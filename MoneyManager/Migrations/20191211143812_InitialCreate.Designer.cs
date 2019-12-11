@@ -9,7 +9,7 @@ using Money_Manager.Models;
 namespace MoneyManager.Migrations
 {
     [DbContext(typeof(MoneyContext))]
-    [Migration("20191211135520_InitialCreate")]
+    [Migration("20191211143812_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -117,6 +117,14 @@ namespace MoneyManager.Migrations
                     b.HasKey("UserId");
 
                     b.ToTable("Users");
+
+                    b.HasData(
+                        new
+                        {
+                            UserId = 1,
+                            Email = "email1",
+                            Name = "User1"
+                        });
                 });
 
             modelBuilder.Entity("Money_Manager.Models.Asset", b =>

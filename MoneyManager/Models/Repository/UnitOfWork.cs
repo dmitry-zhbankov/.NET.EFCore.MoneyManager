@@ -7,6 +7,7 @@ namespace Money_Manager.Models
     {
         MoneyContext context;
         static UnitOfWork instance;
+        bool disposed;
 
         public static UnitOfWork GetInstance(MoneyContext context)
         {
@@ -78,9 +79,32 @@ namespace Money_Manager.Models
             context.SaveChanges();
         }
 
+        protected virtual void Dispose(bool disposing)
+        {
+            if (disposed)
+                return;
+
+            if (disposing)
+            {
+                // Free any other managed objects here.
+                //
+                context.Dispose();
+            }
+
+            // Free any unmanaged objects here.
+            //
+            disposed = true;
+        }
+
         public void Dispose()
         {
-            throw new NotImplementedException();
+            Dispose(true);
+            GC.SuppressFinalize(this);
+        }
+
+        ~UnitOfWork()
+        {
+            Dispose(false);
         }
     }
 }

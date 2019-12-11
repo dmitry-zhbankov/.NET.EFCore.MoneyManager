@@ -115,6 +115,14 @@ namespace MoneyManager.Migrations
                     b.HasKey("UserId");
 
                     b.ToTable("Users");
+
+                    b.HasData(
+                        new
+                        {
+                            UserId = 1,
+                            Email = "email1",
+                            Name = "User1"
+                        });
                 });
 
             modelBuilder.Entity("Money_Manager.Models.Asset", b =>

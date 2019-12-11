@@ -106,6 +106,11 @@ namespace MoneyManager.Migrations
                         onDelete: ReferentialAction.Restrict);
                 });
 
+            migrationBuilder.InsertData(
+                table: "Users",
+                columns: new[] { "UserId", "Email", "Name" },
+                values: new object[] { 1, "email1", "User1" });
+
             migrationBuilder.CreateIndex(
                 name: "IX_Assets_UserId",
                 table: "Assets",

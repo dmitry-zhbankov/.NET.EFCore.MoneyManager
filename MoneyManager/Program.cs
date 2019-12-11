@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Money_Manager.Models;
 
 namespace Money_Manager
 {
@@ -13,7 +16,10 @@ namespace Money_Manager
     {
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+            CreateHostBuilder(args)
+                .Build()
+                .MigrateDatabase()
+                .Run();
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
@@ -22,5 +28,29 @@ namespace Money_Manager
                 {
                     webBuilder.UseStartup<Startup>();
                 });
+    }
+
+    public static class MigrationManager
+    {
+        public static IHost MigrateDatabase(this IHost webHost)
+        {
+            using (var scope = webHost.Services.CreateScope())
+            {
+                using (var appContext = scope.ServiceProvider.GetRequiredService<MoneyContext>())
+                {
+                    try
+                    {
+                        appContext.Database.Migrate();
+                    }
+                    catch (Exception)
+                    {
+                        //Log errors or do anything you think it's needed
+                        throw;
+                    }
+                }
+            }
+
+            return webHost;
+        }
     }
 }
