@@ -12,10 +12,12 @@ namespace Money_Manager.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        UnitOfWork unitOfWork;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, MoneyContext context)
         {
             _logger = logger;
+            unitOfWork = UnitOfWork.GetInstance(context);
         }
 
         public IActionResult Index()

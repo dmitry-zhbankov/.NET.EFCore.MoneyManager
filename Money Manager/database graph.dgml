@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph GraphDirection="LeftToRight" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="Assets" Category="Table" Bounds="-103.004166666667,264.419963809564,180.226666666667,141.92" Group="Expanded" Label="Assets" />
+    <Node Id="Assets_AssetId" Category="Field Primary" Bounds="-1.30749999999991,304.419963809564,58.53,25.96" Description="bigint" Label="AssetId" />
+    <Node Id="Assets_Balance" Category="Field" Bounds="-83.0041666666665,360.379963809564,60.61,25.96" Description="text" Label="Balance" />
+    <Node Id="Assets_Name" Category="Field Optional" Bounds="-83.0041666666665,304.419963809564,51.6966666666667,25.96" Description="text" Label="Name" />
+    <Node Id="Categories" Category="Table" Bounds="107.560833333334,228.459963809564,273.096666666667,213.84" Group="Expanded" Label="Categories" />
+    <Node Id="Categories_CategoryId" Category="Field Primary" Bounds="185.579166666667,340.379963809564,78.2166666666666,25.96" Description="bigint" Label="CategoryId" />
+    <Node Id="Categories_Name" Category="Field Optional" Bounds="127.560833333333,396.339963809564,51.6966666666667,25.96" Description="text" Label="Name" />
+    <Node Id="Categories_ParentCategoryId" Category="Field Foreign" Bounds="168.7175,268.459963809564,111.94,25.96" Description="bigint" Label="ParentCategoryId" />
+    <Node Id="Categories_Type" Category="Field" Bounds="310.6575,268.459963809564,50,25.96" Description="bigint" Label="Type" />
+    <Node Id="Database" Category="Database" Bounds="-160.7625,-267.300036190437,561.42,729.6" Group="Expanded" Label="money.db" />
+    <Node Id="Transactions" Category="Table" Bounds="18.5991666666667,0.57996380956348,285.02,197.88" Group="Expanded" Label="Transactions" />
+    <Node Id="Transactions_Amount" Category="Field" Bounds="118.599166666667,40.5799638095635,62.7533333333333,25.96" Description="text" Label="Amount" />
+    <Node Id="Transactions_CategoryId" Category="Field Foreign" Bounds="38.5991666666668,96.5399638095635,78.2166666666667,25.96" Description="bigint" Label="CategoryId" />
+    <Node Id="Transactions_Comment" Category="Field Optional" Bounds="211.3525,40.5799638095635,72.2666666666667,25.96" Description="text" Label="Comment" />
+    <Node Id="Transactions_Date" Category="Field" Bounds="38.5991666666667,40.5799638095635,50,25.96" Description="text" Label="Date" />
+    <Node Id="Transactions_DestinationAssetId" Category="Field Foreign" Bounds="163.315833333333,152.499963809564,118.976666666667,25.96" Description="bigint" Label="DestinationAssetId" />
+    <Node Id="Transactions_SourceAssetId" Category="Field Foreign" Bounds="38.5991666666668,152.499963809564,94.7166666666667,25.96" Description="bigint" Label="SourceAssetId" />
+    <Node Id="Transactions_TransactionId" Category="Field Primary" Bounds="146.815833333333,96.5399638095635,90.11,25.96" Description="bigint" Label="TransactionId" />
+    <Node Id="Users" Category="Table" Bounds="-140.7625,-227.300036190437,255.743333333333,197.88" Group="Expanded" Label="Users" />
+    <Node Id="Users_AssetsAssetId" Category="Field Foreign" Bounds="-120.7625,-131.340036190437,91.8933333333333,25.96" Description="bigint" Label="AssetsAssetId" />
+    <Node Id="Users_Email" Category="Field Optional" Bounds="-120.7625,-187.300036190437,50,25.96" Description="text" Label="Email" />
+    <Node Id="Users_Name" Category="Field Optional" Bounds="-40.7624999999999,-187.300036190437,51.6966666666667,25.96" Description="text" Label="Name" />
+    <Node Id="Users_TransactionsTransactionId" Category="Field Foreign" Bounds="-120.7625,-75.3800361904366,155.053333333333,25.96" Description="bigint" Label="TransactionsTransactionId" />
+    <Node Id="Users_UserId" Category="Field Primary" Bounds="40.9341666666668,-187.300036190437,54.0466666666667,25.96" Description="bigint" Label="UserId" />
+  </Nodes>
+  <Links>
+    <Link Source="Assets" Target="Assets_AssetId" Category="Contains" />
+    <Link Source="Assets" Target="Assets_Balance" Category="Contains" />
+    <Link Source="Assets" Target="Assets_Name" Category="Contains" />
+    <Link Source="Categories" Target="Categories_CategoryId" Category="Contains" />
+    <Link Source="Categories" Target="Categories_Name" Category="Contains" />
+    <Link Source="Categories" Target="Categories_ParentCategoryId" Category="Contains" />
+    <Link Source="Categories" Target="Categories_Type" Category="Contains" />
+    <Link Source="Categories_ParentCategoryId" Target="Categories_CategoryId" Category="Foreign Key" Bounds="224.6875,294.419952392578,0,36.9600219726563" Label="FK_Categories_0_0" LabelBounds="-25.3037152105168,923.050437897208,97.1266666666667,15.96" />
+    <Link Source="Database" Target="Assets" Category="Contains" />
+    <Link Source="Database" Target="Categories" Category="Contains" />
+    <Link Source="Database" Target="Transactions" Category="Contains" />
+    <Link Source="Database" Target="Users" Category="Contains" />
+    <Link Source="Transactions" Target="Transactions_Amount" Category="Contains" />
+    <Link Source="Transactions" Target="Transactions_CategoryId" Category="Contains" />
+    <Link Source="Transactions" Target="Transactions_Comment" Category="Contains" />
+    <Link Source="Transactions" Target="Transactions_Date" Category="Contains" />
+    <Link Source="Transactions" Target="Transactions_DestinationAssetId" Category="Contains" />
+    <Link Source="Transactions" Target="Transactions_SourceAssetId" Category="Contains" />
+    <Link Source="Transactions" Target="Transactions_TransactionId" Category="Contains" />
+    <Link Source="Transactions_CategoryId" Target="Categories_CategoryId" Category="Foreign Key" Label="FK_Transactions_2_0" />
+    <Link Source="Transactions_DestinationAssetId" Target="Assets_AssetId" Category="Foreign Key" Label="FK_Transactions_1_0" />
+    <Link Source="Transactions_SourceAssetId" Target="Assets_AssetId" Category="Foreign Key" Label="FK_Transactions_0_0" />
+    <Link Source="Users" Target="Users_AssetsAssetId" Category="Contains" />
+    <Link Source="Users" Target="Users_Email" Category="Contains" />
+    <Link Source="Users" Target="Users_Name" Category="Contains" />
+    <Link Source="Users" Target="Users_TransactionsTransactionId" Category="Contains" />
+    <Link Source="Users" Target="Users_UserId" Category="Contains" />
+    <Link Source="Users_AssetsAssetId" Target="Assets_AssetId" Category="Foreign Key" Label="FK_Users_1_0" />
+    <Link Source="Users_TransactionsTransactionId" Target="Transactions_TransactionId" Category="Foreign Key" Label="FK_Users_0_0" />
+  </Links>
+  <Categories>
+    <Category Id="Contains" Label="Contains" Description="Whether the source of the link contains the target object" CanBeDataDriven="False" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="Contained By" IsContainment="True" OutgoingActionLabel="Contains" />
+    <Category Id="Database" />
+    <Category Id="Field" />
+    <Category Id="Field Foreign" />
+    <Category Id="Field Optional" />
+    <Category Id="Field Primary" />
+    <Category Id="Foreign Key" />
+    <Category Id="Table" />
+  </Categories>
+  <Properties>
+    <Property Id="Bounds" DataType="System.Windows.Rect" />
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="Description" Label="Description" Description="Description" DataType="System.String" />
+    <Property Id="Expression" DataType="System.String" />
+    <Property Id="GraphDirection" DataType="Microsoft.VisualStudio.Diagrams.Layout.LayoutOrientation" />
+    <Property Id="Group" Label="Group" Description="Display the node as a group" DataType="Microsoft.VisualStudio.GraphModel.GraphGroupStyle" />
+    <Property Id="GroupLabel" DataType="System.String" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="IsContainment" DataType="System.Boolean" />
+    <Property Id="IsEnabled" DataType="System.Boolean" />
+    <Property Id="Label" Label="Label" Description="Displayable label of an Annotatable object" DataType="System.String" />
+    <Property Id="LabelBounds" DataType="System.Windows.Rect" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+    <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="Value" DataType="System.String" />
+    <Property Id="ValueLabel" DataType="System.String" />
+  </Properties>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="Table" ValueLabel="True">
+      <Condition Expression="HasCategory('Table')" />
+      <Setter Property="Background" Value="#FFC0C0C0" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Schema" ValueLabel="True">
+      <Condition Expression="HasCategory('Schema')" />
+      <Setter Property="Background" Value="#FF7F9169" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Field Primary" ValueLabel="True">
+      <Condition Expression="HasCategory('Field Primary')" />
+      <Setter Property="Background" Value="#FF008000" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Field Optional" ValueLabel="True">
+      <Condition Expression="HasCategory('Field Optional')" />
+      <Setter Property="Background" Value="#FF808040" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Field Foreign" ValueLabel="True">
+      <Condition Expression="HasCategory('Field Foreign')" />
+      <Setter Property="Background" Value="#FF8080FF" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Field" ValueLabel="True">
+      <Condition Expression="HasCategory('Field')" />
+      <Setter Property="Background" Value="#FFC0A000" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="Database" ValueLabel="True">
+      <Condition Expression="HasCategory('Database')" />
+      <Setter Property="Background" Value="#FFFFFFFF" />
+    </Style>
+  </Styles>
+</DirectedGraph>

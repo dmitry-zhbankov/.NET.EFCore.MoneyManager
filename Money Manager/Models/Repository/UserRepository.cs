@@ -2,13 +2,10 @@
 
 namespace Money_Manager.Models
 {
-    public class UserRepository : IRepository<User>
+    public class UserRepository : GenericRepository<User>
     {
-        MoneyContext context;
-        DbSet<User> dbSet;
-        public UserRepository(MoneyContext context)
+        public UserRepository(MoneyContext context):base(context)
         {
-
         }
     }
 }

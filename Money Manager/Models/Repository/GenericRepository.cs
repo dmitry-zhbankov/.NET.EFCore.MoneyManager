@@ -1,37 +1,53 @@
-﻿using System.Collections.Generic;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Linq.Expressions;
 
 namespace Money_Manager.Models
 {
     public class GenericRepository<T> : IRepository<T> where T : class
     {
+        MoneyContext context;
+        DbSet<T> dbSet;
+
+        public GenericRepository(MoneyContext context)
+        {
+            this.context = context;
+            this.dbSet = context.Set<T>();
+        }
+
         public void Create(T entity)
         {
-            throw new System.NotImplementedException();
+            dbSet.Add(entity);
         }
 
         public void Delete(int id)
         {
-            throw new System.NotImplementedException();
+            T entity = dbSet.Find(id);
+            dbSet.Remove(entity);
         }
 
-        public IEnumerable<T> Get()
+        public IEnumerable<T> Get(Expression<Func<T, bool>> filter)
         {
-            throw new System.NotImplementedException();
+            IQueryable<T> query = dbSet;
+            query = query.Where(filter);
+            return query.ToList();
         }
 
         public T GetById(int id)
         {
-            throw new System.NotImplementedException();
+            return dbSet.Find(id);
         }
 
         public void Save()
         {
-            throw new System.NotImplementedException();
+            context.SaveChanges();
         }
 
         public void Update(T entity)
         {
-            throw new System.NotImplementedException();
+            dbSet.Update(entity);
         }
     }
 }

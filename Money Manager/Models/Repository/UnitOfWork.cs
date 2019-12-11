@@ -1,11 +1,27 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 
 namespace Money_Manager.Models
 {
     public class UnitOfWork : IDisposable
     {
-        MoneyContext context = new MoneyContext();
-        UserRepository userRepository;
+        MoneyContext context;
+        static UnitOfWork instance;
+
+        public static UnitOfWork GetInstance(MoneyContext context)
+        {
+            if (instance==null)
+            {
+                instance = new UnitOfWork(context);
+            }
+            return instance;
+        }
+        UnitOfWork(MoneyContext context)
+        {
+            this.context = context;
+        }
+
+        public UserRepository userRepository;
         UserRepository UserRepository
         {
             get
@@ -17,8 +33,9 @@ namespace Money_Manager.Models
                 return userRepository;
             }
         }
-        AssetRepository assetRepository;
-        UserRepository AssetRepository
+
+        public AssetRepository assetRepository;
+        AssetRepository AssetRepository
         {
             get
             {
@@ -29,8 +46,9 @@ namespace Money_Manager.Models
                 return assetRepository;
             }
         }
-        CategoryRepository categoryRepository;
-        UserRepository CategoryRepository
+
+        public CategoryRepository categoryRepository;
+        CategoryRepository CategoryRepository
         {
             get
             {
@@ -41,8 +59,9 @@ namespace Money_Manager.Models
                 return categoryRepository;
             }
         }
-        TransactionRepository transactionRepository;
-        UserRepository TransactionRepository
+
+        public TransactionRepository transactionRepository;
+        TransactionRepository TransactionRepository
         {
             get
             {
@@ -53,6 +72,12 @@ namespace Money_Manager.Models
                 return transactionRepository;
             }
         }
+
+        public void Save()
+        {
+            context.SaveChanges();
+        }
+
         public void Dispose()
         {
             throw new NotImplementedException();
