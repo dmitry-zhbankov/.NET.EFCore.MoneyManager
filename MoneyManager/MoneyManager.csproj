@@ -2,7 +2,8 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>Money_Manager</RootNamespace>
+    <RootNamespace>MoneyManager</RootNamespace>
+    <AssemblyName>MoneyManager</AssemblyName>
   </PropertyGroup>
 
   <ItemGroup>
