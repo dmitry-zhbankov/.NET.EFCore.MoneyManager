@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Money_Manager.Models;
 
-namespace Money_Manager.Migrations
+namespace MoneyManager.Migrations
 {
     [DbContext(typeof(MoneyContext))]
     partial class MoneyContextModelSnapshot : ModelSnapshot
@@ -28,7 +28,12 @@ namespace Money_Manager.Migrations
                     b.Property<string>("Name")
                         .HasColumnType("TEXT");
 
+                    b.Property<int?>("UserId")
+                        .HasColumnType("INTEGER");
+
                     b.HasKey("AssetId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Assets");
                 });
@@ -79,6 +84,9 @@ namespace Money_Manager.Migrations
                     b.Property<int?>("SourceAssetId")
                         .HasColumnType("INTEGER");
 
+                    b.Property<int?>("UserId")
+                        .HasColumnType("INTEGER");
+
                     b.HasKey("TransactionId");
 
                     b.HasIndex("CategoryId");
@@ -86,6 +94,8 @@ namespace Money_Manager.Migrations
                     b.HasIndex("DestinationAssetId");
 
                     b.HasIndex("SourceAssetId");
+
+                    b.HasIndex("UserId");
 
                     b.ToTable("Transactions");
                 });
@@ -96,25 +106,22 @@ namespace Money_Manager.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
-                    b.Property<int?>("AssetsAssetId")
-                        .HasColumnType("INTEGER");
-
                     b.Property<string>("Email")
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Name")
                         .HasColumnType("TEXT");
 
-                    b.Property<int?>("TransactionsTransactionId")
-                        .HasColumnType("INTEGER");
-
                     b.HasKey("UserId");
 
-                    b.HasIndex("AssetsAssetId");
-
-                    b.HasIndex("TransactionsTransactionId");
-
                     b.ToTable("Users");
+                });
+
+            modelBuilder.Entity("Money_Manager.Models.Asset", b =>
+                {
+                    b.HasOne("Money_Manager.Models.User", "User")
+                        .WithMany("Assets")
+                        .HasForeignKey("UserId");
                 });
 
             modelBuilder.Entity("Money_Manager.Models.Category", b =>
@@ -137,17 +144,10 @@ namespace Money_Manager.Migrations
                     b.HasOne("Money_Manager.Models.Asset", "Source")
                         .WithMany()
                         .HasForeignKey("SourceAssetId");
-                });
 
-            modelBuilder.Entity("Money_Manager.Models.User", b =>
-                {
-                    b.HasOne("Money_Manager.Models.Asset", "Assets")
-                        .WithMany()
-                        .HasForeignKey("AssetsAssetId");
-
-                    b.HasOne("Money_Manager.Models.Transaction", "Transactions")
-                        .WithMany()
-                        .HasForeignKey("TransactionsTransactionId");
+                    b.HasOne("Money_Manager.Models.User", "User")
+                        .WithMany("Transactions")
+                        .HasForeignKey("UserId");
                 });
 #pragma warning restore 612, 618
         }

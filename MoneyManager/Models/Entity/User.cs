@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
 namespace Money_Manager.Models
@@ -11,8 +12,8 @@ namespace Money_Manager.Models
 
         public string Email { get; set; }
 
-        public Asset Assets { get; set; }
+        public IEnumerable<Asset> Assets { get; set; }
 
-        public Transaction Transactions { get; set; }
+        public IEnumerable<Transaction> Transactions { get; set; }
     }
 }

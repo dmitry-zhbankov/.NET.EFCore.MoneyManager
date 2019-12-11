@@ -10,6 +10,8 @@ namespace Money_Manager.Models
 
         public string Comment { get; set; }
 
+        public User User { get; set; }
+
         public Category Category { get; set; }
 
         public Asset Source { get; set; }
