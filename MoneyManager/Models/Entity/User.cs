@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Money_Manager.Models
+namespace MoneyManager.Models
 {
     public class User
     {

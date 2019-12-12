@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace Money_Manager.Models
+namespace MoneyManager.Models
 {
     public class UserRepository : GenericRepository<User>
     {

@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace Money_Manager.Models
+namespace MoneyManager.Models
 {
     public class UserConfiguration : IEntityTypeConfiguration<User>
     {

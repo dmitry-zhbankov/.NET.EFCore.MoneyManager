@@ -1,77 +1,40 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System;
 
-namespace Money_Manager.Models
+namespace MoneyManager.Models
 {
-    public class UnitOfWork : IDisposable
+    public class UnitOfWork : IUnitOfWork
     {
         MoneyContext context;
-        static UnitOfWork instance;
         bool disposed;
 
-        public static UnitOfWork GetInstance(MoneyContext context)
-        {
-            if (instance==null)
-            {
-                instance = new UnitOfWork(context);
-            }
-            return instance;
-        }
-        UnitOfWork(MoneyContext context)
+        public UnitOfWork(MoneyContext context)
         {
             this.context = context;
         }
 
-        public UserRepository userRepository;
-        UserRepository UserRepository
+        UserRepository userRepository;
+        public UserRepository UserRepository
         {
-            get
-            {
-                if (userRepository==null)
-                {
-                    userRepository = new UserRepository(context);
-                }
-                return userRepository;
-            }
+            get { return userRepository ??= new UserRepository(context); }
         }
 
-        public AssetRepository assetRepository;
-        AssetRepository AssetRepository
+        AssetRepository assetRepository;
+        public AssetRepository AssetRepository
         {
-            get
-            {
-                if (assetRepository == null)
-                {
-                    assetRepository = new AssetRepository(context);
-                }
-                return assetRepository;
-            }
+            get { return assetRepository ??= new AssetRepository(context); }
         }
 
-        public CategoryRepository categoryRepository;
-        CategoryRepository CategoryRepository
+        CategoryRepository categoryRepository;
+        public CategoryRepository CategoryRepository
         {
-            get
-            {
-                if (categoryRepository == null)
-                {
-                    categoryRepository = new CategoryRepository(context);
-                }
-                return categoryRepository;
-            }
+            get { return categoryRepository ??= new CategoryRepository(context); }
         }
 
-        public TransactionRepository transactionRepository;
-        TransactionRepository TransactionRepository
+        TransactionRepository transactionRepository;
+        public TransactionRepository TransactionRepository
         {
-            get
-            {
-                if (transactionRepository == null)
-                {
-                    transactionRepository = new TransactionRepository(context);
-                }
-                return transactionRepository;
-            }
+            get { return transactionRepository ??= new TransactionRepository(context); }
         }
 
         public void Save()

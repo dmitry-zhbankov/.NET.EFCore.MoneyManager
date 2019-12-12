@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Money_Manager.Models
+namespace MoneyManager.Models
 {
     public class AssetRepository : GenericRepository<Asset>
     {

@@ -8,9 +8,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using Money_Manager.Models;
+using MoneyManager.Models;
 
-namespace Money_Manager
+namespace MoneyManager
 {
     public class Program
     {
@@ -36,7 +36,7 @@ namespace Money_Manager
         {
             using (var scope = webHost.Services.CreateScope())
             {
-                using (var appContext = scope.ServiceProvider.GetRequiredService<MoneyContext>())
+                var appContext = scope.ServiceProvider.GetRequiredService<MoneyContext>();
                 {
                     try
                     {

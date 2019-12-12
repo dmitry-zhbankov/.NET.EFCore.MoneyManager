@@ -1,0 +1,15 @@
+﻿@model IEnumerable<User>
+
+@{
+    ViewData["Title"] = "Students";
+}
+
+<h1>Students</h1>
+<ul>
+    @{
+        foreach (var user in Model)
+        {
+            <li>@user.Name</li>
+        }
+    }
+</ul>

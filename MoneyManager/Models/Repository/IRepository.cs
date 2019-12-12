@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq.Expressions;
 
-namespace Money_Manager.Models
+namespace MoneyManager.Models
 {
     public interface IRepository<T> where T : class
     {

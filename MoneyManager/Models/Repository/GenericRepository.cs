@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace Money_Manager.Models
+namespace MoneyManager.Models
 {
     public class GenericRepository<T> : IRepository<T> where T : class
     {

@@ -5,19 +5,19 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using Money_Manager.Models;
+using MoneyManager.Models;
 
-namespace Money_Manager.Controllers
+namespace MoneyManager.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> logger;
-        UnitOfWork unitOfWork;
+        IUnitOfWork unitOfWork;
 
-        public HomeController(ILogger<HomeController> logger, MoneyContext context)
+        public HomeController(ILogger<HomeController> logger,IUnitOfWork unitOfWork)
         {
             this.logger = logger;
-            unitOfWork = UnitOfWork.GetInstance(context);
+            this.unitOfWork = unitOfWork;
         }
 
         public IActionResult Index()
@@ -29,7 +29,7 @@ namespace Money_Manager.Controllers
         {
             return View();
         }
-
+        
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

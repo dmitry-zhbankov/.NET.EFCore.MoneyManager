@@ -1,6 +1,7 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
-namespace Money_Manager.Models
+namespace MoneyManager.Models
 {
     public class MoneyContext : DbContext
     {
@@ -20,11 +21,6 @@ namespace Money_Manager.Models
             modelBuilder.ApplyConfiguration(new TransactionConfiguration());
             modelBuilder.ApplyConfiguration(new CategoryConfiguration());
             base.OnModelCreating(modelBuilder);
-        }
-
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {                        
-            base.OnConfiguring(optionsBuilder);
         }
     }
 }
