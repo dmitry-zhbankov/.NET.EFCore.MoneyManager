@@ -1,15 +1,33 @@
 ﻿@model IEnumerable<User>
 
 @{
-    ViewData["Title"] = "Students";
+    ViewData["Title"] = "Users";
 }
 
-<h1>Students</h1>
-<ul>
+<h1>Users</h1>
+<a asp-area="" asp-controller="User" asp-action="Create">Create new user</a>
+<hr />
+
+<table>
+    <tr>
+        <th>#</th>
+        <th>@Html.DisplayNameFor(model => model.Name)</th>
+    </tr>
     @{
+        var i = 1;
         foreach (var user in Model)
         {
-            <li>@user.Name</li>
+            <tr>
+                <td>@i</td>
+                <td>@user.Name</td>
+                <td><a asp-area="" asp-controller="User" asp-action="Details" asp-route-userId="@user.UserId">Details</a></td>
+                <td><a asp-area="" asp-controller="User" asp-action="Edit" asp-route-userId="@user.UserId">Edit</a></td>
+                <td><a asp-area="" asp-controller="User" asp-action="Delete" asp-route-userId="@user.UserId">Delete</a></td>
+                <td></td>
+            </tr>
+            i++;
         }
     }
-</ul>
+</table>
+
+

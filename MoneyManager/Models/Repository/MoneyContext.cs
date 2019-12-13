@@ -9,8 +9,8 @@ namespace MoneyManager.Models
         public DbSet<Asset> Assets { get; set; }
         public DbSet<Category> Categories { get; set; }
         public DbSet<Transaction> Transactions { get; set; }
-        
-        public MoneyContext(DbContextOptions options):base(options)
+
+        public MoneyContext(DbContextOptions options) : base(options)
         {
         }
 

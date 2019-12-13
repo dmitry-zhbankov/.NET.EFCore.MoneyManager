@@ -1,0 +1,33 @@
+﻿@model MoneyManager.Models.User
+
+@{
+    ViewData["Title"] = "Create user";
+}
+
+@using (Html.BeginForm())
+{
+    <h4>User</h4>
+    <hr />
+
+    <div>
+        <label asp-for="Name"></label>
+        <div>
+            <input asp-for="Name" />
+        </div>
+    </div>
+
+    <div>
+        <label asp-for="Email"></label>
+        <div>
+            <input asp-for="Email" />
+        </div>
+    </div>
+
+    <div>
+        <input type="submit" value="Create" />
+    </div>
+}
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
