@@ -1,13 +1,14 @@
 ﻿@model MoneyManager.Models.User
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "User Details";
 }
 
-<h1>Details</h1>
+<h1>User Details</h1>
 <a asp-action="Edit" asp-route-id="@Model.UserId">Edit</a> |
 <a asp-action="Delete" asp-route-userId="@Model.UserId">Delete</a> |
 <a asp-controller="Asset" asp-action="Index" asp-route-userId="@Model.UserId">Assets</a> |
+<a asp-controller="Category" asp-action="Index" asp-route-userId="@Model.UserId">Categories</a> |
 <a asp-controller="Transaction" asp-action="Index" asp-route-userId="@Model.UserId">Transactions</a>
 <hr />
 

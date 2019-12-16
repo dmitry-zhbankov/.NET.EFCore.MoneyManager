@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
 namespace MoneyManager.Models
 {
@@ -6,18 +7,16 @@ namespace MoneyManager.Models
     {
         public int TransactionId { get; set; }
 
-        public decimal Amount { get; set; }
+        [Required] public decimal Amount { get; set; }
 
         public string Comment { get; set; }
 
-        public User User { get; set; }
+        [Required] public User User { get; set; }
 
-        public Category Category { get; set; }
+        [Required] public Category Category { get; set; }
 
-        public Asset Source { get; set; }
+        [Required] public Asset Asset { get; set; }
 
-        public Asset Destination { get; set; }
-
-        public DateTime Date { get; set; }
+        [Required] public DateTime Date { get; set; }
     }
 }

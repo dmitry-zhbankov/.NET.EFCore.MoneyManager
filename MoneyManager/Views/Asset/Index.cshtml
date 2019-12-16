@@ -1,7 +1,29 @@
-﻿
+﻿@model IEnumerable<Asset>
+
 @{
     ViewData["Title"] = "Assets";
 }
 
-<h1>Index</h1>
+<h1>Assets for @ViewBag.User.Name</h1>
+<a asp-area="" asp-controller="Asset" asp-action="Create" asp-route-userId="@ViewBag.User.UserId">Create new asset</a>
+<hr />
+
+<table>
+    <tr>
+        <th>#</th>
+        <th>@Html.DisplayNameFor(model => model.Name)</th>
+    </tr>
+    @{
+        var i = 1;
+        foreach (var asset in Model)
+        {
+            <tr>
+                <td>@i</td>
+                <td>@asset.Name</td>
+                <td></td>
+            </tr>
+            i++;
+        }
+    }
+</table>
 

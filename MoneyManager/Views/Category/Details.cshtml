@@ -1,0 +1,53 @@
+﻿@model MoneyManager.Models.Category
+
+@{
+    ViewData["Title"] = "Category Details";
+}
+
+<h1>Category Details</h1>
+<a asp-controller="Category" asp-action="Details" asp-route-categoryId="@Model.Parent?.CategoryId">Parent category</a>
+<a asp-controller="Category" asp-action="Create" asp-route-categoryId="@Model.CategoryId">Create subcategory</a>
+<a asp-controller="Category" asp-action="Index" asp-route-categoryId="@Model.CategoryId">Child categories</a>
+<hr />
+
+<h4>Parent</h4>
+
+<dl>
+    <dt>
+        @Html.DisplayNameFor(model => model.Parent.Name)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.Parent.Name)
+    </dd>
+
+    <dt>
+        @Html.DisplayNameFor(model => model.Parent.Type)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.Parent.Type)
+    </dd>
+</dl>
+
+<h4>Category</h4>
+
+<div>
+    <dl>
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Type)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Type)
+        </dd>
+    </dl>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

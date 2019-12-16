@@ -26,13 +26,13 @@ namespace MoneyManager.Controllers
         {
             return View();
         }
-        
+
         [HttpPost]
         public ActionResult Create(User user)
         {
-            if (user==null)
+            if (user == null)
             {
-                return new BadRequestResult();
+                return BadRequest();
             }
             try
             {
@@ -45,12 +45,12 @@ namespace MoneyManager.Controllers
             }
             return RedirectToAction("Index");
         }
-        
+
         public IActionResult Details(int? userId)
         {
-            if (userId==null)
+            if (userId == null)
             {
-                return new BadRequestResult();
+                return BadRequest();
             }
             User user = unitOfWork.UserRepository.GetById((int)userId);
             return View(user);
@@ -60,7 +60,7 @@ namespace MoneyManager.Controllers
         {
             if (userId == null)
             {
-                return new BadRequestResult();
+                return BadRequest();
             }
             try
             {
@@ -80,7 +80,7 @@ namespace MoneyManager.Controllers
         {
             if (userId == null)
             {
-                return new BadRequestResult();
+                return BadRequest();
             }
             var user = unitOfWork.UserRepository.GetById((int)userId);
             return View(user);
@@ -89,9 +89,9 @@ namespace MoneyManager.Controllers
         [HttpPost, ActionName("Edit")]
         public async Task<ActionResult> EditPost(int? userId)
         {
-            if (userId==null)
+            if (userId == null)
             {
-                return new BadRequestResult();
+                return BadRequest();
             }
             var user = unitOfWork.UserRepository.GetById((int)userId);
             if (await TryUpdateModelAsync(user))

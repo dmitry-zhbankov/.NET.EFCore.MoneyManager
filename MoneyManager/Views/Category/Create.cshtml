@@ -1,0 +1,67 @@
+﻿@model MoneyManager.Models.Category
+
+@{
+    ViewData["Title"] = "Create category";
+}
+
+<h1>Create category</h1>
+
+<hr />
+
+<h4>Parent</h4>
+
+<dl>
+    <dt>
+        @Html.DisplayNameFor(category => category.Parent.Name)
+    </dt>
+    <dd>
+        @Html.DisplayFor(category => category.Parent.Name)
+    </dd>
+
+    <dt>
+        @Html.DisplayNameFor(category => category.Parent.Type)
+    </dt>
+    <dd>
+        @Html.DisplayFor(category => category.Parent.Type)
+    </dd>
+</dl>
+
+
+@using (Html.BeginForm())
+{
+    <h4>New Category</h4>
+
+    @Html.HiddenFor(category => category.Parent.CategoryId)
+
+    <div>
+        <label asp-for="Name"></label>
+        <div>
+            <input asp-for="Name" />
+        </div>
+    </div>
+
+    <div>
+        <label asp-for="Type"></label>
+        <div>
+            @{
+                if (Model.Parent == null)
+                {
+                    <select asp-for="Type" asp-items="new SelectList(Enum.GetNames(typeof(CategoryType)).ToList())"></select>
+                }
+                else
+                {
+                    @Html.DisplayFor(category => category.Parent.Type)
+                }
+            }
+
+        </div>
+    </div>
+
+    <div>
+        <input type="submit" value="Create" />
+    </div>
+}
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

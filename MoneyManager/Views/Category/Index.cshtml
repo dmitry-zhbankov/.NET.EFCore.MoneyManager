@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Category>
+
+@{
+    ViewData["Title"] = "Categories";
+}
+
+<h1>Categories</h1>
+<a asp-area="" asp-controller="Category" asp-action="Details" asp-route-categoryId="@ViewBag.ParentId">Parent</a>
+<a asp-area="" asp-controller="Category" asp-action="Create" asp-route-categoryId="@ViewBag.ParentId">Create new category</a>
+<hr />
+
+<table>
+    <tr>
+        <th>#</th>
+        <th>@Html.DisplayNameFor(model => model.Name)</th>
+        <th>@Html.DisplayNameFor(model => model.Type)</th>
+    </tr>
+    @{
+        var i = 1;
+        foreach (var category in Model)
+        {
+        <tr>
+            <td>@i</td>
+            <td>
+                <a asp-area="" asp-controller="Category" asp-action="Details" asp-route-categoryId="@category.CategoryId">@category.Name</a>
+            </td>
+            <td>@category.Type</td>
+            <td></td>
+        </tr>
+            i++;
+        }
+    }
+</table>

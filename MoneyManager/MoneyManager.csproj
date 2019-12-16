@@ -7,6 +7,33 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20191211143812_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191211143812_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191216090453_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191216090453_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191216091258_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191216091258_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191216093051_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191216093051_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191216094324_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191216094324_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191216094512_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191216094512_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191216095301_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191216095301_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191216101350_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191216101350_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191216104643_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191216104643_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191216104826_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191216104826_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191216115135_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191216115135_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191216123741_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191216123741_InitialCreate.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="wwwroot\lib\" />
     <Folder Include="wwwroot\js\" />
   </ItemGroup>

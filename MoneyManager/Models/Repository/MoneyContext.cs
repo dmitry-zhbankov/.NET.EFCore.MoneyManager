@@ -20,7 +20,11 @@ namespace MoneyManager.Models
             modelBuilder.ApplyConfiguration(new AssetConfiguration());
             modelBuilder.ApplyConfiguration(new TransactionConfiguration());
             modelBuilder.ApplyConfiguration(new CategoryConfiguration());
-            base.OnModelCreating(modelBuilder);
+            modelBuilder.ApplyConfiguration(new UserCategoryConfiguration());
+        }
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
         }
     }
 }

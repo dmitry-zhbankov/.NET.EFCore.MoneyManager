@@ -9,7 +9,7 @@ using MoneyManager.Models;
 namespace MoneyManager.Migrations
 {
     [DbContext(typeof(MoneyContext))]
-    [Migration("20191211143812_InitialCreate")]
+    [Migration("20191216135230_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -18,7 +18,7 @@ namespace MoneyManager.Migrations
             modelBuilder
                 .HasAnnotation("ProductVersion", "3.1.0");
 
-            modelBuilder.Entity("Money_Manager.Models.Asset", b =>
+            modelBuilder.Entity("MoneyManager.Models.Asset", b =>
                 {
                     b.Property<int>("AssetId")
                         .ValueGeneratedOnAdd()
@@ -28,9 +28,10 @@ namespace MoneyManager.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<int?>("UserId")
+                    b.Property<int>("UserId")
                         .HasColumnType("INTEGER");
 
                     b.HasKey("AssetId");
@@ -40,13 +41,14 @@ namespace MoneyManager.Migrations
                     b.ToTable("Assets");
                 });
 
-            modelBuilder.Entity("Money_Manager.Models.Category", b =>
+            modelBuilder.Entity("MoneyManager.Models.Category", b =>
                 {
                     b.Property<int>("CategoryId")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.Property<int?>("ParentCategoryId")
@@ -62,7 +64,7 @@ namespace MoneyManager.Migrations
                     b.ToTable("Categories");
                 });
 
-            modelBuilder.Entity("Money_Manager.Models.Transaction", b =>
+            modelBuilder.Entity("MoneyManager.Models.Transaction", b =>
                 {
                     b.Property<int>("TransactionId")
                         .ValueGeneratedOnAdd()
@@ -71,7 +73,10 @@ namespace MoneyManager.Migrations
                     b.Property<decimal>("Amount")
                         .HasColumnType("TEXT");
 
-                    b.Property<int?>("CategoryId")
+                    b.Property<int>("AssetId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("CategoryId")
                         .HasColumnType("INTEGER");
 
                     b.Property<string>("Comment")
@@ -80,29 +85,21 @@ namespace MoneyManager.Migrations
                     b.Property<DateTime>("Date")
                         .HasColumnType("TEXT");
 
-                    b.Property<int?>("DestinationAssetId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int?>("SourceAssetId")
-                        .HasColumnType("INTEGER");
-
-                    b.Property<int?>("UserId")
+                    b.Property<int>("UserId")
                         .HasColumnType("INTEGER");
 
                     b.HasKey("TransactionId");
 
+                    b.HasIndex("AssetId");
+
                     b.HasIndex("CategoryId");
-
-                    b.HasIndex("DestinationAssetId");
-
-                    b.HasIndex("SourceAssetId");
 
                     b.HasIndex("UserId");
 
                     b.ToTable("Transactions");
                 });
 
-            modelBuilder.Entity("Money_Manager.Models.User", b =>
+            modelBuilder.Entity("MoneyManager.Models.User", b =>
                 {
                     b.Property<int>("UserId")
                         .ValueGeneratedOnAdd()
@@ -112,6 +109,7 @@ namespace MoneyManager.Migrations
                         .HasColumnType("TEXT");
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("TEXT");
 
                     b.HasKey("UserId");
@@ -127,37 +125,71 @@ namespace MoneyManager.Migrations
                         });
                 });
 
-            modelBuilder.Entity("Money_Manager.Models.Asset", b =>
+            modelBuilder.Entity("MoneyManager.Models.UserCategory", b =>
                 {
-                    b.HasOne("Money_Manager.Models.User", "User")
-                        .WithMany("Assets")
-                        .HasForeignKey("UserId");
+                    b.Property<int>("UserId")
+                        .HasColumnType("INTEGER");
+
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("INTEGER");
+
+                    b.HasKey("UserId", "CategoryId");
+
+                    b.HasIndex("CategoryId");
+
+                    b.ToTable("UserCategory");
                 });
 
-            modelBuilder.Entity("Money_Manager.Models.Category", b =>
+            modelBuilder.Entity("MoneyManager.Models.Asset", b =>
                 {
-                    b.HasOne("Money_Manager.Models.Category", "Parent")
+                    b.HasOne("MoneyManager.Models.User", "User")
+                        .WithMany("Assets")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("MoneyManager.Models.Category", b =>
+                {
+                    b.HasOne("MoneyManager.Models.Category", "Parent")
                         .WithMany("Children")
                         .HasForeignKey("ParentCategoryId");
                 });
 
-            modelBuilder.Entity("Money_Manager.Models.Transaction", b =>
+            modelBuilder.Entity("MoneyManager.Models.Transaction", b =>
                 {
-                    b.HasOne("Money_Manager.Models.Category", "Category")
+                    b.HasOne("MoneyManager.Models.Asset", "Asset")
                         .WithMany()
-                        .HasForeignKey("CategoryId");
+                        .HasForeignKey("AssetId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.HasOne("Money_Manager.Models.Asset", "Destination")
+                    b.HasOne("MoneyManager.Models.Category", "Category")
                         .WithMany()
-                        .HasForeignKey("DestinationAssetId");
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
-                    b.HasOne("Money_Manager.Models.Asset", "Source")
-                        .WithMany()
-                        .HasForeignKey("SourceAssetId");
-
-                    b.HasOne("Money_Manager.Models.User", "User")
+                    b.HasOne("MoneyManager.Models.User", "User")
                         .WithMany("Transactions")
-                        .HasForeignKey("UserId");
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("MoneyManager.Models.UserCategory", b =>
+                {
+                    b.HasOne("MoneyManager.Models.Category", "Category")
+                        .WithMany("UserCategories")
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("MoneyManager.Models.User", "User")
+                        .WithMany("UserCategories")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

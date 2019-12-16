@@ -1,0 +1,28 @@
+﻿@model MoneyManager.Models.Asset
+
+@{
+    ViewData["Title"] = "Create asset";
+}
+
+<h4>Create asset for @Model.User.Name</h4>
+<hr/>
+
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(asset => asset.User.UserId)
+
+    <div>
+        <label asp-for="Name"></label>
+        <div>
+            <input asp-for="Name"/>
+        </div>
+    </div>
+
+    <div>
+        <input type="submit" value="Create"/>
+    </div>
+}
+
+<div>
+    <a asp-action="Index" asp-route-userId="@Model.User.UserId">Back to user</a>
+</div>

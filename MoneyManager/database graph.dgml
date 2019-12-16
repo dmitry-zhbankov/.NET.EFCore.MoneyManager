@@ -1,30 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DirectedGraph GraphDirection="LeftToRight" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
   <Nodes>
-    <Node Id="Assets" Category="Table" Bounds="1.05232233744186,114.466001239534,189.14,141.9203" Group="Expanded" Label="Assets" UseManualLocation="True" />
-    <Node Id="Assets_AssetId" Category="Field Primary" Bounds="21.0523223374419,210.426214043733,58.53,25.96" Description="bigint" Label="AssetId" />
-    <Node Id="Assets_Balance" Category="Field" Bounds="109.58232298594,210.426214043733,60.61,25.96" Description="text" Label="Balance" />
-    <Node Id="Assets_Name" Category="Field Optional" Bounds="21.0523258342477,154.466100518343,51.6966666666667,25.96" Description="text" Label="Name" />
-    <Node Id="Assets_UserId" Category="Field Foreign" Bounds="102.748991788838,154.466100518343,54.0466666666667,25.96" Description="bigint" Label="UserId" />
-    <Node Id="Categories" Category="Table" Bounds="-139.245009419739,-162.602668031859,273.096664126927,213.84030579834" Group="Expanded" Label="Categories" UseManualLocation="True" />
-    <Node Id="Categories_CategoryId" Category="Field Primary" Bounds="-61.2266530473599,-50.6825596737433,78.2166666666667,25.96" Description="bigint" Label="CategoryId" />
-    <Node Id="Categories_Name" Category="Field Optional" Bounds="-119.245011506833,5.27753811602107,51.6966666666667,25.96" Description="text" Label="Name" />
-    <Node Id="Categories_ParentCategoryId" Category="Field Foreign" Bounds="-78.0883387875129,-122.60256928678,111.94,25.96" Description="bigint" Label="ParentCategoryId" />
-    <Node Id="Categories_Type" Category="Field" Bounds="63.8516548037957,-122.602462475257,50,25.96" Description="bigint" Label="Type" />
-    <Node Id="Database" Category="Database" Bounds="-159.245011732313,-239.320317339111,688.255036234536,551.138027215576" Group="Expanded" Label="money.db" />
-    <Node Id="Transactions" Category="Table" Bounds="168.416675415039,-199.32021626511,340.593333333333,197.8804" Group="Expanded" Label="Transactions" />
-    <Node Id="Transactions_Amount" Category="Field" Bounds="352.463342081706,-159.32004126511,62.7533333333333,25.96" Description="text" Label="Amount" />
-    <Node Id="Transactions_CategoryId" Category="Field Foreign" Bounds="290.683342081706,-103.36001626511,78.2166666666667,25.96" Description="bigint" Label="CategoryId" />
-    <Node Id="Transactions_Comment" Category="Field Optional" Bounds="188.416675415039,-103.35994126511,72.2666666666667,25.96" Description="text" Label="Comment" />
-    <Node Id="Transactions_Date" Category="Field" Bounds="188.416675415039,-159.32004126511,50,25.96" Description="text" Label="Date" />
-    <Node Id="Transactions_DestinationAssetId" Category="Field Foreign" Bounds="313.133342081706,-47.3999162651097,118.976666666667,25.96" Description="bigint" Label="DestinationAssetId" />
-    <Node Id="Transactions_SourceAssetId" Category="Field Foreign" Bounds="188.416675415039,-47.3999162651097,94.7166666666666,25.96" Description="bigint" Label="SourceAssetId" />
-    <Node Id="Transactions_TransactionId" Category="Field Primary" Bounds="398.900008748372,-103.35994126511,90.11,25.96" Description="bigint" Label="TransactionId" />
-    <Node Id="Transactions_UserId" Category="Field Foreign" Bounds="268.416675415039,-159.32011626511,54.0466666666667,25.96" Description="bigint" Label="UserId" />
-    <Node Id="Users" Category="Table" Bounds="289.150661948466,149.870687178004,171.754426640226,141.946906565477" Group="Expanded" Label="Users" UseManualLocation="True" />
-    <Node Id="Users_Email" Category="Field Optional" Bounds="309.150661948466,189.897398506129,50,25.96" Description="text" Label="Email" />
-    <Node Id="Users_Name" Category="Field Optional" Bounds="389.208426027242,189.870787178004,51.6966666666667,25.96" Description="text" Label="Name" />
-    <Node Id="Users_UserId" Category="Field Primary" Bounds="309.208429079,245.85751203152,54.0466666666667,25.96" Description="bigint" Label="UserId" />
+    <Node Id="Assets" Category="Table" Bounds="205.110326089249,28.5421916146332,189.14,141.92" Group="Expanded" Label="Assets" />
+    <Node Id="Assets_AssetId" Category="Field Primary" Bounds="225.110326089249,124.502191614633,58.53,25.96" Description="bigint" Label="AssetId" />
+    <Node Id="Assets_Balance" Category="Field" Bounds="313.640326089249,124.502191614633,60.61,25.96" Description="text" Label="Balance" />
+    <Node Id="Assets_Name" Category="Field" Bounds="225.110326089249,68.5421916146332,51.6966666666667,25.96" Description="text" Label="Name" />
+    <Node Id="Assets_UserId" Category="Field Foreign" Bounds="306.806992755916,68.5421916146332,54.0466666666667,25.96" Description="bigint" Label="UserId" />
+    <Node Id="Categories" Category="Table" Bounds="-110.868007244084,200.462191614633,273.096666666667,213.84" Group="Expanded" Label="Categories" />
+    <Node Id="Categories_CategoryId" Category="Field Primary" Bounds="-32.8496739107507,312.382191614633,78.2166666666667,25.96" Description="bigint" Label="CategoryId" />
+    <Node Id="Categories_Name" Category="Field" Bounds="-90.8680072440839,368.342191614633,51.6966666666667,25.96" Description="text" Label="Name" />
+    <Node Id="Categories_ParentCategoryId" Category="Field Foreign" Bounds="-49.7113405774174,240.462191614633,111.94,25.96" Description="bigint" Label="ParentCategoryId" />
+    <Node Id="Categories_Type" Category="Field" Bounds="92.2286594225827,240.462191614633,50,25.96" Description="bigint" Label="Type" />
+    <Node Id="Database" Category="Database" Bounds="-130.868007244084,-239.337808385367,662.396666666667,673.64" Group="Expanded" Label="money.db" />
+    <Node Id="Transactions" Category="Table" Bounds="168.391992755916,-199.337808385367,262.576666666667,197.88" Group="Expanded" Label="Transactions" />
+    <Node Id="Transactions_Amount" Category="Field" Bounds="188.391992755916,-103.377808385367,62.7533333333333,25.96" Description="text" Label="Amount" />
+    <Node Id="Transactions_AssetId" Category="Field Foreign" Bounds="352.438659422583,-159.337808385367,58.53,25.96" Description="bigint" Label="AssetId" />
+    <Node Id="Transactions_CategoryId" Category="Field Foreign" Bounds="188.391992755916,-47.4178083853668,78.2166666666667,25.96" Description="bigint" Label="CategoryId" />
+    <Node Id="Transactions_Comment" Category="Field Optional" Bounds="281.145326089249,-103.377808385367,72.2666666666667,25.96" Description="text" Label="Comment" />
+    <Node Id="Transactions_Date" Category="Field" Bounds="188.391992755916,-159.337808385367,50,25.96" Description="text" Label="Date" />
+    <Node Id="Transactions_TransactionId" Category="Field Primary" Bounds="296.608659422583,-47.4178083853668,90.11,25.96" Description="bigint" Label="TransactionId" />
+    <Node Id="Transactions_UserId" Category="Field Foreign" Bounds="268.391992755916,-159.337808385367,54.0466666666667,25.96" Description="bigint" Label="UserId" />
+    <Node Id="UserCategory" Category="Table" Bounds="56.571992755916,28.5421916146332,118.216666666667,141.92" Group="Expanded" Label="UserCategory" />
+    <Node Id="UserCategory_CategoryId" Category="Field Primary" Bounds="76.571992755916,124.502191614633,78.2166666666667,25.96" Description="bigint" Label="CategoryId" />
+    <Node Id="UserCategory_UserId" Category="Field Primary" Bounds="76.571992755916,68.5421916146332,54.0466666666666,25.96" Description="bigint" Label="UserId" />
+    <Node Id="Users" Category="Table" Bounds="339.831992755916,236.422191614633,171.696666666667,141.92" Group="Expanded" Label="Users" />
+    <Node Id="Users_Email" Category="Field Optional" Bounds="359.831992755916,276.422191614633,50,25.96" Description="text" Label="Email" />
+    <Node Id="Users_Name" Category="Field" Bounds="439.831992755916,276.422191614633,51.6966666666667,25.96" Description="text" Label="Name" />
+    <Node Id="Users_UserId" Category="Field Primary" Bounds="359.831992755916,332.382191614633,54.0466666666667,25.96" Description="bigint" Label="UserId" />
   </Nodes>
   <Links>
     <Link Source="Assets" Target="Assets_AssetId" Category="Contains" />
@@ -36,23 +38,26 @@
     <Link Source="Categories" Target="Categories_Name" Category="Contains" />
     <Link Source="Categories" Target="Categories_ParentCategoryId" Category="Contains" />
     <Link Source="Categories" Target="Categories_Type" Category="Contains" />
-    <Link Source="Categories_ParentCategoryId" Target="Categories_CategoryId" Category="Foreign Key" Bounds="-22.1183433323997,-96.6425706156415,1.43395983229766E-05,36.9600096130378" Label="FK_Categories_0_0" LabelBounds="-18.1183361626005,-86.1425665850747,97.1266666666666,15.9600000000001" />
+    <Link Source="Categories_ParentCategoryId" Target="Categories_CategoryId" Category="Foreign Key" Bounds="6.25865936279297,266.422180175781,0,36.9600219726563" Label="FK_Categories_0_0" LabelBounds="-90.8680044258804,281.422191600743,97.1266666666666,15.96" />
     <Link Source="Database" Target="Assets" Category="Contains" />
     <Link Source="Database" Target="Categories" Category="Contains" />
     <Link Source="Database" Target="Transactions" Category="Contains" />
+    <Link Source="Database" Target="UserCategory" Category="Contains" />
     <Link Source="Database" Target="Users" Category="Contains" />
     <Link Source="Transactions" Target="Transactions_Amount" Category="Contains" />
+    <Link Source="Transactions" Target="Transactions_AssetId" Category="Contains" />
     <Link Source="Transactions" Target="Transactions_CategoryId" Category="Contains" />
     <Link Source="Transactions" Target="Transactions_Comment" Category="Contains" />
     <Link Source="Transactions" Target="Transactions_Date" Category="Contains" />
-    <Link Source="Transactions" Target="Transactions_DestinationAssetId" Category="Contains" />
-    <Link Source="Transactions" Target="Transactions_SourceAssetId" Category="Contains" />
     <Link Source="Transactions" Target="Transactions_TransactionId" Category="Contains" />
     <Link Source="Transactions" Target="Transactions_UserId" Category="Contains" />
-    <Link Source="Transactions_CategoryId" Target="Categories_CategoryId" Category="Foreign Key" Label="FK_Transactions_3_0" />
-    <Link Source="Transactions_DestinationAssetId" Target="Assets_AssetId" Category="Foreign Key" Label="FK_Transactions_2_0" />
-    <Link Source="Transactions_SourceAssetId" Target="Assets_AssetId" Category="Foreign Key" Label="FK_Transactions_1_0" />
+    <Link Source="Transactions_AssetId" Target="Assets_AssetId" Category="Foreign Key" Label="FK_Transactions_2_0" />
+    <Link Source="Transactions_CategoryId" Target="Categories_CategoryId" Category="Foreign Key" Label="FK_Transactions_1_0" />
     <Link Source="Transactions_UserId" Target="Users_UserId" Category="Foreign Key" Label="FK_Transactions_0_0" />
+    <Link Source="UserCategory" Target="UserCategory_CategoryId" Category="Contains" />
+    <Link Source="UserCategory" Target="UserCategory_UserId" Category="Contains" />
+    <Link Source="UserCategory_CategoryId" Target="Categories_CategoryId" Category="Foreign Key" Label="FK_UserCategory_1_0" />
+    <Link Source="UserCategory_UserId" Target="Users_UserId" Category="Foreign Key" Label="FK_UserCategory_0_0" />
     <Link Source="Users" Target="Users_Email" Category="Contains" />
     <Link Source="Users" Target="Users_Name" Category="Contains" />
     <Link Source="Users" Target="Users_UserId" Category="Contains" />
@@ -83,7 +88,6 @@
     <Property Id="LabelBounds" DataType="System.Windows.Rect" />
     <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
     <Property Id="TargetType" DataType="System.Type" />
-    <Property Id="UseManualLocation" DataType="System.Boolean" />
     <Property Id="Value" DataType="System.String" />
     <Property Id="ValueLabel" DataType="System.String" />
   </Properties>
