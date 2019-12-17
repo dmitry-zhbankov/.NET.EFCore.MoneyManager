@@ -11,14 +11,14 @@ namespace MoneyManager.Models
         [Required]
         public string Name { get; set; }
 
-        public IEnumerable<Category> Children { get; set; }
+        public ICollection<Category> Children { get; set; }
 
         public Category Parent { get; set; }
 
         [Required]
         public CategoryType Type { get; set; }
 
-        public IEnumerable<UserCategory> UserCategories { get; set; }
+        public ICollection<UserCategory> UserCategories { get; set; }
 
         public Category()
         {

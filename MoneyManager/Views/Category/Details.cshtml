@@ -8,16 +8,23 @@
 @{
     if (Model.Parent != null)
     {
-        <a asp-controller="Category" asp-action="Details" asp-route-categoryId="@Model.Parent.CategoryId">Parent category</a>
+        <a asp-controller="Category" asp-action="Details" asp-route-categoryId="@Model.Parent.CategoryId" asp-route-userId="@ViewBag.UserId">Parent category</a>
         @(" | ")
     }
 }
-<a asp-controller="Category" asp-action="Create" asp-route-parentId="@Model.CategoryId">Create subcategory</a>
+<a asp-controller="Category" asp-action="Create" asp-route-parentId="@Model.CategoryId" asp-route-userId="@ViewBag.UserId">Create subcategory</a>
 @{
     if (Model.Children.Any())
     {
         @(" | ")
-        <a asp-controller="Category" asp-action="Index" asp-route-categoryId="@Model.CategoryId">Child categories</a>
+        <a asp-controller="Category" asp-action="Index" asp-route-categoryId="@Model.CategoryId" asp-route-userId="@ViewBag.UserId">Child categories</a>
+    }
+}
+@{
+    if (ViewBag.UserId != null)
+    {
+        @(" | ")
+        <a asp-controller="Category" asp-action="Add" asp-route-categoryId="@Model.CategoryId" asp-route-userId="@ViewBag.UserId">Add</a>
     }
 }
 <hr />
@@ -61,14 +68,5 @@
 </div>
 
 <div>
-    @{
-        if (@Model.Parent == null)
-        {
-            <a asp-action="Index">Back to List</a>
-        }
-        else
-        {
-            <a asp-action="Index" asp-route-categoryId="@Model.Parent.CategoryId">Back to List</a>
-        }
-    }
+    <a asp-action="Index" asp-route-categoryId="@Model.Parent?.CategoryId" asp-route-userId="@ViewBag.UserId">Back to List</a>
 </div>

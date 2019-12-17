@@ -1,0 +1,60 @@
+﻿@model MoneyManager.Models.Transaction
+
+@{
+    ViewData["Title"] = "Create transaction";
+}
+
+<h4>Create transaction</h4>
+<hr />
+
+@ViewBag.Message
+
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(transaction => transaction.User.UserId)
+
+    <div>
+        <label asp-for="User.Name"></label>
+        <div>
+            @Html.DisplayFor(transaction => transaction.User.Name)
+        </div>
+    </div>
+
+    <div>
+        <label asp-for="Asset"></label>
+        <div>
+            <select asp-for="Asset.AssetId" asp-items="new SelectList(Model.User.Assets,nameof(Asset.AssetId),nameof(Asset.Name))"></select>
+        </div>
+    </div>
+
+    <div>
+        <label asp-for="Category"></label>
+        <div>
+            @{
+                <select asp-for="Category.CategoryId" asp-items="new SelectList(Model.User.UserCategories.Select(x=>new{x.CategoryId, x.Category.Name}),nameof(Category.CategoryId),nameof(Category.Name))"></select>
+            }
+        </div>
+    </div>
+
+    <div>
+        <label asp-for="Amount"></label>
+        <div>
+            <input asp-for="Amount" />
+        </div>
+    </div>
+
+    <div>
+        <label asp-for="Comment"></label>
+        <div>
+            <input asp-for="Comment" />
+        </div>
+    </div>
+
+    <div>
+        <input type="submit" value="Create" />
+    </div>
+}
+
+<div>
+    <a asp-action="Index" asp-route-userId="@ViewBag.UserId">Back to list</a>
+</div>

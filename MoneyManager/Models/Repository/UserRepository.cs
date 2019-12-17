@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.Linq;
+using Microsoft.EntityFrameworkCore;
 
 namespace MoneyManager.Models
 {
@@ -6,6 +7,11 @@ namespace MoneyManager.Models
     {
         public UserRepository(MoneyContext context) : base(context)
         {
+        }
+
+        public override User GetById(int id)
+        {
+            return dbSet.Include(x => x.Assets).Include(x=>x.UserCategories).ThenInclude(y=>y.Category).FirstOrDefault(x => x.UserId == id);
         }
     }
 }

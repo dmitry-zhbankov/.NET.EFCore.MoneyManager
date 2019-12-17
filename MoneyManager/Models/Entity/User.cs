@@ -15,11 +15,11 @@ namespace MoneyManager.Models
 
         public string Email { get; set; }
 
-        public IEnumerable<Asset> Assets { get; set; }
+        public ICollection<Asset> Assets { get; set; }
 
-        public IEnumerable<Transaction> Transactions { get; set; }
+        public ICollection<Transaction> Transactions { get; set; }
 
-        public IEnumerable<UserCategory> UserCategories { get; set; }
+        public ICollection<UserCategory> UserCategories { get; set; }
 
         public User()
         {

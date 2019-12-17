@@ -12,16 +12,18 @@
     <tr>
         <th>#</th>
         <th>@Html.DisplayNameFor(model => model.Name)</th>
+        <th>@Html.DisplayNameFor(model => model.Balance)</th>
     </tr>
     @{
         var i = 1;
         foreach (var asset in Model)
         {
-            <tr>
-                <td>@i</td>
-                <td>@asset.Name</td>
-                <td></td>
-            </tr>
+        <tr>
+            <td>@i</td>
+            <td>@asset.Name</td>
+            <td>@asset.Balance</td>
+            <td></td>
+        </tr>
             i++;
         }
     }

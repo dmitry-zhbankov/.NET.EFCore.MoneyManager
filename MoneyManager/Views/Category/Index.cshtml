@@ -8,7 +8,7 @@
 @{
     if (ViewBag.ParentId!=null)
     {
-        <a asp-area="" asp-controller="Category" asp-action="Details" asp-route-categoryId="@ViewBag.ParentId">Parent</a>
+        <a asp-area="" asp-controller="Category" asp-action="Details" asp-route-categoryId="@ViewBag.ParentId" asp-route-userId="@ViewBag.UserId">Parent</a>
         @(" | ")
     }
 }
@@ -27,11 +27,17 @@
         {
         <tr>
             <td>@i</td>
-            <td>
-                <a asp-area="" asp-controller="Category" asp-action="Details" asp-route-categoryId="@category.CategoryId">@category.Name</a>
-            </td>
+            <td><a asp-area="" asp-controller="Category" asp-action="Details" asp-route-categoryId="@category.CategoryId" asp-route-userId="@ViewBag.UserId">@category.Name</a></td>
             <td>@category.Type</td>
-            <td></td>
+            @{
+                if (ViewBag.UserId!=null)
+                {
+                    if (!category.UserCategories.Any(x => x.UserId==ViewBag.UserId&&x.CategoryId==category.CategoryId))
+                    {
+                        <td><a asp-area="" asp-controller="Category" asp-action="Add" asp-route-categoryId="@category.CategoryId" asp-route-userId="@ViewBag.UserId">Add</a></td>
+                    }
+                }
+            }
         </tr>
             i++;
         }

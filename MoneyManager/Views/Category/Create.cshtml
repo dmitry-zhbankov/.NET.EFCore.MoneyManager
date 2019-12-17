@@ -31,8 +31,6 @@
 {
     <h4>New Category</h4>
 
-    @Html.HiddenFor(category => category.Parent.CategoryId)
-
     <div>
         <label asp-for="Name"></label>
         <div>
@@ -50,6 +48,8 @@
                 }
                 else
                 {
+                    @Html.HiddenFor(category => category.Parent.CategoryId)
+
                     @Html.DisplayFor(category => category.Parent.Type)
                 }
             }
