@@ -20,7 +20,7 @@ namespace MoneyManager.Models
         public override IEnumerable <Category> Get(Expression<Func<Category, bool>> filter)
         {
             IQueryable<Category> query = dbSet;
-            query = query.Where(filter).Include(x => x.UserCategories);
+            query = query.Where(filter).Include(x => x.UserCategories).Include(x=>x.Children);
             return query.ToList();
         }
     }

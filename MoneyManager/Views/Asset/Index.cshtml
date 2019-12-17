@@ -6,7 +6,7 @@
 
 <h1>Assets for @ViewBag.User.Name</h1>
 <a asp-area="" asp-controller="Asset" asp-action="Create" asp-route-userId="@ViewBag.User.UserId">Create new asset</a>
-<hr />
+<hr/>
 
 <table>
     <tr>
@@ -18,14 +18,17 @@
         var i = 1;
         foreach (var asset in Model)
         {
-        <tr>
-            <td>@i</td>
-            <td>@asset.Name</td>
-            <td>@asset.Balance</td>
-            <td></td>
-        </tr>
+            <tr>
+                <td>@i</td>
+                <td>@asset.Name</td>
+                <td>@asset.Balance</td>
+                <td></td>
+            </tr>
             i++;
         }
     }
 </table>
 
+<div>
+    <a asp-controller="User" asp-action="Details" asp-route-userId="@ViewBag.User.UserId">Back to User</a>
+</div>

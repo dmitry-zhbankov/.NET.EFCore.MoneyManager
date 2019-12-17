@@ -68,7 +68,7 @@ namespace MoneyManager.Controllers
             categories = unitOfWork.CategoryRepository.Get(x => x.Parent==null);
             return View(categories);
         }
-
+         
         public IActionResult Details(int? categoryId, int? userId)
         {
             if (categoryId == null)

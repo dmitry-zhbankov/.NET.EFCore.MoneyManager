@@ -5,7 +5,7 @@
 }
 
 <h4>Create transaction</h4>
-<hr />
+<hr/>
 
 @ViewBag.Message
 
@@ -23,7 +23,7 @@
     <div>
         <label asp-for="Asset"></label>
         <div>
-            <select asp-for="Asset.AssetId" asp-items="new SelectList(Model.User.Assets,nameof(Asset.AssetId),nameof(Asset.Name))"></select>
+            <select asp-for="Asset.AssetId" asp-items="new SelectList(Model.User.Assets, nameof(Asset.AssetId), nameof(Asset.Name))"></select>
         </div>
     </div>
 
@@ -31,7 +31,7 @@
         <label asp-for="Category"></label>
         <div>
             @{
-                <select asp-for="Category.CategoryId" asp-items="new SelectList(Model.User.UserCategories.Select(x=>new{x.CategoryId, x.Category.Name}),nameof(Category.CategoryId),nameof(Category.Name))"></select>
+                <select asp-for="Category.CategoryId" asp-items="new SelectList(Model.User.UserCategories.Select(x => new {x.CategoryId, x.Category.Name}), nameof(Category.CategoryId), nameof(Category.Name))"></select>
             }
         </div>
     </div>
@@ -39,19 +39,19 @@
     <div>
         <label asp-for="Amount"></label>
         <div>
-            <input asp-for="Amount" />
+            <input asp-for="Amount"/>
         </div>
     </div>
 
     <div>
         <label asp-for="Comment"></label>
         <div>
-            <input asp-for="Comment" />
+            <input asp-for="Comment"/>
         </div>
     </div>
 
     <div>
-        <input type="submit" value="Create" />
+        <input type="submit" value="Create"/>
     </div>
 }
 

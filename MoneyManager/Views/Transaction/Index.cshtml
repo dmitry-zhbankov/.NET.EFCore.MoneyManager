@@ -6,12 +6,12 @@
 
 <h1>Users</h1>
 @{
-    if (ViewBag.UserId!=null)
+    if (ViewBag.UserId != null)
     {
         <a asp-area="" asp-controller="Transaction" asp-action="Create" asp-route-userId="@ViewBag.UserId">Create new transaction</a>
     }
 }
-<hr />
+<hr/>
 
 <table>
     <tr>
@@ -27,18 +27,26 @@
         var i = 1;
         foreach (var transaction in Model)
         {
-        <tr>
-            <td>@i</td>
-            <td>@transaction.User?.Name</td>
-            <td>@transaction.Date</td>
-            <td>@transaction.Asset?.Name</td>
-            <td>@transaction.Category?.Name</td>
-            <td>@transaction.Category?.Type</td>
-            <td>@transaction.Amount</td>
-            <td></td>
-        </tr>
+            <tr>
+                <td>@i</td>
+                <td>@transaction.User?.Name</td>
+                <td>@transaction.Date</td>
+                <td>@transaction.Asset?.Name</td>
+                <td>@transaction.Category?.Name</td>
+                <td>@transaction.Category?.Type</td>
+                <td>@transaction.Amount</td>
+                <td></td>
+            </tr>
             i++;
         }
     }
 </table>
 
+@{
+    if (ViewBag.UserId != null)
+    {
+        <div>
+            <a asp-controller="User" asp-action="Details" asp-route-userId="@ViewBag.UserId">Back to User</a>
+        </div>
+    }
+}

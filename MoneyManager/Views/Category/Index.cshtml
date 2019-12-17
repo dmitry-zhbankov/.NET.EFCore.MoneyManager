@@ -6,40 +6,76 @@
 
 <h1>Categories</h1>
 @{
-    if (ViewBag.ParentId!=null)
+    if (ViewBag.ParentId != null)
     {
         <a asp-area="" asp-controller="Category" asp-action="Details" asp-route-categoryId="@ViewBag.ParentId" asp-route-userId="@ViewBag.UserId">Parent</a>
         @(" | ")
     }
 }
 <a asp-area="" asp-controller="Category" asp-action="Create" asp-route-parentId="@ViewBag.ParentId">Create new category</a>
-<hr />
+<hr/>
 
 <table>
     <tr>
         <th>#</th>
         <th>@Html.DisplayNameFor(model => model.Name)</th>
         <th>@Html.DisplayNameFor(model => model.Type)</th>
+        <th></th>
+        <th></th>
     </tr>
     @{
         var i = 1;
         foreach (var category in Model)
         {
-        <tr>
-            <td>@i</td>
-            <td><a asp-area="" asp-controller="Category" asp-action="Details" asp-route-categoryId="@category.CategoryId" asp-route-userId="@ViewBag.UserId">@category.Name</a></td>
-            <td>@category.Type</td>
-            @{
-                if (ViewBag.UserId!=null)
-                {
-                    if (!category.UserCategories.Any(x => x.UserId==ViewBag.UserId&&x.CategoryId==category.CategoryId))
-                    {
-                        <td><a asp-area="" asp-controller="Category" asp-action="Add" asp-route-categoryId="@category.CategoryId" asp-route-userId="@ViewBag.UserId">Add</a></td>
-                    }
-                }
+            if (i == 1 && category.Parent != null)
+            {
+                <tr>
+                    <td>
+                        <a asp-area="" asp-controller="Category" asp-action="Index" asp-route-categoryId="@category.Parent.Parent?.CategoryId" asp-route-userId="@ViewBag.UserId">..</a>
+                    </td>
+                </tr>
             }
-        </tr>
+
+            <tr>
+                <td>@i</td>
+                <td>
+                    <a asp-area="" asp-controller="Category" asp-action="Details" asp-route-categoryId="@category.CategoryId" asp-route-userId="@ViewBag.UserId">@category.Name</a>
+                </td>
+                <td>@category.Type</td>
+                @{
+                    if (category.Children.Any())
+                    {
+                        <td>
+                            <a asp-area="" asp-controller="Category" asp-action="Index" asp-route-categoryId="@category.CategoryId" asp-route-userId="@ViewBag.UserId">Children</a>
+                        </td>
+                    }
+                    else
+                    {
+                        <td></td>
+                    }
+
+                    if (ViewBag.UserId != null)
+                    {
+                        if (!category.UserCategories.Any(x => x.UserId == ViewBag.UserId && x.CategoryId == category.CategoryId))
+                        {
+                            <td>
+                                <a asp-area="" asp-controller="Category" asp-action="Add" asp-route-categoryId="@category.CategoryId" asp-route-userId="@ViewBag.UserId">Add</a>
+                            </td>
+                        }
+                    }
+
+                }
+            </tr>
             i++;
         }
     }
 </table>
+
+@{
+    if (ViewBag.UserId != null)
+    {
+        <div>
+            <a asp-controller="User" asp-action="Details" asp-route-userId="@ViewBag.UserId">Back to User</a>
+        </div>
+    }
+}
