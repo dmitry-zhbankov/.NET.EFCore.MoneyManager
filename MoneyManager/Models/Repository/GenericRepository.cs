@@ -8,8 +8,8 @@ namespace MoneyManager.Models
 {
     public class GenericRepository<T> : IRepository<T> where T : class
     {
-        MoneyContext context;
-        DbSet<T> dbSet;
+        protected MoneyContext context;
+        protected DbSet<T> dbSet;
 
         public GenericRepository(MoneyContext context)
         {
@@ -17,35 +17,35 @@ namespace MoneyManager.Models
             this.dbSet = context.Set<T>();
         }
 
-        public void Create(T entity)
+        public virtual void Create(T entity)
         {
             dbSet.Add(entity);
         }
 
-        public void Delete(int id)
+        public virtual void Delete(int id)
         {
             T entity = dbSet.Find(id);
             dbSet.Remove(entity);
         }
 
-        public IEnumerable<T> Get(Expression<Func<T, bool>> filter)
+        public virtual IEnumerable<T> Get(Expression<Func<T, bool>> filter)
         {
             IQueryable<T> query = dbSet;
             query = query.Where(filter);
             return query.ToList();
         }
 
-        public T GetById(int id)
+        public virtual T GetById(int id)
         {
             return dbSet.Find(id);
         }
 
-        public void Save()
+        public virtual void Save()
         {
             context.SaveChanges();
         }
 
-        public void Update(T entity)
+        public virtual void Update(T entity)
         {
             dbSet.Update(entity);
         }

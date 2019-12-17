@@ -5,9 +5,21 @@
 }
 
 <h1>Category Details</h1>
-<a asp-controller="Category" asp-action="Details" asp-route-categoryId="@Model.Parent?.CategoryId">Parent category</a>
-<a asp-controller="Category" asp-action="Create" asp-route-categoryId="@Model.CategoryId">Create subcategory</a>
-<a asp-controller="Category" asp-action="Index" asp-route-categoryId="@Model.CategoryId">Child categories</a>
+@{
+    if (Model.Parent != null)
+    {
+        <a asp-controller="Category" asp-action="Details" asp-route-categoryId="@Model.Parent.CategoryId">Parent category</a>
+        @(" | ")
+    }
+}
+<a asp-controller="Category" asp-action="Create" asp-route-parentId="@Model.CategoryId">Create subcategory</a>
+@{
+    if (Model.Children.Any())
+    {
+        @(" | ")
+        <a asp-controller="Category" asp-action="Index" asp-route-categoryId="@Model.CategoryId">Child categories</a>
+    }
+}
 <hr />
 
 <h4>Parent</h4>
@@ -28,7 +40,7 @@
     </dd>
 </dl>
 
-<h4>Category</h4>
+<h4>This Category</h4>
 
 <div>
     <dl>
@@ -49,5 +61,14 @@
 </div>
 
 <div>
-    <a asp-action="Index">Back to List</a>
+    @{
+        if (@Model.Parent == null)
+        {
+            <a asp-action="Index">Back to List</a>
+        }
+        else
+        {
+            <a asp-action="Index" asp-route-categoryId="@Model.Parent.CategoryId">Back to List</a>
+        }
+    }
 </div>

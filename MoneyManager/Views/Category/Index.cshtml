@@ -5,8 +5,14 @@
 }
 
 <h1>Categories</h1>
-<a asp-area="" asp-controller="Category" asp-action="Details" asp-route-categoryId="@ViewBag.ParentId">Parent</a>
-<a asp-area="" asp-controller="Category" asp-action="Create" asp-route-categoryId="@ViewBag.ParentId">Create new category</a>
+@{
+    if (ViewBag.ParentId!=null)
+    {
+        <a asp-area="" asp-controller="Category" asp-action="Details" asp-route-categoryId="@ViewBag.ParentId">Parent</a>
+        @(" | ")
+    }
+}
+<a asp-area="" asp-controller="Category" asp-action="Create" asp-route-parentId="@ViewBag.ParentId">Create new category</a>
 <hr />
 
 <table>

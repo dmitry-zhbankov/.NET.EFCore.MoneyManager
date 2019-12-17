@@ -15,12 +15,12 @@ namespace MoneyManager.Controllers
         {
             this.unitOfWork = unitOfWork;
         }
-        public IActionResult Create(int? categoryId)
+        public IActionResult Create(int? parentId)
         {
             var category = new Category();
-            if (categoryId != null)
+            if (parentId != null)
             {
-                var parent = unitOfWork.CategoryRepository.GetById((int)categoryId);
+                var parent = unitOfWork.CategoryRepository.GetById((int)parentId);
                 category.Parent = parent;
             }
             return View(category);
@@ -35,7 +35,8 @@ namespace MoneyManager.Controllers
             }
             try
             {
-                
+                var parent = unitOfWork.CategoryRepository.GetById(category.Parent.CategoryId);
+                category.Parent = parent;
                 unitOfWork.CategoryRepository.Create(category);
                 unitOfWork.Save();
             }
@@ -43,7 +44,7 @@ namespace MoneyManager.Controllers
             {
                 return View();
             }
-            return RedirectToAction("Index");
+            return RedirectToAction("Index",new {categoryId=category.Parent.CategoryId});
         }
 
         public IActionResult Index(int? categoryId)
@@ -52,17 +53,17 @@ namespace MoneyManager.Controllers
             if (categoryId != null)
             {
                 ViewBag.ParentId = categoryId;
-                categories = unitOfWork.CategoryRepository.GetById((int) categoryId).Children;
+                categories = unitOfWork.CategoryRepository.Get(x => x.Parent.CategoryId == categoryId);
                 return View(categories);
             }
             
-            categories = unitOfWork.CategoryRepository.Get(x => true);
+            categories = unitOfWork.CategoryRepository.Get(x => x.Parent==null);
             return View(categories);
         }
 
         public IActionResult Details(int? categoryId)
         {
-            if (categoryId==null)
+            if (categoryId == null)
             {
                 return BadRequest();
             }
