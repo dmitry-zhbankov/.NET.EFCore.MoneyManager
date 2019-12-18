@@ -21,9 +21,15 @@ namespace MoneyManager.Models
         }
         public IEnumerable<Transaction> GetUserTransactions(int userId)
         {
-            var transactions = Get(x => x.User.UserId == userId)
-                .OrderBy(x => x.Asset.Name).OrderBy(x => x.Category.Name);
+            var transactions = Get(x => x.User.UserId == userId).OrderByDescending(x => x.Date)
+                .ThenBy(x => x.Asset.Name).ThenBy(x => x.Category.Name);
             return transactions;
+        }
+
+        public void DeleteAllUserMonthTransactions(int userId)
+        {
+            var transactions = dbSet.Where(x => x.Date.Month == DateTime.Now.Month&&x.Date.Year==DateTime.Now.Year && x.User.UserId == userId);
+            dbSet.RemoveRange(transactions);
         }
     }
 }

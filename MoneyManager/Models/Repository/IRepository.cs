@@ -16,6 +16,6 @@ namespace MoneyManager.Models
 
         void Update(T entity);
 
-        void Save();
+        int Save();
     }
 }

@@ -6,7 +6,9 @@
 
 <h1>Users</h1>
 <a asp-area="" asp-controller="User" asp-action="Create">Create new user</a>
-<hr/>
+<partial name="Search" model="null" />
+<div>@ViewBag.Message</div>
+<hr />
 
 <table>
     <tr>

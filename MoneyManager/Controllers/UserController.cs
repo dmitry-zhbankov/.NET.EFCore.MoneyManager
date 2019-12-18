@@ -109,5 +109,19 @@ namespace MoneyManager.Controllers
             }
             return View(user);
         }
+
+
+        [HttpPost]
+        public ActionResult Search(User userEmail)
+        {
+            var users= unitOfWork.UserRepository.GetByEmail(userEmail.Email);
+            if (users==null||users?.Count()==0)
+            {
+                ViewBag.Message = "Not found";
+                users = unitOfWork.UserRepository.Get((user) => true);
+                return View("Index",users);
+            }
+            return View("Index", users);
+        }
     }
 }

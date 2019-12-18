@@ -12,6 +12,6 @@ namespace MoneyManager.Models
 
         TransactionRepository TransactionRepository { get; }
 
-        void Save();
+        int Save();
     }
 }

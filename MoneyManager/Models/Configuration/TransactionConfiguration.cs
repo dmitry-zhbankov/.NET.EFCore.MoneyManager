@@ -30,7 +30,7 @@ namespace MoneyManager.Models
                                 UserId = i,
                                 CategoryId = i,
                                 AssetId = i,
-                                Date = DateTime.Now.AddDays(-counter * 10)
+                                Date = DateTime.Now.AddDays(-counter * 5)
                             }
                         );
                         counter++;
@@ -43,7 +43,7 @@ namespace MoneyManager.Models
                                 UserId = i,
                                 CategoryId = i + 3 + j,
                                 AssetId = i + 1,
-                                Date = DateTime.Now.AddDays(-counter * 10)
+                                Date = DateTime.Now.AddDays(-counter * 5)
                             }
                         );
                         counter++;

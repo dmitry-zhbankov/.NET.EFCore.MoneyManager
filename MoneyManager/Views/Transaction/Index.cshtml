@@ -9,9 +9,14 @@
     if (ViewBag.UserId != null)
     {
         <a asp-area="" asp-controller="Transaction" asp-action="Create" asp-route-userId="@ViewBag.UserId">Create new transaction</a>
+        @(" | ")
+        <a asp-area="" asp-controller="Transaction" asp-action="DeleteMonthTransactions" asp-route-userId="@ViewBag.UserId">Delete current month transactions</a>
     }
 }
-<hr/>
+<div>
+    @TempData["Message"]
+</div>
+<hr />
 
 <table>
     <tr>

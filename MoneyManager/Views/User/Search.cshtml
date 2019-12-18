@@ -1,0 +1,11 @@
+﻿@model User
+@using (Html.BeginForm())
+{
+    <span>
+        <label asp-for="Email">Search by email</label>
+
+        <input  asp-for="Email"/>
+
+        <input asp-action="Search" type="submit" value="Search" />
+    </span>
+}

@@ -40,9 +40,9 @@ namespace MoneyManager.Models
             return dbSet.Find(id);
         }
 
-        public virtual void Save()
+        public virtual int Save()
         {
-            context.SaveChanges();
+            return context.SaveChanges();
         }
 
         public virtual void Update(T entity)

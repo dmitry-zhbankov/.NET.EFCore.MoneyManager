@@ -37,9 +37,9 @@ namespace MoneyManager.Models
             get { return transactionRepository ??= new TransactionRepository(context); }
         }
 
-        public void Save()
+        public int Save()
         {
-            context.SaveChanges();
+            return context.SaveChanges();
         }
 
         protected virtual void Dispose(bool disposing)

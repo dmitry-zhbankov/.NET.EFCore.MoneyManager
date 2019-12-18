@@ -57,7 +57,7 @@ namespace MoneyManager.Controllers
             {
                 return BadRequest();
             }
-            var assets = unitOfWork.AssetRepository.Get(x => x.User.UserId == userId);
+            var assets = unitOfWork.AssetRepository.GetByUser((int)userId);
             ViewBag.User = unitOfWork.UserRepository.GetById((int)userId);
             return View(assets);
         }

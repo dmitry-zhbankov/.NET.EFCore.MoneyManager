@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Mvc;
 using MoneyManager.Models;
 
@@ -48,6 +49,7 @@ namespace MoneyManager.Controllers
             {
                 return BadRequest();
             }
+
             try
             {
                 var category = unitOfWork.CategoryRepository.GetById(transaction.Category.CategoryId);
@@ -58,14 +60,14 @@ namespace MoneyManager.Controllers
                 transaction.User = user;
                 transaction.Date = DateTime.Now;
 
-                if (category.Type==CategoryType.Income)
+                if (category.Type == CategoryType.Income)
                 {
                     asset.Balance += transaction.Amount;
                 }
 
-                if (category.Type==CategoryType.Expense)
+                if (category.Type == CategoryType.Expense)
                 {
-                    if (asset.Balance>=transaction.Amount)
+                    if (asset.Balance >= transaction.Amount)
                     {
                         asset.Balance -= transaction.Amount;
                     }
@@ -76,6 +78,7 @@ namespace MoneyManager.Controllers
                         return View(transaction);
                     }
                 }
+
                 unitOfWork.AssetRepository.Update(asset);
                 unitOfWork.TransactionRepository.Create(transaction);
                 unitOfWork.Save();
@@ -84,7 +87,27 @@ namespace MoneyManager.Controllers
             {
                 return View(transaction);
             }
-            return RedirectToAction("Index", new { userId = transaction.User.UserId});
+
+            return RedirectToAction("Index", new { userId = transaction.User.UserId });
+        }
+
+        public IActionResult DeleteMonthTransactions(int? userId)
+        {
+            if (userId == null)
+            {
+                return RedirectToAction("Index");
+            }
+
+            try
+            {
+                unitOfWork.TransactionRepository.DeleteAllUserMonthTransactions((int)userId);
+                TempData["Message"] = $"Successfully deleted {unitOfWork.Save()} records";
+                return RedirectToAction("Index", new { userId = userId });
+            }
+            catch
+            {
+                throw;
+            }
         }
     }
 }
