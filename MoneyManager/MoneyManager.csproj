@@ -31,6 +31,40 @@
     <Compile Remove="Migrations\20191216115135_InitialCreate.Designer.cs" />
     <Compile Remove="Migrations\20191216123741_InitialCreate.cs" />
     <Compile Remove="Migrations\20191216123741_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191216135230_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191216135230_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191218094938_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191218094938_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191218095522_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191218095522_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191218100043_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191218100043_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191218102413_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191218102413_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191218104021_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191218104021_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191218104823_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191218104823_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191218105303_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191218105303_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191218111823_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191218111823_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191218112117_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191218112117_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191218113424_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191218113424_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191218114229_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191218114229_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191218114816_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191218114816_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191218115701_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191218115701_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191218115841_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191218115841_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191218120255_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191218120255_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191218120524_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191218120524_InitialCreate.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

@@ -20,6 +20,28 @@ namespace MoneyManager.Models
             builder.HasOne(pt => pt.Category)
                 .WithMany(t => t.UserCategories)
                 .HasForeignKey(pt => pt.CategoryId);
+
+            builder.HasData(CreateUserCategories());
+        }
+
+        IEnumerable<object> CreateUserCategories()
+        {
+            List<object> list = new List<object>();
+            for (var i = 1; i <= 10; i++)
+            {
+                for (var j = 1; j <= i*6; j++) 
+                {
+                    list.Add(
+                        new
+                        {
+                            UserId = i,
+                            CategoryId = j
+                        }
+                    );
+                }
+            }
+
+            return list;
         }
     }
 }

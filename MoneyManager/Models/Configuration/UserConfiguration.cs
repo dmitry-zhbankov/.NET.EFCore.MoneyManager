@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace MoneyManager.Models
@@ -7,14 +8,24 @@ namespace MoneyManager.Models
     {
         public void Configure(EntityTypeBuilder<User> builder)
         {
-            builder.HasData(
-                new User
-                {
-                    UserId = 1,
-                    Name = "User1",
-                    Email = "email1"
-                }
-                );
+            builder.HasData(CreateUsers());
         }
+
+        IEnumerable<User> CreateUsers()
+        {
+            var list=new List<User>();
+            for (var i = 1; i <= 10; i++)
+            {
+                list.Add(
+                        new User
+                        {
+                            UserId = i,
+                            Name = $"User{i}",
+                            Email = $"email{i}",
+                        });
+            }
+            return list;
+        }
+
     }
 }

@@ -21,7 +21,7 @@ namespace MoneyManager.Controllers
             IEnumerable<Transaction> transactions;
             if (userId != null)
             {
-                transactions = unitOfWork.TransactionRepository.Get(x => x.User.UserId == userId);
+                transactions = unitOfWork.TransactionRepository.GetUserTransactions((int)userId);
                 ViewBag.UserId = userId;
                 return View(transactions);
             }
