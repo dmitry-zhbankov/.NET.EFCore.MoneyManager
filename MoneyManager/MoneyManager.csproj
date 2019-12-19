@@ -67,6 +67,13 @@
     <Compile Remove="Migrations\20191218120524_InitialCreate.Designer.cs" />
     <Compile Remove="Migrations\20191218120705_InitialCreate.cs" />
     <Compile Remove="Migrations\20191218120705_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191218154535_ManualMigration.cs" />
+    <Compile Remove="Migrations\20191218154535_ManualMigration.Designer.cs" />
+    <Compile Remove="Migrations\20191219125257_ManualMigration.cs" />
+    <Compile Remove="Migrations\20191219125257_ManualMigration.Designer.cs" />
+    <Compile Remove="Migrations\20191219140000_ManualMigration2.cs" />
+    <Compile Remove="Migrations\InitialCreate.cs" />
+    <Compile Remove="Migrations\InitialCreate.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>

@@ -9,7 +9,7 @@ using MoneyManager.Models;
 namespace MoneyManager.Migrations
 {
     [DbContext(typeof(MoneyContext))]
-    [Migration("20191218125626_InitialCreate")]
+    [Migration("20191219124838_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -649,7 +649,7 @@ namespace MoneyManager.Migrations
                             Amount = 10m,
                             AssetId = 1,
                             CategoryId = 1,
-                            Date = new DateTime(2019, 12, 13, 15, 56, 25, 747, DateTimeKind.Local).AddTicks(4541),
+                            Date = new DateTime(2019, 12, 14, 15, 48, 37, 654, DateTimeKind.Local).AddTicks(3947),
                             UserId = 1
                         },
                         new
@@ -658,7 +658,7 @@ namespace MoneyManager.Migrations
                             Amount = 10m,
                             AssetId = 2,
                             CategoryId = 4,
-                            Date = new DateTime(2019, 12, 8, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5016),
+                            Date = new DateTime(2019, 12, 9, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4243),
                             UserId = 1
                         },
                         new
@@ -667,7 +667,7 @@ namespace MoneyManager.Migrations
                             Amount = 30m,
                             AssetId = 1,
                             CategoryId = 1,
-                            Date = new DateTime(2019, 12, 3, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5067),
+                            Date = new DateTime(2019, 12, 4, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4299),
                             UserId = 1
                         },
                         new
@@ -676,7 +676,7 @@ namespace MoneyManager.Migrations
                             Amount = 30m,
                             AssetId = 2,
                             CategoryId = 5,
-                            Date = new DateTime(2019, 11, 28, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5069),
+                            Date = new DateTime(2019, 11, 29, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4301),
                             UserId = 1
                         },
                         new
@@ -685,7 +685,7 @@ namespace MoneyManager.Migrations
                             Amount = 50m,
                             AssetId = 1,
                             CategoryId = 1,
-                            Date = new DateTime(2019, 11, 23, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5071),
+                            Date = new DateTime(2019, 11, 24, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4303),
                             UserId = 1
                         },
                         new
@@ -694,7 +694,7 @@ namespace MoneyManager.Migrations
                             Amount = 50m,
                             AssetId = 2,
                             CategoryId = 6,
-                            Date = new DateTime(2019, 11, 18, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5078),
+                            Date = new DateTime(2019, 11, 19, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4308),
                             UserId = 1
                         },
                         new
@@ -703,7 +703,7 @@ namespace MoneyManager.Migrations
                             Amount = 70m,
                             AssetId = 2,
                             CategoryId = 2,
-                            Date = new DateTime(2019, 11, 13, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5079),
+                            Date = new DateTime(2019, 11, 14, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4310),
                             UserId = 2
                         },
                         new
@@ -712,7 +712,7 @@ namespace MoneyManager.Migrations
                             Amount = 70m,
                             AssetId = 3,
                             CategoryId = 5,
-                            Date = new DateTime(2019, 11, 8, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5081),
+                            Date = new DateTime(2019, 11, 9, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4311),
                             UserId = 2
                         },
                         new
@@ -721,7 +721,7 @@ namespace MoneyManager.Migrations
                             Amount = 90m,
                             AssetId = 2,
                             CategoryId = 2,
-                            Date = new DateTime(2019, 11, 3, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5082),
+                            Date = new DateTime(2019, 11, 4, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4312),
                             UserId = 2
                         },
                         new
@@ -730,7 +730,7 @@ namespace MoneyManager.Migrations
                             Amount = 90m,
                             AssetId = 3,
                             CategoryId = 6,
-                            Date = new DateTime(2019, 10, 29, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5084),
+                            Date = new DateTime(2019, 10, 30, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4314),
                             UserId = 2
                         },
                         new
@@ -739,7 +739,7 @@ namespace MoneyManager.Migrations
                             Amount = 110m,
                             AssetId = 2,
                             CategoryId = 2,
-                            Date = new DateTime(2019, 10, 24, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5086),
+                            Date = new DateTime(2019, 10, 25, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4316),
                             UserId = 2
                         },
                         new
@@ -748,7 +748,7 @@ namespace MoneyManager.Migrations
                             Amount = 110m,
                             AssetId = 3,
                             CategoryId = 7,
-                            Date = new DateTime(2019, 10, 19, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5087),
+                            Date = new DateTime(2019, 10, 20, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4317),
                             UserId = 2
                         },
                         new
@@ -757,7 +757,7 @@ namespace MoneyManager.Migrations
                             Amount = 130m,
                             AssetId = 3,
                             CategoryId = 3,
-                            Date = new DateTime(2019, 10, 14, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5089),
+                            Date = new DateTime(2019, 10, 15, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4318),
                             UserId = 3
                         },
                         new
@@ -766,7 +766,7 @@ namespace MoneyManager.Migrations
                             Amount = 130m,
                             AssetId = 4,
                             CategoryId = 6,
-                            Date = new DateTime(2019, 10, 9, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5090),
+                            Date = new DateTime(2019, 10, 10, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4319),
                             UserId = 3
                         },
                         new
@@ -775,7 +775,7 @@ namespace MoneyManager.Migrations
                             Amount = 150m,
                             AssetId = 3,
                             CategoryId = 3,
-                            Date = new DateTime(2019, 10, 4, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5091),
+                            Date = new DateTime(2019, 10, 5, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4321),
                             UserId = 3
                         },
                         new
@@ -784,7 +784,7 @@ namespace MoneyManager.Migrations
                             Amount = 150m,
                             AssetId = 4,
                             CategoryId = 7,
-                            Date = new DateTime(2019, 9, 29, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5092),
+                            Date = new DateTime(2019, 9, 30, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4322),
                             UserId = 3
                         },
                         new
@@ -793,7 +793,7 @@ namespace MoneyManager.Migrations
                             Amount = 170m,
                             AssetId = 3,
                             CategoryId = 3,
-                            Date = new DateTime(2019, 9, 24, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5093),
+                            Date = new DateTime(2019, 9, 25, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4323),
                             UserId = 3
                         },
                         new
@@ -802,7 +802,7 @@ namespace MoneyManager.Migrations
                             Amount = 170m,
                             AssetId = 4,
                             CategoryId = 8,
-                            Date = new DateTime(2019, 9, 19, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5095),
+                            Date = new DateTime(2019, 9, 20, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4326),
                             UserId = 3
                         },
                         new
@@ -811,7 +811,7 @@ namespace MoneyManager.Migrations
                             Amount = 190m,
                             AssetId = 4,
                             CategoryId = 4,
-                            Date = new DateTime(2019, 9, 14, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5097),
+                            Date = new DateTime(2019, 9, 15, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4327),
                             UserId = 4
                         },
                         new
@@ -820,7 +820,7 @@ namespace MoneyManager.Migrations
                             Amount = 190m,
                             AssetId = 5,
                             CategoryId = 7,
-                            Date = new DateTime(2019, 9, 9, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5098),
+                            Date = new DateTime(2019, 9, 10, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4328),
                             UserId = 4
                         },
                         new
@@ -829,7 +829,7 @@ namespace MoneyManager.Migrations
                             Amount = 210m,
                             AssetId = 4,
                             CategoryId = 4,
-                            Date = new DateTime(2019, 9, 4, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5099),
+                            Date = new DateTime(2019, 9, 5, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4329),
                             UserId = 4
                         },
                         new
@@ -838,7 +838,7 @@ namespace MoneyManager.Migrations
                             Amount = 210m,
                             AssetId = 5,
                             CategoryId = 8,
-                            Date = new DateTime(2019, 8, 30, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5100),
+                            Date = new DateTime(2019, 8, 31, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4330),
                             UserId = 4
                         },
                         new
@@ -847,7 +847,7 @@ namespace MoneyManager.Migrations
                             Amount = 230m,
                             AssetId = 4,
                             CategoryId = 4,
-                            Date = new DateTime(2019, 8, 25, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5101),
+                            Date = new DateTime(2019, 8, 26, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4331),
                             UserId = 4
                         },
                         new
@@ -856,7 +856,7 @@ namespace MoneyManager.Migrations
                             Amount = 230m,
                             AssetId = 5,
                             CategoryId = 9,
-                            Date = new DateTime(2019, 8, 20, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5102),
+                            Date = new DateTime(2019, 8, 21, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4333),
                             UserId = 4
                         },
                         new
@@ -865,7 +865,7 @@ namespace MoneyManager.Migrations
                             Amount = 250m,
                             AssetId = 5,
                             CategoryId = 5,
-                            Date = new DateTime(2019, 8, 15, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5104),
+                            Date = new DateTime(2019, 8, 16, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4334),
                             UserId = 5
                         },
                         new
@@ -874,7 +874,7 @@ namespace MoneyManager.Migrations
                             Amount = 250m,
                             AssetId = 6,
                             CategoryId = 8,
-                            Date = new DateTime(2019, 8, 10, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5105),
+                            Date = new DateTime(2019, 8, 11, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4335),
                             UserId = 5
                         },
                         new
@@ -883,7 +883,7 @@ namespace MoneyManager.Migrations
                             Amount = 270m,
                             AssetId = 5,
                             CategoryId = 5,
-                            Date = new DateTime(2019, 8, 5, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5106),
+                            Date = new DateTime(2019, 8, 6, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4336),
                             UserId = 5
                         },
                         new
@@ -892,7 +892,7 @@ namespace MoneyManager.Migrations
                             Amount = 270m,
                             AssetId = 6,
                             CategoryId = 9,
-                            Date = new DateTime(2019, 7, 31, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5107),
+                            Date = new DateTime(2019, 8, 1, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4338),
                             UserId = 5
                         },
                         new
@@ -901,7 +901,7 @@ namespace MoneyManager.Migrations
                             Amount = 290m,
                             AssetId = 5,
                             CategoryId = 5,
-                            Date = new DateTime(2019, 7, 26, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5108),
+                            Date = new DateTime(2019, 7, 27, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4339),
                             UserId = 5
                         },
                         new
@@ -910,7 +910,7 @@ namespace MoneyManager.Migrations
                             Amount = 290m,
                             AssetId = 6,
                             CategoryId = 10,
-                            Date = new DateTime(2019, 7, 21, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5109),
+                            Date = new DateTime(2019, 7, 22, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4340),
                             UserId = 5
                         },
                         new
@@ -919,7 +919,7 @@ namespace MoneyManager.Migrations
                             Amount = 310m,
                             AssetId = 6,
                             CategoryId = 6,
-                            Date = new DateTime(2019, 7, 16, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5110),
+                            Date = new DateTime(2019, 7, 17, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4341),
                             UserId = 6
                         },
                         new
@@ -928,7 +928,7 @@ namespace MoneyManager.Migrations
                             Amount = 310m,
                             AssetId = 7,
                             CategoryId = 9,
-                            Date = new DateTime(2019, 7, 11, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5112),
+                            Date = new DateTime(2019, 7, 12, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4342),
                             UserId = 6
                         },
                         new
@@ -937,7 +937,7 @@ namespace MoneyManager.Migrations
                             Amount = 330m,
                             AssetId = 6,
                             CategoryId = 6,
-                            Date = new DateTime(2019, 7, 6, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5113),
+                            Date = new DateTime(2019, 7, 7, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4343),
                             UserId = 6
                         },
                         new
@@ -946,7 +946,7 @@ namespace MoneyManager.Migrations
                             Amount = 330m,
                             AssetId = 7,
                             CategoryId = 10,
-                            Date = new DateTime(2019, 7, 1, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5115),
+                            Date = new DateTime(2019, 7, 2, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4346),
                             UserId = 6
                         },
                         new
@@ -955,7 +955,7 @@ namespace MoneyManager.Migrations
                             Amount = 350m,
                             AssetId = 6,
                             CategoryId = 6,
-                            Date = new DateTime(2019, 6, 26, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5116),
+                            Date = new DateTime(2019, 6, 27, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4347),
                             UserId = 6
                         },
                         new
@@ -964,7 +964,7 @@ namespace MoneyManager.Migrations
                             Amount = 350m,
                             AssetId = 7,
                             CategoryId = 11,
-                            Date = new DateTime(2019, 6, 21, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5117),
+                            Date = new DateTime(2019, 6, 22, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4348),
                             UserId = 6
                         },
                         new
@@ -973,7 +973,7 @@ namespace MoneyManager.Migrations
                             Amount = 370m,
                             AssetId = 7,
                             CategoryId = 7,
-                            Date = new DateTime(2019, 6, 16, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5118),
+                            Date = new DateTime(2019, 6, 17, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4349),
                             UserId = 7
                         },
                         new
@@ -982,7 +982,7 @@ namespace MoneyManager.Migrations
                             Amount = 370m,
                             AssetId = 8,
                             CategoryId = 10,
-                            Date = new DateTime(2019, 6, 11, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5120),
+                            Date = new DateTime(2019, 6, 12, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4350),
                             UserId = 7
                         },
                         new
@@ -991,7 +991,7 @@ namespace MoneyManager.Migrations
                             Amount = 390m,
                             AssetId = 7,
                             CategoryId = 7,
-                            Date = new DateTime(2019, 6, 6, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5121),
+                            Date = new DateTime(2019, 6, 7, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4352),
                             UserId = 7
                         },
                         new
@@ -1000,7 +1000,7 @@ namespace MoneyManager.Migrations
                             Amount = 390m,
                             AssetId = 8,
                             CategoryId = 11,
-                            Date = new DateTime(2019, 6, 1, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5122),
+                            Date = new DateTime(2019, 6, 2, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4353),
                             UserId = 7
                         },
                         new
@@ -1009,7 +1009,7 @@ namespace MoneyManager.Migrations
                             Amount = 410m,
                             AssetId = 7,
                             CategoryId = 7,
-                            Date = new DateTime(2019, 5, 27, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5123),
+                            Date = new DateTime(2019, 5, 28, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4354),
                             UserId = 7
                         },
                         new
@@ -1018,7 +1018,7 @@ namespace MoneyManager.Migrations
                             Amount = 410m,
                             AssetId = 8,
                             CategoryId = 12,
-                            Date = new DateTime(2019, 5, 22, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5124),
+                            Date = new DateTime(2019, 5, 23, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4355),
                             UserId = 7
                         },
                         new
@@ -1027,7 +1027,7 @@ namespace MoneyManager.Migrations
                             Amount = 430m,
                             AssetId = 8,
                             CategoryId = 8,
-                            Date = new DateTime(2019, 5, 17, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5125),
+                            Date = new DateTime(2019, 5, 18, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4356),
                             UserId = 8
                         },
                         new
@@ -1036,7 +1036,7 @@ namespace MoneyManager.Migrations
                             Amount = 430m,
                             AssetId = 9,
                             CategoryId = 11,
-                            Date = new DateTime(2019, 5, 12, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5127),
+                            Date = new DateTime(2019, 5, 13, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4357),
                             UserId = 8
                         },
                         new
@@ -1045,7 +1045,7 @@ namespace MoneyManager.Migrations
                             Amount = 450m,
                             AssetId = 8,
                             CategoryId = 8,
-                            Date = new DateTime(2019, 5, 7, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5128),
+                            Date = new DateTime(2019, 5, 8, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4358),
                             UserId = 8
                         },
                         new
@@ -1054,7 +1054,7 @@ namespace MoneyManager.Migrations
                             Amount = 450m,
                             AssetId = 9,
                             CategoryId = 12,
-                            Date = new DateTime(2019, 5, 2, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5129),
+                            Date = new DateTime(2019, 5, 3, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4360),
                             UserId = 8
                         },
                         new
@@ -1063,7 +1063,7 @@ namespace MoneyManager.Migrations
                             Amount = 470m,
                             AssetId = 8,
                             CategoryId = 8,
-                            Date = new DateTime(2019, 4, 27, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5130),
+                            Date = new DateTime(2019, 4, 28, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4361),
                             UserId = 8
                         },
                         new
@@ -1072,7 +1072,7 @@ namespace MoneyManager.Migrations
                             Amount = 470m,
                             AssetId = 9,
                             CategoryId = 13,
-                            Date = new DateTime(2019, 4, 22, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5131),
+                            Date = new DateTime(2019, 4, 23, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4362),
                             UserId = 8
                         },
                         new
@@ -1081,7 +1081,7 @@ namespace MoneyManager.Migrations
                             Amount = 490m,
                             AssetId = 9,
                             CategoryId = 9,
-                            Date = new DateTime(2019, 4, 17, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5132),
+                            Date = new DateTime(2019, 4, 18, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4363),
                             UserId = 9
                         },
                         new
@@ -1090,7 +1090,7 @@ namespace MoneyManager.Migrations
                             Amount = 490m,
                             AssetId = 10,
                             CategoryId = 12,
-                            Date = new DateTime(2019, 4, 12, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5134),
+                            Date = new DateTime(2019, 4, 13, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4365),
                             UserId = 9
                         },
                         new
@@ -1099,7 +1099,7 @@ namespace MoneyManager.Migrations
                             Amount = 510m,
                             AssetId = 9,
                             CategoryId = 9,
-                            Date = new DateTime(2019, 4, 7, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5135),
+                            Date = new DateTime(2019, 4, 8, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4366),
                             UserId = 9
                         },
                         new
@@ -1108,7 +1108,7 @@ namespace MoneyManager.Migrations
                             Amount = 510m,
                             AssetId = 10,
                             CategoryId = 13,
-                            Date = new DateTime(2019, 4, 2, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5136),
+                            Date = new DateTime(2019, 4, 3, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4367),
                             UserId = 9
                         },
                         new
@@ -1117,7 +1117,7 @@ namespace MoneyManager.Migrations
                             Amount = 530m,
                             AssetId = 9,
                             CategoryId = 9,
-                            Date = new DateTime(2019, 3, 28, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5137),
+                            Date = new DateTime(2019, 3, 29, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4368),
                             UserId = 9
                         },
                         new
@@ -1126,7 +1126,7 @@ namespace MoneyManager.Migrations
                             Amount = 530m,
                             AssetId = 10,
                             CategoryId = 14,
-                            Date = new DateTime(2019, 3, 23, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5138),
+                            Date = new DateTime(2019, 3, 24, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4369),
                             UserId = 9
                         },
                         new
@@ -1135,7 +1135,7 @@ namespace MoneyManager.Migrations
                             Amount = 550m,
                             AssetId = 10,
                             CategoryId = 10,
-                            Date = new DateTime(2019, 3, 18, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5139),
+                            Date = new DateTime(2019, 3, 19, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4370),
                             UserId = 10
                         },
                         new
@@ -1144,7 +1144,7 @@ namespace MoneyManager.Migrations
                             Amount = 550m,
                             AssetId = 11,
                             CategoryId = 13,
-                            Date = new DateTime(2019, 3, 13, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5140),
+                            Date = new DateTime(2019, 3, 14, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4372),
                             UserId = 10
                         },
                         new
@@ -1153,7 +1153,7 @@ namespace MoneyManager.Migrations
                             Amount = 570m,
                             AssetId = 10,
                             CategoryId = 10,
-                            Date = new DateTime(2019, 3, 8, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5142),
+                            Date = new DateTime(2019, 3, 9, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4373),
                             UserId = 10
                         },
                         new
@@ -1162,7 +1162,7 @@ namespace MoneyManager.Migrations
                             Amount = 570m,
                             AssetId = 11,
                             CategoryId = 14,
-                            Date = new DateTime(2019, 3, 3, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5143),
+                            Date = new DateTime(2019, 3, 4, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4374),
                             UserId = 10
                         },
                         new
@@ -1171,7 +1171,7 @@ namespace MoneyManager.Migrations
                             Amount = 590m,
                             AssetId = 10,
                             CategoryId = 10,
-                            Date = new DateTime(2019, 2, 26, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5144),
+                            Date = new DateTime(2019, 2, 27, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4375),
                             UserId = 10
                         },
                         new
@@ -1180,7 +1180,7 @@ namespace MoneyManager.Migrations
                             Amount = 590m,
                             AssetId = 11,
                             CategoryId = 15,
-                            Date = new DateTime(2019, 2, 21, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5145),
+                            Date = new DateTime(2019, 2, 22, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4376),
                             UserId = 10
                         },
                         new
@@ -1189,7 +1189,7 @@ namespace MoneyManager.Migrations
                             Amount = 610m,
                             AssetId = 1,
                             CategoryId = 1,
-                            Date = new DateTime(2019, 2, 16, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5146),
+                            Date = new DateTime(2019, 2, 17, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4378),
                             UserId = 1
                         },
                         new
@@ -1198,7 +1198,7 @@ namespace MoneyManager.Migrations
                             Amount = 610m,
                             AssetId = 2,
                             CategoryId = 4,
-                            Date = new DateTime(2019, 2, 11, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5148),
+                            Date = new DateTime(2019, 2, 12, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4379),
                             UserId = 1
                         },
                         new
@@ -1207,7 +1207,7 @@ namespace MoneyManager.Migrations
                             Amount = 630m,
                             AssetId = 1,
                             CategoryId = 1,
-                            Date = new DateTime(2019, 2, 6, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5149),
+                            Date = new DateTime(2019, 2, 7, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4380),
                             UserId = 1
                         },
                         new
@@ -1216,7 +1216,7 @@ namespace MoneyManager.Migrations
                             Amount = 630m,
                             AssetId = 2,
                             CategoryId = 5,
-                            Date = new DateTime(2019, 2, 1, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5150),
+                            Date = new DateTime(2019, 2, 2, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4381),
                             UserId = 1
                         },
                         new
@@ -1225,7 +1225,7 @@ namespace MoneyManager.Migrations
                             Amount = 650m,
                             AssetId = 1,
                             CategoryId = 1,
-                            Date = new DateTime(2019, 1, 27, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5151),
+                            Date = new DateTime(2019, 1, 28, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4382),
                             UserId = 1
                         },
                         new
@@ -1234,7 +1234,7 @@ namespace MoneyManager.Migrations
                             Amount = 650m,
                             AssetId = 2,
                             CategoryId = 6,
-                            Date = new DateTime(2019, 1, 22, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5153),
+                            Date = new DateTime(2019, 1, 23, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4385),
                             UserId = 1
                         },
                         new
@@ -1243,7 +1243,7 @@ namespace MoneyManager.Migrations
                             Amount = 670m,
                             AssetId = 2,
                             CategoryId = 2,
-                            Date = new DateTime(2019, 1, 17, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5154),
+                            Date = new DateTime(2019, 1, 18, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4386),
                             UserId = 2
                         },
                         new
@@ -1252,7 +1252,7 @@ namespace MoneyManager.Migrations
                             Amount = 670m,
                             AssetId = 3,
                             CategoryId = 5,
-                            Date = new DateTime(2019, 1, 12, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5156),
+                            Date = new DateTime(2019, 1, 13, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4387),
                             UserId = 2
                         },
                         new
@@ -1261,7 +1261,7 @@ namespace MoneyManager.Migrations
                             Amount = 690m,
                             AssetId = 2,
                             CategoryId = 2,
-                            Date = new DateTime(2019, 1, 7, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5157),
+                            Date = new DateTime(2019, 1, 8, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4440),
                             UserId = 2
                         },
                         new
@@ -1270,7 +1270,7 @@ namespace MoneyManager.Migrations
                             Amount = 690m,
                             AssetId = 3,
                             CategoryId = 6,
-                            Date = new DateTime(2019, 1, 2, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5158),
+                            Date = new DateTime(2019, 1, 3, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4441),
                             UserId = 2
                         },
                         new
@@ -1279,7 +1279,7 @@ namespace MoneyManager.Migrations
                             Amount = 710m,
                             AssetId = 2,
                             CategoryId = 2,
-                            Date = new DateTime(2018, 12, 28, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5159),
+                            Date = new DateTime(2018, 12, 29, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4442),
                             UserId = 2
                         },
                         new
@@ -1288,7 +1288,7 @@ namespace MoneyManager.Migrations
                             Amount = 710m,
                             AssetId = 3,
                             CategoryId = 7,
-                            Date = new DateTime(2018, 12, 23, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5160),
+                            Date = new DateTime(2018, 12, 24, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4443),
                             UserId = 2
                         },
                         new
@@ -1297,7 +1297,7 @@ namespace MoneyManager.Migrations
                             Amount = 730m,
                             AssetId = 3,
                             CategoryId = 3,
-                            Date = new DateTime(2018, 12, 18, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5161),
+                            Date = new DateTime(2018, 12, 19, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4445),
                             UserId = 3
                         },
                         new
@@ -1306,7 +1306,7 @@ namespace MoneyManager.Migrations
                             Amount = 730m,
                             AssetId = 4,
                             CategoryId = 6,
-                            Date = new DateTime(2018, 12, 13, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5163),
+                            Date = new DateTime(2018, 12, 14, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4446),
                             UserId = 3
                         },
                         new
@@ -1315,7 +1315,7 @@ namespace MoneyManager.Migrations
                             Amount = 750m,
                             AssetId = 3,
                             CategoryId = 3,
-                            Date = new DateTime(2018, 12, 8, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5164),
+                            Date = new DateTime(2018, 12, 9, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4447),
                             UserId = 3
                         },
                         new
@@ -1324,7 +1324,7 @@ namespace MoneyManager.Migrations
                             Amount = 750m,
                             AssetId = 4,
                             CategoryId = 7,
-                            Date = new DateTime(2018, 12, 3, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5165),
+                            Date = new DateTime(2018, 12, 4, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4448),
                             UserId = 3
                         },
                         new
@@ -1333,7 +1333,7 @@ namespace MoneyManager.Migrations
                             Amount = 770m,
                             AssetId = 3,
                             CategoryId = 3,
-                            Date = new DateTime(2018, 11, 28, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5166),
+                            Date = new DateTime(2018, 11, 29, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4449),
                             UserId = 3
                         },
                         new
@@ -1342,7 +1342,7 @@ namespace MoneyManager.Migrations
                             Amount = 770m,
                             AssetId = 4,
                             CategoryId = 8,
-                            Date = new DateTime(2018, 11, 23, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5167),
+                            Date = new DateTime(2018, 11, 24, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4450),
                             UserId = 3
                         },
                         new
@@ -1351,7 +1351,7 @@ namespace MoneyManager.Migrations
                             Amount = 790m,
                             AssetId = 4,
                             CategoryId = 4,
-                            Date = new DateTime(2018, 11, 18, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5168),
+                            Date = new DateTime(2018, 11, 19, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4452),
                             UserId = 4
                         },
                         new
@@ -1360,7 +1360,7 @@ namespace MoneyManager.Migrations
                             Amount = 790m,
                             AssetId = 5,
                             CategoryId = 7,
-                            Date = new DateTime(2018, 11, 13, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5170),
+                            Date = new DateTime(2018, 11, 14, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4453),
                             UserId = 4
                         },
                         new
@@ -1369,7 +1369,7 @@ namespace MoneyManager.Migrations
                             Amount = 810m,
                             AssetId = 4,
                             CategoryId = 4,
-                            Date = new DateTime(2018, 11, 8, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5171),
+                            Date = new DateTime(2018, 11, 9, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4454),
                             UserId = 4
                         },
                         new
@@ -1378,7 +1378,7 @@ namespace MoneyManager.Migrations
                             Amount = 810m,
                             AssetId = 5,
                             CategoryId = 8,
-                            Date = new DateTime(2018, 11, 3, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5172),
+                            Date = new DateTime(2018, 11, 4, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4455),
                             UserId = 4
                         },
                         new
@@ -1387,7 +1387,7 @@ namespace MoneyManager.Migrations
                             Amount = 830m,
                             AssetId = 4,
                             CategoryId = 4,
-                            Date = new DateTime(2018, 10, 29, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5173),
+                            Date = new DateTime(2018, 10, 30, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4456),
                             UserId = 4
                         },
                         new
@@ -1396,7 +1396,7 @@ namespace MoneyManager.Migrations
                             Amount = 830m,
                             AssetId = 5,
                             CategoryId = 9,
-                            Date = new DateTime(2018, 10, 24, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5174),
+                            Date = new DateTime(2018, 10, 25, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4458),
                             UserId = 4
                         },
                         new
@@ -1405,7 +1405,7 @@ namespace MoneyManager.Migrations
                             Amount = 850m,
                             AssetId = 5,
                             CategoryId = 5,
-                            Date = new DateTime(2018, 10, 19, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5175),
+                            Date = new DateTime(2018, 10, 20, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4459),
                             UserId = 5
                         },
                         new
@@ -1414,7 +1414,7 @@ namespace MoneyManager.Migrations
                             Amount = 850m,
                             AssetId = 6,
                             CategoryId = 8,
-                            Date = new DateTime(2018, 10, 14, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5176),
+                            Date = new DateTime(2018, 10, 15, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4461),
                             UserId = 5
                         },
                         new
@@ -1423,7 +1423,7 @@ namespace MoneyManager.Migrations
                             Amount = 870m,
                             AssetId = 5,
                             CategoryId = 5,
-                            Date = new DateTime(2018, 10, 9, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5178),
+                            Date = new DateTime(2018, 10, 10, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4462),
                             UserId = 5
                         },
                         new
@@ -1432,7 +1432,7 @@ namespace MoneyManager.Migrations
                             Amount = 870m,
                             AssetId = 6,
                             CategoryId = 9,
-                            Date = new DateTime(2018, 10, 4, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5179),
+                            Date = new DateTime(2018, 10, 5, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4463),
                             UserId = 5
                         },
                         new
@@ -1441,7 +1441,7 @@ namespace MoneyManager.Migrations
                             Amount = 890m,
                             AssetId = 5,
                             CategoryId = 5,
-                            Date = new DateTime(2018, 9, 29, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5180),
+                            Date = new DateTime(2018, 9, 30, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4465),
                             UserId = 5
                         },
                         new
@@ -1450,7 +1450,7 @@ namespace MoneyManager.Migrations
                             Amount = 890m,
                             AssetId = 6,
                             CategoryId = 10,
-                            Date = new DateTime(2018, 9, 24, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5181),
+                            Date = new DateTime(2018, 9, 25, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4466),
                             UserId = 5
                         },
                         new
@@ -1459,7 +1459,7 @@ namespace MoneyManager.Migrations
                             Amount = 910m,
                             AssetId = 6,
                             CategoryId = 6,
-                            Date = new DateTime(2018, 9, 19, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5182),
+                            Date = new DateTime(2018, 9, 20, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4467),
                             UserId = 6
                         },
                         new
@@ -1468,7 +1468,7 @@ namespace MoneyManager.Migrations
                             Amount = 910m,
                             AssetId = 7,
                             CategoryId = 9,
-                            Date = new DateTime(2018, 9, 14, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5183),
+                            Date = new DateTime(2018, 9, 15, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4469),
                             UserId = 6
                         },
                         new
@@ -1477,7 +1477,7 @@ namespace MoneyManager.Migrations
                             Amount = 930m,
                             AssetId = 6,
                             CategoryId = 6,
-                            Date = new DateTime(2018, 9, 9, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5184),
+                            Date = new DateTime(2018, 9, 10, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4470),
                             UserId = 6
                         },
                         new
@@ -1486,7 +1486,7 @@ namespace MoneyManager.Migrations
                             Amount = 930m,
                             AssetId = 7,
                             CategoryId = 10,
-                            Date = new DateTime(2018, 9, 4, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5186),
+                            Date = new DateTime(2018, 9, 5, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4471),
                             UserId = 6
                         },
                         new
@@ -1495,7 +1495,7 @@ namespace MoneyManager.Migrations
                             Amount = 950m,
                             AssetId = 6,
                             CategoryId = 6,
-                            Date = new DateTime(2018, 8, 30, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5187),
+                            Date = new DateTime(2018, 8, 31, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4472),
                             UserId = 6
                         },
                         new
@@ -1504,7 +1504,7 @@ namespace MoneyManager.Migrations
                             Amount = 950m,
                             AssetId = 7,
                             CategoryId = 11,
-                            Date = new DateTime(2018, 8, 25, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5188),
+                            Date = new DateTime(2018, 8, 26, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4473),
                             UserId = 6
                         },
                         new
@@ -1513,7 +1513,7 @@ namespace MoneyManager.Migrations
                             Amount = 970m,
                             AssetId = 7,
                             CategoryId = 7,
-                            Date = new DateTime(2018, 8, 20, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5189),
+                            Date = new DateTime(2018, 8, 21, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4475),
                             UserId = 7
                         },
                         new
@@ -1522,7 +1522,7 @@ namespace MoneyManager.Migrations
                             Amount = 970m,
                             AssetId = 8,
                             CategoryId = 10,
-                            Date = new DateTime(2018, 8, 15, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5190),
+                            Date = new DateTime(2018, 8, 16, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4476),
                             UserId = 7
                         },
                         new
@@ -1531,7 +1531,7 @@ namespace MoneyManager.Migrations
                             Amount = 990m,
                             AssetId = 7,
                             CategoryId = 7,
-                            Date = new DateTime(2018, 8, 10, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5191),
+                            Date = new DateTime(2018, 8, 11, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4477),
                             UserId = 7
                         },
                         new
@@ -1540,7 +1540,7 @@ namespace MoneyManager.Migrations
                             Amount = 990m,
                             AssetId = 8,
                             CategoryId = 11,
-                            Date = new DateTime(2018, 8, 5, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5192),
+                            Date = new DateTime(2018, 8, 6, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4478),
                             UserId = 7
                         },
                         new
@@ -1549,7 +1549,7 @@ namespace MoneyManager.Migrations
                             Amount = 1010m,
                             AssetId = 7,
                             CategoryId = 7,
-                            Date = new DateTime(2018, 7, 31, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5194),
+                            Date = new DateTime(2018, 8, 1, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4479),
                             UserId = 7
                         },
                         new
@@ -1558,7 +1558,7 @@ namespace MoneyManager.Migrations
                             Amount = 1010m,
                             AssetId = 8,
                             CategoryId = 12,
-                            Date = new DateTime(2018, 7, 26, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5195),
+                            Date = new DateTime(2018, 7, 27, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4480),
                             UserId = 7
                         },
                         new
@@ -1567,7 +1567,7 @@ namespace MoneyManager.Migrations
                             Amount = 1030m,
                             AssetId = 8,
                             CategoryId = 8,
-                            Date = new DateTime(2018, 7, 21, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5196),
+                            Date = new DateTime(2018, 7, 22, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4482),
                             UserId = 8
                         },
                         new
@@ -1576,7 +1576,7 @@ namespace MoneyManager.Migrations
                             Amount = 1030m,
                             AssetId = 9,
                             CategoryId = 11,
-                            Date = new DateTime(2018, 7, 16, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5197),
+                            Date = new DateTime(2018, 7, 17, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4483),
                             UserId = 8
                         },
                         new
@@ -1585,7 +1585,7 @@ namespace MoneyManager.Migrations
                             Amount = 1050m,
                             AssetId = 8,
                             CategoryId = 8,
-                            Date = new DateTime(2018, 7, 11, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5198),
+                            Date = new DateTime(2018, 7, 12, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4484),
                             UserId = 8
                         },
                         new
@@ -1594,7 +1594,7 @@ namespace MoneyManager.Migrations
                             Amount = 1050m,
                             AssetId = 9,
                             CategoryId = 12,
-                            Date = new DateTime(2018, 7, 6, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5199),
+                            Date = new DateTime(2018, 7, 7, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4485),
                             UserId = 8
                         },
                         new
@@ -1603,7 +1603,7 @@ namespace MoneyManager.Migrations
                             Amount = 1070m,
                             AssetId = 8,
                             CategoryId = 8,
-                            Date = new DateTime(2018, 7, 1, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5242),
+                            Date = new DateTime(2018, 7, 2, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4486),
                             UserId = 8
                         },
                         new
@@ -1612,7 +1612,7 @@ namespace MoneyManager.Migrations
                             Amount = 1070m,
                             AssetId = 9,
                             CategoryId = 13,
-                            Date = new DateTime(2018, 6, 26, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5244),
+                            Date = new DateTime(2018, 6, 27, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4487),
                             UserId = 8
                         },
                         new
@@ -1621,7 +1621,7 @@ namespace MoneyManager.Migrations
                             Amount = 1090m,
                             AssetId = 9,
                             CategoryId = 9,
-                            Date = new DateTime(2018, 6, 21, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5245),
+                            Date = new DateTime(2018, 6, 22, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4489),
                             UserId = 9
                         },
                         new
@@ -1630,7 +1630,7 @@ namespace MoneyManager.Migrations
                             Amount = 1090m,
                             AssetId = 10,
                             CategoryId = 12,
-                            Date = new DateTime(2018, 6, 16, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5246),
+                            Date = new DateTime(2018, 6, 17, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4490),
                             UserId = 9
                         },
                         new
@@ -1639,7 +1639,7 @@ namespace MoneyManager.Migrations
                             Amount = 1110m,
                             AssetId = 9,
                             CategoryId = 9,
-                            Date = new DateTime(2018, 6, 11, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5247),
+                            Date = new DateTime(2018, 6, 12, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4491),
                             UserId = 9
                         },
                         new
@@ -1648,7 +1648,7 @@ namespace MoneyManager.Migrations
                             Amount = 1110m,
                             AssetId = 10,
                             CategoryId = 13,
-                            Date = new DateTime(2018, 6, 6, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5248),
+                            Date = new DateTime(2018, 6, 7, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4492),
                             UserId = 9
                         },
                         new
@@ -1657,7 +1657,7 @@ namespace MoneyManager.Migrations
                             Amount = 1130m,
                             AssetId = 9,
                             CategoryId = 9,
-                            Date = new DateTime(2018, 6, 1, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5250),
+                            Date = new DateTime(2018, 6, 2, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4493),
                             UserId = 9
                         },
                         new
@@ -1666,7 +1666,7 @@ namespace MoneyManager.Migrations
                             Amount = 1130m,
                             AssetId = 10,
                             CategoryId = 14,
-                            Date = new DateTime(2018, 5, 27, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5251),
+                            Date = new DateTime(2018, 5, 28, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4494),
                             UserId = 9
                         },
                         new
@@ -1675,7 +1675,7 @@ namespace MoneyManager.Migrations
                             Amount = 1150m,
                             AssetId = 10,
                             CategoryId = 10,
-                            Date = new DateTime(2018, 5, 22, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5252),
+                            Date = new DateTime(2018, 5, 23, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4496),
                             UserId = 10
                         },
                         new
@@ -1684,7 +1684,7 @@ namespace MoneyManager.Migrations
                             Amount = 1150m,
                             AssetId = 11,
                             CategoryId = 13,
-                            Date = new DateTime(2018, 5, 17, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5253),
+                            Date = new DateTime(2018, 5, 18, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4497),
                             UserId = 10
                         },
                         new
@@ -1693,7 +1693,7 @@ namespace MoneyManager.Migrations
                             Amount = 1170m,
                             AssetId = 10,
                             CategoryId = 10,
-                            Date = new DateTime(2018, 5, 12, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5254),
+                            Date = new DateTime(2018, 5, 13, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4498),
                             UserId = 10
                         },
                         new
@@ -1702,7 +1702,7 @@ namespace MoneyManager.Migrations
                             Amount = 1170m,
                             AssetId = 11,
                             CategoryId = 14,
-                            Date = new DateTime(2018, 5, 7, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5255),
+                            Date = new DateTime(2018, 5, 8, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4499),
                             UserId = 10
                         },
                         new
@@ -1711,7 +1711,7 @@ namespace MoneyManager.Migrations
                             Amount = 1190m,
                             AssetId = 10,
                             CategoryId = 10,
-                            Date = new DateTime(2018, 5, 2, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5256),
+                            Date = new DateTime(2018, 5, 3, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4500),
                             UserId = 10
                         },
                         new
@@ -1720,7 +1720,7 @@ namespace MoneyManager.Migrations
                             Amount = 1190m,
                             AssetId = 11,
                             CategoryId = 15,
-                            Date = new DateTime(2018, 4, 27, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5258),
+                            Date = new DateTime(2018, 4, 28, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4501),
                             UserId = 10
                         },
                         new
@@ -1729,7 +1729,7 @@ namespace MoneyManager.Migrations
                             Amount = 1210m,
                             AssetId = 1,
                             CategoryId = 1,
-                            Date = new DateTime(2018, 4, 22, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5259),
+                            Date = new DateTime(2018, 4, 23, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4503),
                             UserId = 1
                         },
                         new
@@ -1738,7 +1738,7 @@ namespace MoneyManager.Migrations
                             Amount = 1210m,
                             AssetId = 2,
                             CategoryId = 4,
-                            Date = new DateTime(2018, 4, 17, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5260),
+                            Date = new DateTime(2018, 4, 18, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4504),
                             UserId = 1
                         },
                         new
@@ -1747,7 +1747,7 @@ namespace MoneyManager.Migrations
                             Amount = 1230m,
                             AssetId = 1,
                             CategoryId = 1,
-                            Date = new DateTime(2018, 4, 12, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5261),
+                            Date = new DateTime(2018, 4, 13, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4505),
                             UserId = 1
                         },
                         new
@@ -1756,7 +1756,7 @@ namespace MoneyManager.Migrations
                             Amount = 1230m,
                             AssetId = 2,
                             CategoryId = 5,
-                            Date = new DateTime(2018, 4, 7, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5262),
+                            Date = new DateTime(2018, 4, 8, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4506),
                             UserId = 1
                         },
                         new
@@ -1765,7 +1765,7 @@ namespace MoneyManager.Migrations
                             Amount = 1250m,
                             AssetId = 1,
                             CategoryId = 1,
-                            Date = new DateTime(2018, 4, 2, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5263),
+                            Date = new DateTime(2018, 4, 3, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4507),
                             UserId = 1
                         },
                         new
@@ -1774,7 +1774,7 @@ namespace MoneyManager.Migrations
                             Amount = 1250m,
                             AssetId = 2,
                             CategoryId = 6,
-                            Date = new DateTime(2018, 3, 28, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5265),
+                            Date = new DateTime(2018, 3, 29, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4509),
                             UserId = 1
                         },
                         new
@@ -1783,7 +1783,7 @@ namespace MoneyManager.Migrations
                             Amount = 1270m,
                             AssetId = 2,
                             CategoryId = 2,
-                            Date = new DateTime(2018, 3, 23, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5266),
+                            Date = new DateTime(2018, 3, 24, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4510),
                             UserId = 2
                         },
                         new
@@ -1792,7 +1792,7 @@ namespace MoneyManager.Migrations
                             Amount = 1270m,
                             AssetId = 3,
                             CategoryId = 5,
-                            Date = new DateTime(2018, 3, 18, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5267),
+                            Date = new DateTime(2018, 3, 19, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4511),
                             UserId = 2
                         },
                         new
@@ -1801,7 +1801,7 @@ namespace MoneyManager.Migrations
                             Amount = 1290m,
                             AssetId = 2,
                             CategoryId = 2,
-                            Date = new DateTime(2018, 3, 13, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5268),
+                            Date = new DateTime(2018, 3, 14, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4512),
                             UserId = 2
                         },
                         new
@@ -1810,7 +1810,7 @@ namespace MoneyManager.Migrations
                             Amount = 1290m,
                             AssetId = 3,
                             CategoryId = 6,
-                            Date = new DateTime(2018, 3, 8, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5271),
+                            Date = new DateTime(2018, 3, 9, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4515),
                             UserId = 2
                         },
                         new
@@ -1819,7 +1819,7 @@ namespace MoneyManager.Migrations
                             Amount = 1310m,
                             AssetId = 2,
                             CategoryId = 2,
-                            Date = new DateTime(2018, 3, 3, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5272),
+                            Date = new DateTime(2018, 3, 4, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4516),
                             UserId = 2
                         },
                         new
@@ -1828,7 +1828,7 @@ namespace MoneyManager.Migrations
                             Amount = 1310m,
                             AssetId = 3,
                             CategoryId = 7,
-                            Date = new DateTime(2018, 2, 26, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5273),
+                            Date = new DateTime(2018, 2, 27, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4517),
                             UserId = 2
                         },
                         new
@@ -1837,7 +1837,7 @@ namespace MoneyManager.Migrations
                             Amount = 1330m,
                             AssetId = 3,
                             CategoryId = 3,
-                            Date = new DateTime(2018, 2, 21, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5274),
+                            Date = new DateTime(2018, 2, 22, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4519),
                             UserId = 3
                         },
                         new
@@ -1846,7 +1846,7 @@ namespace MoneyManager.Migrations
                             Amount = 1330m,
                             AssetId = 4,
                             CategoryId = 6,
-                            Date = new DateTime(2018, 2, 16, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5275),
+                            Date = new DateTime(2018, 2, 17, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4520),
                             UserId = 3
                         },
                         new
@@ -1855,7 +1855,7 @@ namespace MoneyManager.Migrations
                             Amount = 1350m,
                             AssetId = 3,
                             CategoryId = 3,
-                            Date = new DateTime(2018, 2, 11, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5276),
+                            Date = new DateTime(2018, 2, 12, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4521),
                             UserId = 3
                         },
                         new
@@ -1864,7 +1864,7 @@ namespace MoneyManager.Migrations
                             Amount = 1350m,
                             AssetId = 4,
                             CategoryId = 7,
-                            Date = new DateTime(2018, 2, 6, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5278),
+                            Date = new DateTime(2018, 2, 7, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4522),
                             UserId = 3
                         },
                         new
@@ -1873,7 +1873,7 @@ namespace MoneyManager.Migrations
                             Amount = 1370m,
                             AssetId = 3,
                             CategoryId = 3,
-                            Date = new DateTime(2018, 2, 1, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5279),
+                            Date = new DateTime(2018, 2, 2, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4523),
                             UserId = 3
                         },
                         new
@@ -1882,7 +1882,7 @@ namespace MoneyManager.Migrations
                             Amount = 1370m,
                             AssetId = 4,
                             CategoryId = 8,
-                            Date = new DateTime(2018, 1, 27, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5280),
+                            Date = new DateTime(2018, 1, 28, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4524),
                             UserId = 3
                         },
                         new
@@ -1891,7 +1891,7 @@ namespace MoneyManager.Migrations
                             Amount = 1390m,
                             AssetId = 4,
                             CategoryId = 4,
-                            Date = new DateTime(2018, 1, 22, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5281),
+                            Date = new DateTime(2018, 1, 23, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4525),
                             UserId = 4
                         },
                         new
@@ -1900,7 +1900,7 @@ namespace MoneyManager.Migrations
                             Amount = 1390m,
                             AssetId = 5,
                             CategoryId = 7,
-                            Date = new DateTime(2018, 1, 17, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5282),
+                            Date = new DateTime(2018, 1, 18, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4527),
                             UserId = 4
                         },
                         new
@@ -1909,7 +1909,7 @@ namespace MoneyManager.Migrations
                             Amount = 1410m,
                             AssetId = 4,
                             CategoryId = 4,
-                            Date = new DateTime(2018, 1, 12, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5283),
+                            Date = new DateTime(2018, 1, 13, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4528),
                             UserId = 4
                         },
                         new
@@ -1918,7 +1918,7 @@ namespace MoneyManager.Migrations
                             Amount = 1410m,
                             AssetId = 5,
                             CategoryId = 8,
-                            Date = new DateTime(2018, 1, 7, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5284),
+                            Date = new DateTime(2018, 1, 8, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4529),
                             UserId = 4
                         },
                         new
@@ -1927,7 +1927,7 @@ namespace MoneyManager.Migrations
                             Amount = 1430m,
                             AssetId = 4,
                             CategoryId = 4,
-                            Date = new DateTime(2018, 1, 2, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5286),
+                            Date = new DateTime(2018, 1, 3, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4530),
                             UserId = 4
                         },
                         new
@@ -1936,7 +1936,7 @@ namespace MoneyManager.Migrations
                             Amount = 1430m,
                             AssetId = 5,
                             CategoryId = 9,
-                            Date = new DateTime(2017, 12, 28, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5287),
+                            Date = new DateTime(2017, 12, 29, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4531),
                             UserId = 4
                         },
                         new
@@ -1945,7 +1945,7 @@ namespace MoneyManager.Migrations
                             Amount = 1450m,
                             AssetId = 5,
                             CategoryId = 5,
-                            Date = new DateTime(2017, 12, 23, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5288),
+                            Date = new DateTime(2017, 12, 24, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4532),
                             UserId = 5
                         },
                         new
@@ -1954,7 +1954,7 @@ namespace MoneyManager.Migrations
                             Amount = 1450m,
                             AssetId = 6,
                             CategoryId = 8,
-                            Date = new DateTime(2017, 12, 18, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5289),
+                            Date = new DateTime(2017, 12, 19, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4534),
                             UserId = 5
                         },
                         new
@@ -1963,7 +1963,7 @@ namespace MoneyManager.Migrations
                             Amount = 1470m,
                             AssetId = 5,
                             CategoryId = 5,
-                            Date = new DateTime(2017, 12, 13, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5290),
+                            Date = new DateTime(2017, 12, 14, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4535),
                             UserId = 5
                         },
                         new
@@ -1972,7 +1972,7 @@ namespace MoneyManager.Migrations
                             Amount = 1470m,
                             AssetId = 6,
                             CategoryId = 9,
-                            Date = new DateTime(2017, 12, 8, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5291),
+                            Date = new DateTime(2017, 12, 9, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4536),
                             UserId = 5
                         },
                         new
@@ -1981,7 +1981,7 @@ namespace MoneyManager.Migrations
                             Amount = 1490m,
                             AssetId = 5,
                             CategoryId = 5,
-                            Date = new DateTime(2017, 12, 3, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5292),
+                            Date = new DateTime(2017, 12, 4, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4537),
                             UserId = 5
                         },
                         new
@@ -1990,7 +1990,7 @@ namespace MoneyManager.Migrations
                             Amount = 1490m,
                             AssetId = 6,
                             CategoryId = 10,
-                            Date = new DateTime(2017, 11, 28, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5293),
+                            Date = new DateTime(2017, 11, 29, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4538),
                             UserId = 5
                         },
                         new
@@ -1999,7 +1999,7 @@ namespace MoneyManager.Migrations
                             Amount = 1510m,
                             AssetId = 6,
                             CategoryId = 6,
-                            Date = new DateTime(2017, 11, 23, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5295),
+                            Date = new DateTime(2017, 11, 24, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4540),
                             UserId = 6
                         },
                         new
@@ -2008,7 +2008,7 @@ namespace MoneyManager.Migrations
                             Amount = 1510m,
                             AssetId = 7,
                             CategoryId = 9,
-                            Date = new DateTime(2017, 11, 18, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5296),
+                            Date = new DateTime(2017, 11, 19, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4541),
                             UserId = 6
                         },
                         new
@@ -2017,7 +2017,7 @@ namespace MoneyManager.Migrations
                             Amount = 1530m,
                             AssetId = 6,
                             CategoryId = 6,
-                            Date = new DateTime(2017, 11, 13, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5297),
+                            Date = new DateTime(2017, 11, 14, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4542),
                             UserId = 6
                         },
                         new
@@ -2026,7 +2026,7 @@ namespace MoneyManager.Migrations
                             Amount = 1530m,
                             AssetId = 7,
                             CategoryId = 10,
-                            Date = new DateTime(2017, 11, 8, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5298),
+                            Date = new DateTime(2017, 11, 9, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4543),
                             UserId = 6
                         },
                         new
@@ -2035,7 +2035,7 @@ namespace MoneyManager.Migrations
                             Amount = 1550m,
                             AssetId = 6,
                             CategoryId = 6,
-                            Date = new DateTime(2017, 11, 3, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5299),
+                            Date = new DateTime(2017, 11, 4, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4544),
                             UserId = 6
                         },
                         new
@@ -2044,7 +2044,7 @@ namespace MoneyManager.Migrations
                             Amount = 1550m,
                             AssetId = 7,
                             CategoryId = 11,
-                            Date = new DateTime(2017, 10, 29, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5301),
+                            Date = new DateTime(2017, 10, 30, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4545),
                             UserId = 6
                         },
                         new
@@ -2053,7 +2053,7 @@ namespace MoneyManager.Migrations
                             Amount = 1570m,
                             AssetId = 7,
                             CategoryId = 7,
-                            Date = new DateTime(2017, 10, 24, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5302),
+                            Date = new DateTime(2017, 10, 25, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4547),
                             UserId = 7
                         },
                         new
@@ -2062,7 +2062,7 @@ namespace MoneyManager.Migrations
                             Amount = 1570m,
                             AssetId = 8,
                             CategoryId = 10,
-                            Date = new DateTime(2017, 10, 19, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5303),
+                            Date = new DateTime(2017, 10, 20, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4548),
                             UserId = 7
                         },
                         new
@@ -2071,7 +2071,7 @@ namespace MoneyManager.Migrations
                             Amount = 1590m,
                             AssetId = 7,
                             CategoryId = 7,
-                            Date = new DateTime(2017, 10, 14, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5304),
+                            Date = new DateTime(2017, 10, 15, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4549),
                             UserId = 7
                         },
                         new
@@ -2080,7 +2080,7 @@ namespace MoneyManager.Migrations
                             Amount = 1590m,
                             AssetId = 8,
                             CategoryId = 11,
-                            Date = new DateTime(2017, 10, 9, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5305),
+                            Date = new DateTime(2017, 10, 10, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4550),
                             UserId = 7
                         },
                         new
@@ -2089,7 +2089,7 @@ namespace MoneyManager.Migrations
                             Amount = 1610m,
                             AssetId = 7,
                             CategoryId = 7,
-                            Date = new DateTime(2017, 10, 4, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5306),
+                            Date = new DateTime(2017, 10, 5, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4551),
                             UserId = 7
                         },
                         new
@@ -2098,7 +2098,7 @@ namespace MoneyManager.Migrations
                             Amount = 1610m,
                             AssetId = 8,
                             CategoryId = 12,
-                            Date = new DateTime(2017, 9, 29, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5307),
+                            Date = new DateTime(2017, 9, 30, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4552),
                             UserId = 7
                         },
                         new
@@ -2107,7 +2107,7 @@ namespace MoneyManager.Migrations
                             Amount = 1630m,
                             AssetId = 8,
                             CategoryId = 8,
-                            Date = new DateTime(2017, 9, 24, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5309),
+                            Date = new DateTime(2017, 9, 25, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4554),
                             UserId = 8
                         },
                         new
@@ -2116,7 +2116,7 @@ namespace MoneyManager.Migrations
                             Amount = 1630m,
                             AssetId = 9,
                             CategoryId = 11,
-                            Date = new DateTime(2017, 9, 19, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5310),
+                            Date = new DateTime(2017, 9, 20, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4555),
                             UserId = 8
                         },
                         new
@@ -2125,7 +2125,7 @@ namespace MoneyManager.Migrations
                             Amount = 1650m,
                             AssetId = 8,
                             CategoryId = 8,
-                            Date = new DateTime(2017, 9, 14, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5311),
+                            Date = new DateTime(2017, 9, 15, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4556),
                             UserId = 8
                         },
                         new
@@ -2134,7 +2134,7 @@ namespace MoneyManager.Migrations
                             Amount = 1650m,
                             AssetId = 9,
                             CategoryId = 12,
-                            Date = new DateTime(2017, 9, 9, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5312),
+                            Date = new DateTime(2017, 9, 10, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4557),
                             UserId = 8
                         },
                         new
@@ -2143,7 +2143,7 @@ namespace MoneyManager.Migrations
                             Amount = 1670m,
                             AssetId = 8,
                             CategoryId = 8,
-                            Date = new DateTime(2017, 9, 4, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5313),
+                            Date = new DateTime(2017, 9, 5, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4558),
                             UserId = 8
                         },
                         new
@@ -2152,7 +2152,7 @@ namespace MoneyManager.Migrations
                             Amount = 1670m,
                             AssetId = 9,
                             CategoryId = 13,
-                            Date = new DateTime(2017, 8, 30, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5314),
+                            Date = new DateTime(2017, 8, 31, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4559),
                             UserId = 8
                         },
                         new
@@ -2161,7 +2161,7 @@ namespace MoneyManager.Migrations
                             Amount = 1690m,
                             AssetId = 9,
                             CategoryId = 9,
-                            Date = new DateTime(2017, 8, 25, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5315),
+                            Date = new DateTime(2017, 8, 26, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4561),
                             UserId = 9
                         },
                         new
@@ -2170,7 +2170,7 @@ namespace MoneyManager.Migrations
                             Amount = 1690m,
                             AssetId = 10,
                             CategoryId = 12,
-                            Date = new DateTime(2017, 8, 20, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5317),
+                            Date = new DateTime(2017, 8, 21, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4562),
                             UserId = 9
                         },
                         new
@@ -2179,7 +2179,7 @@ namespace MoneyManager.Migrations
                             Amount = 1710m,
                             AssetId = 9,
                             CategoryId = 9,
-                            Date = new DateTime(2017, 8, 15, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5318),
+                            Date = new DateTime(2017, 8, 16, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4563),
                             UserId = 9
                         },
                         new
@@ -2188,7 +2188,7 @@ namespace MoneyManager.Migrations
                             Amount = 1710m,
                             AssetId = 10,
                             CategoryId = 13,
-                            Date = new DateTime(2017, 8, 10, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5319),
+                            Date = new DateTime(2017, 8, 11, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4564),
                             UserId = 9
                         },
                         new
@@ -2197,7 +2197,7 @@ namespace MoneyManager.Migrations
                             Amount = 1730m,
                             AssetId = 9,
                             CategoryId = 9,
-                            Date = new DateTime(2017, 8, 5, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5320),
+                            Date = new DateTime(2017, 8, 6, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4565),
                             UserId = 9
                         },
                         new
@@ -2206,7 +2206,7 @@ namespace MoneyManager.Migrations
                             Amount = 1730m,
                             AssetId = 10,
                             CategoryId = 14,
-                            Date = new DateTime(2017, 7, 31, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5321),
+                            Date = new DateTime(2017, 8, 1, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4566),
                             UserId = 9
                         },
                         new
@@ -2215,7 +2215,7 @@ namespace MoneyManager.Migrations
                             Amount = 1750m,
                             AssetId = 10,
                             CategoryId = 10,
-                            Date = new DateTime(2017, 7, 26, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5322),
+                            Date = new DateTime(2017, 7, 27, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4567),
                             UserId = 10
                         },
                         new
@@ -2224,7 +2224,7 @@ namespace MoneyManager.Migrations
                             Amount = 1750m,
                             AssetId = 11,
                             CategoryId = 13,
-                            Date = new DateTime(2017, 7, 21, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5323),
+                            Date = new DateTime(2017, 7, 22, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4569),
                             UserId = 10
                         },
                         new
@@ -2233,7 +2233,7 @@ namespace MoneyManager.Migrations
                             Amount = 1770m,
                             AssetId = 10,
                             CategoryId = 10,
-                            Date = new DateTime(2017, 7, 16, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5324),
+                            Date = new DateTime(2017, 7, 17, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4570),
                             UserId = 10
                         },
                         new
@@ -2242,7 +2242,7 @@ namespace MoneyManager.Migrations
                             Amount = 1770m,
                             AssetId = 11,
                             CategoryId = 14,
-                            Date = new DateTime(2017, 7, 11, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5326),
+                            Date = new DateTime(2017, 7, 12, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4606),
                             UserId = 10
                         },
                         new
@@ -2251,7 +2251,7 @@ namespace MoneyManager.Migrations
                             Amount = 1790m,
                             AssetId = 10,
                             CategoryId = 10,
-                            Date = new DateTime(2017, 7, 6, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5327),
+                            Date = new DateTime(2017, 7, 7, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4607),
                             UserId = 10
                         },
                         new
@@ -2260,7 +2260,7 @@ namespace MoneyManager.Migrations
                             Amount = 1790m,
                             AssetId = 11,
                             CategoryId = 15,
-                            Date = new DateTime(2017, 7, 1, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5328),
+                            Date = new DateTime(2017, 7, 2, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4609),
                             UserId = 10
                         },
                         new
@@ -2269,7 +2269,7 @@ namespace MoneyManager.Migrations
                             Amount = 1810m,
                             AssetId = 1,
                             CategoryId = 1,
-                            Date = new DateTime(2017, 6, 26, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5329),
+                            Date = new DateTime(2017, 6, 27, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4610),
                             UserId = 1
                         },
                         new
@@ -2278,7 +2278,7 @@ namespace MoneyManager.Migrations
                             Amount = 1810m,
                             AssetId = 2,
                             CategoryId = 4,
-                            Date = new DateTime(2017, 6, 21, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5330),
+                            Date = new DateTime(2017, 6, 22, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4611),
                             UserId = 1
                         },
                         new
@@ -2287,7 +2287,7 @@ namespace MoneyManager.Migrations
                             Amount = 1830m,
                             AssetId = 1,
                             CategoryId = 1,
-                            Date = new DateTime(2017, 6, 16, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5331),
+                            Date = new DateTime(2017, 6, 17, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4612),
                             UserId = 1
                         },
                         new
@@ -2296,7 +2296,7 @@ namespace MoneyManager.Migrations
                             Amount = 1830m,
                             AssetId = 2,
                             CategoryId = 5,
-                            Date = new DateTime(2017, 6, 11, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5333),
+                            Date = new DateTime(2017, 6, 12, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4613),
                             UserId = 1
                         },
                         new
@@ -2305,7 +2305,7 @@ namespace MoneyManager.Migrations
                             Amount = 1850m,
                             AssetId = 1,
                             CategoryId = 1,
-                            Date = new DateTime(2017, 6, 6, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5334),
+                            Date = new DateTime(2017, 6, 7, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4615),
                             UserId = 1
                         },
                         new
@@ -2314,7 +2314,7 @@ namespace MoneyManager.Migrations
                             Amount = 1850m,
                             AssetId = 2,
                             CategoryId = 6,
-                            Date = new DateTime(2017, 6, 1, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5335),
+                            Date = new DateTime(2017, 6, 2, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4616),
                             UserId = 1
                         },
                         new
@@ -2323,7 +2323,7 @@ namespace MoneyManager.Migrations
                             Amount = 1870m,
                             AssetId = 2,
                             CategoryId = 2,
-                            Date = new DateTime(2017, 5, 27, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5336),
+                            Date = new DateTime(2017, 5, 28, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4617),
                             UserId = 2
                         },
                         new
@@ -2332,7 +2332,7 @@ namespace MoneyManager.Migrations
                             Amount = 1870m,
                             AssetId = 3,
                             CategoryId = 5,
-                            Date = new DateTime(2017, 5, 22, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5337),
+                            Date = new DateTime(2017, 5, 23, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4618),
                             UserId = 2
                         },
                         new
@@ -2341,7 +2341,7 @@ namespace MoneyManager.Migrations
                             Amount = 1890m,
                             AssetId = 2,
                             CategoryId = 2,
-                            Date = new DateTime(2017, 5, 17, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5338),
+                            Date = new DateTime(2017, 5, 18, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4619),
                             UserId = 2
                         },
                         new
@@ -2350,7 +2350,7 @@ namespace MoneyManager.Migrations
                             Amount = 1890m,
                             AssetId = 3,
                             CategoryId = 6,
-                            Date = new DateTime(2017, 5, 12, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5340),
+                            Date = new DateTime(2017, 5, 13, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4620),
                             UserId = 2
                         },
                         new
@@ -2359,7 +2359,7 @@ namespace MoneyManager.Migrations
                             Amount = 1910m,
                             AssetId = 2,
                             CategoryId = 2,
-                            Date = new DateTime(2017, 5, 7, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5341),
+                            Date = new DateTime(2017, 5, 8, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4622),
                             UserId = 2
                         },
                         new
@@ -2368,7 +2368,7 @@ namespace MoneyManager.Migrations
                             Amount = 1910m,
                             AssetId = 3,
                             CategoryId = 7,
-                            Date = new DateTime(2017, 5, 2, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5342),
+                            Date = new DateTime(2017, 5, 3, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4623),
                             UserId = 2
                         },
                         new
@@ -2377,7 +2377,7 @@ namespace MoneyManager.Migrations
                             Amount = 1930m,
                             AssetId = 3,
                             CategoryId = 3,
-                            Date = new DateTime(2017, 4, 27, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5343),
+                            Date = new DateTime(2017, 4, 28, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4624),
                             UserId = 3
                         },
                         new
@@ -2386,7 +2386,7 @@ namespace MoneyManager.Migrations
                             Amount = 1930m,
                             AssetId = 4,
                             CategoryId = 6,
-                            Date = new DateTime(2017, 4, 22, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5344),
+                            Date = new DateTime(2017, 4, 23, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4625),
                             UserId = 3
                         },
                         new
@@ -2395,7 +2395,7 @@ namespace MoneyManager.Migrations
                             Amount = 1950m,
                             AssetId = 3,
                             CategoryId = 3,
-                            Date = new DateTime(2017, 4, 17, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5345),
+                            Date = new DateTime(2017, 4, 18, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4626),
                             UserId = 3
                         },
                         new
@@ -2404,7 +2404,7 @@ namespace MoneyManager.Migrations
                             Amount = 1950m,
                             AssetId = 4,
                             CategoryId = 7,
-                            Date = new DateTime(2017, 4, 12, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5346),
+                            Date = new DateTime(2017, 4, 13, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4627),
                             UserId = 3
                         },
                         new
@@ -2413,7 +2413,7 @@ namespace MoneyManager.Migrations
                             Amount = 1970m,
                             AssetId = 3,
                             CategoryId = 3,
-                            Date = new DateTime(2017, 4, 7, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5348),
+                            Date = new DateTime(2017, 4, 8, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4629),
                             UserId = 3
                         },
                         new
@@ -2422,7 +2422,7 @@ namespace MoneyManager.Migrations
                             Amount = 1970m,
                             AssetId = 4,
                             CategoryId = 8,
-                            Date = new DateTime(2017, 4, 2, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5349),
+                            Date = new DateTime(2017, 4, 3, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4630),
                             UserId = 3
                         },
                         new
@@ -2431,7 +2431,7 @@ namespace MoneyManager.Migrations
                             Amount = 1990m,
                             AssetId = 4,
                             CategoryId = 4,
-                            Date = new DateTime(2017, 3, 28, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5350),
+                            Date = new DateTime(2017, 3, 29, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4631),
                             UserId = 4
                         },
                         new
@@ -2440,7 +2440,7 @@ namespace MoneyManager.Migrations
                             Amount = 1990m,
                             AssetId = 5,
                             CategoryId = 7,
-                            Date = new DateTime(2017, 3, 23, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5351),
+                            Date = new DateTime(2017, 3, 24, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4632),
                             UserId = 4
                         },
                         new
@@ -2449,7 +2449,7 @@ namespace MoneyManager.Migrations
                             Amount = 2010m,
                             AssetId = 4,
                             CategoryId = 4,
-                            Date = new DateTime(2017, 3, 18, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5352),
+                            Date = new DateTime(2017, 3, 19, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4633),
                             UserId = 4
                         },
                         new
@@ -2458,7 +2458,7 @@ namespace MoneyManager.Migrations
                             Amount = 2010m,
                             AssetId = 5,
                             CategoryId = 8,
-                            Date = new DateTime(2017, 3, 13, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5353),
+                            Date = new DateTime(2017, 3, 14, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4634),
                             UserId = 4
                         },
                         new
@@ -2467,7 +2467,7 @@ namespace MoneyManager.Migrations
                             Amount = 2030m,
                             AssetId = 4,
                             CategoryId = 4,
-                            Date = new DateTime(2017, 3, 8, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5354),
+                            Date = new DateTime(2017, 3, 9, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4636),
                             UserId = 4
                         },
                         new
@@ -2476,7 +2476,7 @@ namespace MoneyManager.Migrations
                             Amount = 2030m,
                             AssetId = 5,
                             CategoryId = 9,
-                            Date = new DateTime(2017, 3, 3, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5355),
+                            Date = new DateTime(2017, 3, 4, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4637),
                             UserId = 4
                         },
                         new
@@ -2485,7 +2485,7 @@ namespace MoneyManager.Migrations
                             Amount = 2050m,
                             AssetId = 5,
                             CategoryId = 5,
-                            Date = new DateTime(2017, 2, 26, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5357),
+                            Date = new DateTime(2017, 2, 27, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4638),
                             UserId = 5
                         },
                         new
@@ -2494,7 +2494,7 @@ namespace MoneyManager.Migrations
                             Amount = 2050m,
                             AssetId = 6,
                             CategoryId = 8,
-                            Date = new DateTime(2017, 2, 21, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5358),
+                            Date = new DateTime(2017, 2, 22, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4639),
                             UserId = 5
                         },
                         new
@@ -2503,7 +2503,7 @@ namespace MoneyManager.Migrations
                             Amount = 2070m,
                             AssetId = 5,
                             CategoryId = 5,
-                            Date = new DateTime(2017, 2, 16, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5359),
+                            Date = new DateTime(2017, 2, 17, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4640),
                             UserId = 5
                         },
                         new
@@ -2512,7 +2512,7 @@ namespace MoneyManager.Migrations
                             Amount = 2070m,
                             AssetId = 6,
                             CategoryId = 9,
-                            Date = new DateTime(2017, 2, 11, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5360),
+                            Date = new DateTime(2017, 2, 12, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4641),
                             UserId = 5
                         },
                         new
@@ -2521,7 +2521,7 @@ namespace MoneyManager.Migrations
                             Amount = 2090m,
                             AssetId = 5,
                             CategoryId = 5,
-                            Date = new DateTime(2017, 2, 6, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5361),
+                            Date = new DateTime(2017, 2, 7, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4643),
                             UserId = 5
                         },
                         new
@@ -2530,7 +2530,7 @@ namespace MoneyManager.Migrations
                             Amount = 2090m,
                             AssetId = 6,
                             CategoryId = 10,
-                            Date = new DateTime(2017, 2, 1, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5363),
+                            Date = new DateTime(2017, 2, 2, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4644),
                             UserId = 5
                         },
                         new
@@ -2539,7 +2539,7 @@ namespace MoneyManager.Migrations
                             Amount = 2110m,
                             AssetId = 6,
                             CategoryId = 6,
-                            Date = new DateTime(2017, 1, 27, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5364),
+                            Date = new DateTime(2017, 1, 28, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4645),
                             UserId = 6
                         },
                         new
@@ -2548,7 +2548,7 @@ namespace MoneyManager.Migrations
                             Amount = 2110m,
                             AssetId = 7,
                             CategoryId = 9,
-                            Date = new DateTime(2017, 1, 22, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5365),
+                            Date = new DateTime(2017, 1, 23, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4646),
                             UserId = 6
                         },
                         new
@@ -2557,7 +2557,7 @@ namespace MoneyManager.Migrations
                             Amount = 2130m,
                             AssetId = 6,
                             CategoryId = 6,
-                            Date = new DateTime(2017, 1, 17, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5366),
+                            Date = new DateTime(2017, 1, 18, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4647),
                             UserId = 6
                         },
                         new
@@ -2566,7 +2566,7 @@ namespace MoneyManager.Migrations
                             Amount = 2130m,
                             AssetId = 7,
                             CategoryId = 10,
-                            Date = new DateTime(2017, 1, 12, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5367),
+                            Date = new DateTime(2017, 1, 13, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4648),
                             UserId = 6
                         },
                         new
@@ -2575,7 +2575,7 @@ namespace MoneyManager.Migrations
                             Amount = 2150m,
                             AssetId = 6,
                             CategoryId = 6,
-                            Date = new DateTime(2017, 1, 7, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5368),
+                            Date = new DateTime(2017, 1, 8, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4650),
                             UserId = 6
                         },
                         new
@@ -2584,7 +2584,7 @@ namespace MoneyManager.Migrations
                             Amount = 2150m,
                             AssetId = 7,
                             CategoryId = 11,
-                            Date = new DateTime(2017, 1, 2, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5428),
+                            Date = new DateTime(2017, 1, 3, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4651),
                             UserId = 6
                         },
                         new
@@ -2593,7 +2593,7 @@ namespace MoneyManager.Migrations
                             Amount = 2170m,
                             AssetId = 7,
                             CategoryId = 7,
-                            Date = new DateTime(2016, 12, 28, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5430),
+                            Date = new DateTime(2016, 12, 29, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4652),
                             UserId = 7
                         },
                         new
@@ -2602,7 +2602,7 @@ namespace MoneyManager.Migrations
                             Amount = 2170m,
                             AssetId = 8,
                             CategoryId = 10,
-                            Date = new DateTime(2016, 12, 23, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5431),
+                            Date = new DateTime(2016, 12, 24, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4653),
                             UserId = 7
                         },
                         new
@@ -2611,7 +2611,7 @@ namespace MoneyManager.Migrations
                             Amount = 2190m,
                             AssetId = 7,
                             CategoryId = 7,
-                            Date = new DateTime(2016, 12, 18, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5432),
+                            Date = new DateTime(2016, 12, 19, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4654),
                             UserId = 7
                         },
                         new
@@ -2620,7 +2620,7 @@ namespace MoneyManager.Migrations
                             Amount = 2190m,
                             AssetId = 8,
                             CategoryId = 11,
-                            Date = new DateTime(2016, 12, 13, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5433),
+                            Date = new DateTime(2016, 12, 14, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4655),
                             UserId = 7
                         },
                         new
@@ -2629,7 +2629,7 @@ namespace MoneyManager.Migrations
                             Amount = 2210m,
                             AssetId = 7,
                             CategoryId = 7,
-                            Date = new DateTime(2016, 12, 8, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5435),
+                            Date = new DateTime(2016, 12, 9, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4657),
                             UserId = 7
                         },
                         new
@@ -2638,7 +2638,7 @@ namespace MoneyManager.Migrations
                             Amount = 2210m,
                             AssetId = 8,
                             CategoryId = 12,
-                            Date = new DateTime(2016, 12, 3, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5436),
+                            Date = new DateTime(2016, 12, 4, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4658),
                             UserId = 7
                         },
                         new
@@ -2647,7 +2647,7 @@ namespace MoneyManager.Migrations
                             Amount = 2230m,
                             AssetId = 8,
                             CategoryId = 8,
-                            Date = new DateTime(2016, 11, 28, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5437),
+                            Date = new DateTime(2016, 11, 29, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4659),
                             UserId = 8
                         },
                         new
@@ -2656,7 +2656,7 @@ namespace MoneyManager.Migrations
                             Amount = 2230m,
                             AssetId = 9,
                             CategoryId = 11,
-                            Date = new DateTime(2016, 11, 23, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5438),
+                            Date = new DateTime(2016, 11, 24, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4660),
                             UserId = 8
                         },
                         new
@@ -2665,7 +2665,7 @@ namespace MoneyManager.Migrations
                             Amount = 2250m,
                             AssetId = 8,
                             CategoryId = 8,
-                            Date = new DateTime(2016, 11, 18, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5439),
+                            Date = new DateTime(2016, 11, 19, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4661),
                             UserId = 8
                         },
                         new
@@ -2674,7 +2674,7 @@ namespace MoneyManager.Migrations
                             Amount = 2250m,
                             AssetId = 9,
                             CategoryId = 12,
-                            Date = new DateTime(2016, 11, 13, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5440),
+                            Date = new DateTime(2016, 11, 14, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4662),
                             UserId = 8
                         },
                         new
@@ -2683,7 +2683,7 @@ namespace MoneyManager.Migrations
                             Amount = 2270m,
                             AssetId = 8,
                             CategoryId = 8,
-                            Date = new DateTime(2016, 11, 8, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5441),
+                            Date = new DateTime(2016, 11, 9, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4664),
                             UserId = 8
                         },
                         new
@@ -2692,7 +2692,7 @@ namespace MoneyManager.Migrations
                             Amount = 2270m,
                             AssetId = 9,
                             CategoryId = 13,
-                            Date = new DateTime(2016, 11, 3, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5443),
+                            Date = new DateTime(2016, 11, 4, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4665),
                             UserId = 8
                         },
                         new
@@ -2701,7 +2701,7 @@ namespace MoneyManager.Migrations
                             Amount = 2290m,
                             AssetId = 9,
                             CategoryId = 9,
-                            Date = new DateTime(2016, 10, 29, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5444),
+                            Date = new DateTime(2016, 10, 30, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4666),
                             UserId = 9
                         },
                         new
@@ -2710,7 +2710,7 @@ namespace MoneyManager.Migrations
                             Amount = 2290m,
                             AssetId = 10,
                             CategoryId = 12,
-                            Date = new DateTime(2016, 10, 24, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5445),
+                            Date = new DateTime(2016, 10, 25, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4667),
                             UserId = 9
                         },
                         new
@@ -2719,7 +2719,7 @@ namespace MoneyManager.Migrations
                             Amount = 2310m,
                             AssetId = 9,
                             CategoryId = 9,
-                            Date = new DateTime(2016, 10, 19, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5446),
+                            Date = new DateTime(2016, 10, 20, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4669),
                             UserId = 9
                         },
                         new
@@ -2728,7 +2728,7 @@ namespace MoneyManager.Migrations
                             Amount = 2310m,
                             AssetId = 10,
                             CategoryId = 13,
-                            Date = new DateTime(2016, 10, 14, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5447),
+                            Date = new DateTime(2016, 10, 15, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4670),
                             UserId = 9
                         },
                         new
@@ -2737,7 +2737,7 @@ namespace MoneyManager.Migrations
                             Amount = 2330m,
                             AssetId = 9,
                             CategoryId = 9,
-                            Date = new DateTime(2016, 10, 9, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5448),
+                            Date = new DateTime(2016, 10, 10, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4671),
                             UserId = 9
                         },
                         new
@@ -2746,7 +2746,7 @@ namespace MoneyManager.Migrations
                             Amount = 2330m,
                             AssetId = 10,
                             CategoryId = 14,
-                            Date = new DateTime(2016, 10, 4, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5449),
+                            Date = new DateTime(2016, 10, 5, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4672),
                             UserId = 9
                         },
                         new
@@ -2755,7 +2755,7 @@ namespace MoneyManager.Migrations
                             Amount = 2350m,
                             AssetId = 10,
                             CategoryId = 10,
-                            Date = new DateTime(2016, 9, 29, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5451),
+                            Date = new DateTime(2016, 9, 30, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4673),
                             UserId = 10
                         },
                         new
@@ -2764,7 +2764,7 @@ namespace MoneyManager.Migrations
                             Amount = 2350m,
                             AssetId = 11,
                             CategoryId = 13,
-                            Date = new DateTime(2016, 9, 24, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5452),
+                            Date = new DateTime(2016, 9, 25, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4674),
                             UserId = 10
                         },
                         new
@@ -2773,7 +2773,7 @@ namespace MoneyManager.Migrations
                             Amount = 2370m,
                             AssetId = 10,
                             CategoryId = 10,
-                            Date = new DateTime(2016, 9, 19, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5453),
+                            Date = new DateTime(2016, 9, 20, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4676),
                             UserId = 10
                         },
                         new
@@ -2782,7 +2782,7 @@ namespace MoneyManager.Migrations
                             Amount = 2370m,
                             AssetId = 11,
                             CategoryId = 14,
-                            Date = new DateTime(2016, 9, 14, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5454),
+                            Date = new DateTime(2016, 9, 15, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4677),
                             UserId = 10
                         },
                         new
@@ -2791,7 +2791,7 @@ namespace MoneyManager.Migrations
                             Amount = 2390m,
                             AssetId = 10,
                             CategoryId = 10,
-                            Date = new DateTime(2016, 9, 9, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5455),
+                            Date = new DateTime(2016, 9, 10, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4678),
                             UserId = 10
                         },
                         new
@@ -2800,7 +2800,7 @@ namespace MoneyManager.Migrations
                             Amount = 2390m,
                             AssetId = 11,
                             CategoryId = 15,
-                            Date = new DateTime(2016, 9, 4, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5456),
+                            Date = new DateTime(2016, 9, 5, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4679),
                             UserId = 10
                         },
                         new
@@ -2809,7 +2809,7 @@ namespace MoneyManager.Migrations
                             Amount = 2410m,
                             AssetId = 1,
                             CategoryId = 1,
-                            Date = new DateTime(2016, 8, 30, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5458),
+                            Date = new DateTime(2016, 8, 31, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4680),
                             UserId = 1
                         },
                         new
@@ -2818,7 +2818,7 @@ namespace MoneyManager.Migrations
                             Amount = 2410m,
                             AssetId = 2,
                             CategoryId = 4,
-                            Date = new DateTime(2016, 8, 25, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5459),
+                            Date = new DateTime(2016, 8, 26, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4682),
                             UserId = 1
                         },
                         new
@@ -2827,7 +2827,7 @@ namespace MoneyManager.Migrations
                             Amount = 2430m,
                             AssetId = 1,
                             CategoryId = 1,
-                            Date = new DateTime(2016, 8, 20, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5460),
+                            Date = new DateTime(2016, 8, 21, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4683),
                             UserId = 1
                         },
                         new
@@ -2836,7 +2836,7 @@ namespace MoneyManager.Migrations
                             Amount = 2430m,
                             AssetId = 2,
                             CategoryId = 5,
-                            Date = new DateTime(2016, 8, 15, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5461),
+                            Date = new DateTime(2016, 8, 16, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4684),
                             UserId = 1
                         },
                         new
@@ -2845,7 +2845,7 @@ namespace MoneyManager.Migrations
                             Amount = 2450m,
                             AssetId = 1,
                             CategoryId = 1,
-                            Date = new DateTime(2016, 8, 10, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5462),
+                            Date = new DateTime(2016, 8, 11, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4685),
                             UserId = 1
                         },
                         new
@@ -2854,7 +2854,7 @@ namespace MoneyManager.Migrations
                             Amount = 2450m,
                             AssetId = 2,
                             CategoryId = 6,
-                            Date = new DateTime(2016, 8, 5, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5463),
+                            Date = new DateTime(2016, 8, 6, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4686),
                             UserId = 1
                         },
                         new
@@ -2863,7 +2863,7 @@ namespace MoneyManager.Migrations
                             Amount = 2470m,
                             AssetId = 2,
                             CategoryId = 2,
-                            Date = new DateTime(2016, 7, 31, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5464),
+                            Date = new DateTime(2016, 8, 1, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4687),
                             UserId = 2
                         },
                         new
@@ -2872,7 +2872,7 @@ namespace MoneyManager.Migrations
                             Amount = 2470m,
                             AssetId = 3,
                             CategoryId = 5,
-                            Date = new DateTime(2016, 7, 26, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5466),
+                            Date = new DateTime(2016, 7, 27, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4688),
                             UserId = 2
                         },
                         new
@@ -2881,7 +2881,7 @@ namespace MoneyManager.Migrations
                             Amount = 2490m,
                             AssetId = 2,
                             CategoryId = 2,
-                            Date = new DateTime(2016, 7, 21, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5467),
+                            Date = new DateTime(2016, 7, 22, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4690),
                             UserId = 2
                         },
                         new
@@ -2890,7 +2890,7 @@ namespace MoneyManager.Migrations
                             Amount = 2490m,
                             AssetId = 3,
                             CategoryId = 6,
-                            Date = new DateTime(2016, 7, 16, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5468),
+                            Date = new DateTime(2016, 7, 17, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4691),
                             UserId = 2
                         },
                         new
@@ -2899,7 +2899,7 @@ namespace MoneyManager.Migrations
                             Amount = 2510m,
                             AssetId = 2,
                             CategoryId = 2,
-                            Date = new DateTime(2016, 7, 11, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5469),
+                            Date = new DateTime(2016, 7, 12, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4692),
                             UserId = 2
                         },
                         new
@@ -2908,7 +2908,7 @@ namespace MoneyManager.Migrations
                             Amount = 2510m,
                             AssetId = 3,
                             CategoryId = 7,
-                            Date = new DateTime(2016, 7, 6, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5470),
+                            Date = new DateTime(2016, 7, 7, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4693),
                             UserId = 2
                         },
                         new
@@ -2917,7 +2917,7 @@ namespace MoneyManager.Migrations
                             Amount = 2530m,
                             AssetId = 3,
                             CategoryId = 3,
-                            Date = new DateTime(2016, 7, 1, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5471),
+                            Date = new DateTime(2016, 7, 2, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4694),
                             UserId = 3
                         },
                         new
@@ -2926,7 +2926,7 @@ namespace MoneyManager.Migrations
                             Amount = 2530m,
                             AssetId = 4,
                             CategoryId = 6,
-                            Date = new DateTime(2016, 6, 26, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5472),
+                            Date = new DateTime(2016, 6, 27, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4695),
                             UserId = 3
                         },
                         new
@@ -2935,7 +2935,7 @@ namespace MoneyManager.Migrations
                             Amount = 2550m,
                             AssetId = 3,
                             CategoryId = 3,
-                            Date = new DateTime(2016, 6, 21, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5474),
+                            Date = new DateTime(2016, 6, 22, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4697),
                             UserId = 3
                         },
                         new
@@ -2944,7 +2944,7 @@ namespace MoneyManager.Migrations
                             Amount = 2550m,
                             AssetId = 4,
                             CategoryId = 7,
-                            Date = new DateTime(2016, 6, 16, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5475),
+                            Date = new DateTime(2016, 6, 17, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4698),
                             UserId = 3
                         },
                         new
@@ -2953,7 +2953,7 @@ namespace MoneyManager.Migrations
                             Amount = 2570m,
                             AssetId = 3,
                             CategoryId = 3,
-                            Date = new DateTime(2016, 6, 11, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5476),
+                            Date = new DateTime(2016, 6, 12, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4699),
                             UserId = 3
                         },
                         new
@@ -2962,7 +2962,7 @@ namespace MoneyManager.Migrations
                             Amount = 2570m,
                             AssetId = 4,
                             CategoryId = 8,
-                            Date = new DateTime(2016, 6, 6, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5478),
+                            Date = new DateTime(2016, 6, 7, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4742),
                             UserId = 3
                         },
                         new
@@ -2971,7 +2971,7 @@ namespace MoneyManager.Migrations
                             Amount = 2590m,
                             AssetId = 4,
                             CategoryId = 4,
-                            Date = new DateTime(2016, 6, 1, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5480),
+                            Date = new DateTime(2016, 6, 2, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4743),
                             UserId = 4
                         },
                         new
@@ -2980,7 +2980,7 @@ namespace MoneyManager.Migrations
                             Amount = 2590m,
                             AssetId = 5,
                             CategoryId = 7,
-                            Date = new DateTime(2016, 5, 27, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5481),
+                            Date = new DateTime(2016, 5, 28, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4744),
                             UserId = 4
                         },
                         new
@@ -2989,7 +2989,7 @@ namespace MoneyManager.Migrations
                             Amount = 2610m,
                             AssetId = 4,
                             CategoryId = 4,
-                            Date = new DateTime(2016, 5, 22, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5482),
+                            Date = new DateTime(2016, 5, 23, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4746),
                             UserId = 4
                         },
                         new
@@ -2998,7 +2998,7 @@ namespace MoneyManager.Migrations
                             Amount = 2610m,
                             AssetId = 5,
                             CategoryId = 8,
-                            Date = new DateTime(2016, 5, 17, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5483),
+                            Date = new DateTime(2016, 5, 18, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4747),
                             UserId = 4
                         },
                         new
@@ -3007,7 +3007,7 @@ namespace MoneyManager.Migrations
                             Amount = 2630m,
                             AssetId = 4,
                             CategoryId = 4,
-                            Date = new DateTime(2016, 5, 12, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5484),
+                            Date = new DateTime(2016, 5, 13, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4748),
                             UserId = 4
                         },
                         new
@@ -3016,7 +3016,7 @@ namespace MoneyManager.Migrations
                             Amount = 2630m,
                             AssetId = 5,
                             CategoryId = 9,
-                            Date = new DateTime(2016, 5, 7, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5485),
+                            Date = new DateTime(2016, 5, 8, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4749),
                             UserId = 4
                         },
                         new
@@ -3025,7 +3025,7 @@ namespace MoneyManager.Migrations
                             Amount = 2650m,
                             AssetId = 5,
                             CategoryId = 5,
-                            Date = new DateTime(2016, 5, 2, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5487),
+                            Date = new DateTime(2016, 5, 3, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4750),
                             UserId = 5
                         },
                         new
@@ -3034,7 +3034,7 @@ namespace MoneyManager.Migrations
                             Amount = 2650m,
                             AssetId = 6,
                             CategoryId = 8,
-                            Date = new DateTime(2016, 4, 27, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5488),
+                            Date = new DateTime(2016, 4, 28, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4751),
                             UserId = 5
                         },
                         new
@@ -3043,7 +3043,7 @@ namespace MoneyManager.Migrations
                             Amount = 2670m,
                             AssetId = 5,
                             CategoryId = 5,
-                            Date = new DateTime(2016, 4, 22, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5489),
+                            Date = new DateTime(2016, 4, 23, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4753),
                             UserId = 5
                         },
                         new
@@ -3052,7 +3052,7 @@ namespace MoneyManager.Migrations
                             Amount = 2670m,
                             AssetId = 6,
                             CategoryId = 9,
-                            Date = new DateTime(2016, 4, 17, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5490),
+                            Date = new DateTime(2016, 4, 18, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4754),
                             UserId = 5
                         },
                         new
@@ -3061,7 +3061,7 @@ namespace MoneyManager.Migrations
                             Amount = 2690m,
                             AssetId = 5,
                             CategoryId = 5,
-                            Date = new DateTime(2016, 4, 12, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5491),
+                            Date = new DateTime(2016, 4, 13, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4755),
                             UserId = 5
                         },
                         new
@@ -3070,7 +3070,7 @@ namespace MoneyManager.Migrations
                             Amount = 2690m,
                             AssetId = 6,
                             CategoryId = 10,
-                            Date = new DateTime(2016, 4, 7, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5492),
+                            Date = new DateTime(2016, 4, 8, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4756),
                             UserId = 5
                         },
                         new
@@ -3079,7 +3079,7 @@ namespace MoneyManager.Migrations
                             Amount = 2710m,
                             AssetId = 6,
                             CategoryId = 6,
-                            Date = new DateTime(2016, 4, 2, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5493),
+                            Date = new DateTime(2016, 4, 3, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4757),
                             UserId = 6
                         },
                         new
@@ -3088,7 +3088,7 @@ namespace MoneyManager.Migrations
                             Amount = 2710m,
                             AssetId = 7,
                             CategoryId = 9,
-                            Date = new DateTime(2016, 3, 28, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5495),
+                            Date = new DateTime(2016, 3, 29, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4759),
                             UserId = 6
                         },
                         new
@@ -3097,7 +3097,7 @@ namespace MoneyManager.Migrations
                             Amount = 2730m,
                             AssetId = 6,
                             CategoryId = 6,
-                            Date = new DateTime(2016, 3, 23, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5496),
+                            Date = new DateTime(2016, 3, 24, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4760),
                             UserId = 6
                         },
                         new
@@ -3106,7 +3106,7 @@ namespace MoneyManager.Migrations
                             Amount = 2730m,
                             AssetId = 7,
                             CategoryId = 10,
-                            Date = new DateTime(2016, 3, 18, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5497),
+                            Date = new DateTime(2016, 3, 19, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4761),
                             UserId = 6
                         },
                         new
@@ -3115,7 +3115,7 @@ namespace MoneyManager.Migrations
                             Amount = 2750m,
                             AssetId = 6,
                             CategoryId = 6,
-                            Date = new DateTime(2016, 3, 13, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5498),
+                            Date = new DateTime(2016, 3, 14, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4762),
                             UserId = 6
                         },
                         new
@@ -3124,7 +3124,7 @@ namespace MoneyManager.Migrations
                             Amount = 2750m,
                             AssetId = 7,
                             CategoryId = 11,
-                            Date = new DateTime(2016, 3, 8, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5499),
+                            Date = new DateTime(2016, 3, 9, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4763),
                             UserId = 6
                         },
                         new
@@ -3133,7 +3133,7 @@ namespace MoneyManager.Migrations
                             Amount = 2770m,
                             AssetId = 7,
                             CategoryId = 7,
-                            Date = new DateTime(2016, 3, 3, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5500),
+                            Date = new DateTime(2016, 3, 4, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4764),
                             UserId = 7
                         },
                         new
@@ -3142,7 +3142,7 @@ namespace MoneyManager.Migrations
                             Amount = 2770m,
                             AssetId = 8,
                             CategoryId = 10,
-                            Date = new DateTime(2016, 2, 27, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5501),
+                            Date = new DateTime(2016, 2, 28, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4766),
                             UserId = 7
                         },
                         new
@@ -3151,7 +3151,7 @@ namespace MoneyManager.Migrations
                             Amount = 2790m,
                             AssetId = 7,
                             CategoryId = 7,
-                            Date = new DateTime(2016, 2, 22, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5503),
+                            Date = new DateTime(2016, 2, 23, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4767),
                             UserId = 7
                         },
                         new
@@ -3160,7 +3160,7 @@ namespace MoneyManager.Migrations
                             Amount = 2790m,
                             AssetId = 8,
                             CategoryId = 11,
-                            Date = new DateTime(2016, 2, 17, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5504),
+                            Date = new DateTime(2016, 2, 18, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4768),
                             UserId = 7
                         },
                         new
@@ -3169,7 +3169,7 @@ namespace MoneyManager.Migrations
                             Amount = 2810m,
                             AssetId = 7,
                             CategoryId = 7,
-                            Date = new DateTime(2016, 2, 12, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5505),
+                            Date = new DateTime(2016, 2, 13, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4769),
                             UserId = 7
                         },
                         new
@@ -3178,7 +3178,7 @@ namespace MoneyManager.Migrations
                             Amount = 2810m,
                             AssetId = 8,
                             CategoryId = 12,
-                            Date = new DateTime(2016, 2, 7, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5506),
+                            Date = new DateTime(2016, 2, 8, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4770),
                             UserId = 7
                         },
                         new
@@ -3187,7 +3187,7 @@ namespace MoneyManager.Migrations
                             Amount = 2830m,
                             AssetId = 8,
                             CategoryId = 8,
-                            Date = new DateTime(2016, 2, 2, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5507),
+                            Date = new DateTime(2016, 2, 3, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4772),
                             UserId = 8
                         },
                         new
@@ -3196,7 +3196,7 @@ namespace MoneyManager.Migrations
                             Amount = 2830m,
                             AssetId = 9,
                             CategoryId = 11,
-                            Date = new DateTime(2016, 1, 28, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5508),
+                            Date = new DateTime(2016, 1, 29, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4773),
                             UserId = 8
                         },
                         new
@@ -3205,7 +3205,7 @@ namespace MoneyManager.Migrations
                             Amount = 2850m,
                             AssetId = 8,
                             CategoryId = 8,
-                            Date = new DateTime(2016, 1, 23, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5509),
+                            Date = new DateTime(2016, 1, 24, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4774),
                             UserId = 8
                         },
                         new
@@ -3214,7 +3214,7 @@ namespace MoneyManager.Migrations
                             Amount = 2850m,
                             AssetId = 9,
                             CategoryId = 12,
-                            Date = new DateTime(2016, 1, 18, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5510),
+                            Date = new DateTime(2016, 1, 19, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4775),
                             UserId = 8
                         },
                         new
@@ -3223,7 +3223,7 @@ namespace MoneyManager.Migrations
                             Amount = 2870m,
                             AssetId = 8,
                             CategoryId = 8,
-                            Date = new DateTime(2016, 1, 13, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5512),
+                            Date = new DateTime(2016, 1, 14, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4776),
                             UserId = 8
                         },
                         new
@@ -3232,7 +3232,7 @@ namespace MoneyManager.Migrations
                             Amount = 2870m,
                             AssetId = 9,
                             CategoryId = 13,
-                            Date = new DateTime(2016, 1, 8, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5563),
+                            Date = new DateTime(2016, 1, 9, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4777),
                             UserId = 8
                         },
                         new
@@ -3241,7 +3241,7 @@ namespace MoneyManager.Migrations
                             Amount = 2890m,
                             AssetId = 9,
                             CategoryId = 9,
-                            Date = new DateTime(2016, 1, 3, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5565),
+                            Date = new DateTime(2016, 1, 4, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4779),
                             UserId = 9
                         },
                         new
@@ -3250,7 +3250,7 @@ namespace MoneyManager.Migrations
                             Amount = 2890m,
                             AssetId = 10,
                             CategoryId = 12,
-                            Date = new DateTime(2015, 12, 29, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5566),
+                            Date = new DateTime(2015, 12, 30, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4780),
                             UserId = 9
                         },
                         new
@@ -3259,7 +3259,7 @@ namespace MoneyManager.Migrations
                             Amount = 2910m,
                             AssetId = 9,
                             CategoryId = 9,
-                            Date = new DateTime(2015, 12, 24, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5567),
+                            Date = new DateTime(2015, 12, 25, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4781),
                             UserId = 9
                         },
                         new
@@ -3268,7 +3268,7 @@ namespace MoneyManager.Migrations
                             Amount = 2910m,
                             AssetId = 10,
                             CategoryId = 13,
-                            Date = new DateTime(2015, 12, 19, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5568),
+                            Date = new DateTime(2015, 12, 20, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4782),
                             UserId = 9
                         },
                         new
@@ -3277,7 +3277,7 @@ namespace MoneyManager.Migrations
                             Amount = 2930m,
                             AssetId = 9,
                             CategoryId = 9,
-                            Date = new DateTime(2015, 12, 14, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5569),
+                            Date = new DateTime(2015, 12, 15, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4783),
                             UserId = 9
                         },
                         new
@@ -3286,7 +3286,7 @@ namespace MoneyManager.Migrations
                             Amount = 2930m,
                             AssetId = 10,
                             CategoryId = 14,
-                            Date = new DateTime(2015, 12, 9, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5571),
+                            Date = new DateTime(2015, 12, 10, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4784),
                             UserId = 9
                         },
                         new
@@ -3295,7 +3295,7 @@ namespace MoneyManager.Migrations
                             Amount = 2950m,
                             AssetId = 10,
                             CategoryId = 10,
-                            Date = new DateTime(2015, 12, 4, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5572),
+                            Date = new DateTime(2015, 12, 5, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4785),
                             UserId = 10
                         },
                         new
@@ -3304,7 +3304,7 @@ namespace MoneyManager.Migrations
                             Amount = 2950m,
                             AssetId = 11,
                             CategoryId = 13,
-                            Date = new DateTime(2015, 11, 29, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5573),
+                            Date = new DateTime(2015, 11, 30, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4787),
                             UserId = 10
                         },
                         new
@@ -3313,7 +3313,7 @@ namespace MoneyManager.Migrations
                             Amount = 2970m,
                             AssetId = 10,
                             CategoryId = 10,
-                            Date = new DateTime(2015, 11, 24, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5574),
+                            Date = new DateTime(2015, 11, 25, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4788),
                             UserId = 10
                         },
                         new
@@ -3322,7 +3322,7 @@ namespace MoneyManager.Migrations
                             Amount = 2970m,
                             AssetId = 11,
                             CategoryId = 14,
-                            Date = new DateTime(2015, 11, 19, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5575),
+                            Date = new DateTime(2015, 11, 20, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4789),
                             UserId = 10
                         },
                         new
@@ -3331,7 +3331,7 @@ namespace MoneyManager.Migrations
                             Amount = 2990m,
                             AssetId = 10,
                             CategoryId = 10,
-                            Date = new DateTime(2015, 11, 14, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5576),
+                            Date = new DateTime(2015, 11, 15, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4790),
                             UserId = 10
                         },
                         new
@@ -3340,7 +3340,7 @@ namespace MoneyManager.Migrations
                             Amount = 2990m,
                             AssetId = 11,
                             CategoryId = 15,
-                            Date = new DateTime(2015, 11, 9, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5578),
+                            Date = new DateTime(2015, 11, 10, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4791),
                             UserId = 10
                         },
                         new
@@ -3349,7 +3349,7 @@ namespace MoneyManager.Migrations
                             Amount = 3010m,
                             AssetId = 1,
                             CategoryId = 1,
-                            Date = new DateTime(2015, 11, 4, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5579),
+                            Date = new DateTime(2015, 11, 5, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4792),
                             UserId = 1
                         },
                         new
@@ -3358,7 +3358,7 @@ namespace MoneyManager.Migrations
                             Amount = 3010m,
                             AssetId = 2,
                             CategoryId = 4,
-                            Date = new DateTime(2015, 10, 30, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5580),
+                            Date = new DateTime(2015, 10, 31, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4794),
                             UserId = 1
                         },
                         new
@@ -3367,7 +3367,7 @@ namespace MoneyManager.Migrations
                             Amount = 3030m,
                             AssetId = 1,
                             CategoryId = 1,
-                            Date = new DateTime(2015, 10, 25, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5581),
+                            Date = new DateTime(2015, 10, 26, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4795),
                             UserId = 1
                         },
                         new
@@ -3376,7 +3376,7 @@ namespace MoneyManager.Migrations
                             Amount = 3030m,
                             AssetId = 2,
                             CategoryId = 5,
-                            Date = new DateTime(2015, 10, 20, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5582),
+                            Date = new DateTime(2015, 10, 21, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4796),
                             UserId = 1
                         },
                         new
@@ -3385,7 +3385,7 @@ namespace MoneyManager.Migrations
                             Amount = 3050m,
                             AssetId = 1,
                             CategoryId = 1,
-                            Date = new DateTime(2015, 10, 15, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5583),
+                            Date = new DateTime(2015, 10, 16, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4797),
                             UserId = 1
                         },
                         new
@@ -3394,7 +3394,7 @@ namespace MoneyManager.Migrations
                             Amount = 3050m,
                             AssetId = 2,
                             CategoryId = 6,
-                            Date = new DateTime(2015, 10, 10, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5585),
+                            Date = new DateTime(2015, 10, 11, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4798),
                             UserId = 1
                         },
                         new
@@ -3403,7 +3403,7 @@ namespace MoneyManager.Migrations
                             Amount = 3070m,
                             AssetId = 2,
                             CategoryId = 2,
-                            Date = new DateTime(2015, 10, 5, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5586),
+                            Date = new DateTime(2015, 10, 6, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4799),
                             UserId = 2
                         },
                         new
@@ -3412,7 +3412,7 @@ namespace MoneyManager.Migrations
                             Amount = 3070m,
                             AssetId = 3,
                             CategoryId = 5,
-                            Date = new DateTime(2015, 9, 30, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5587),
+                            Date = new DateTime(2015, 10, 1, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4801),
                             UserId = 2
                         },
                         new
@@ -3421,7 +3421,7 @@ namespace MoneyManager.Migrations
                             Amount = 3090m,
                             AssetId = 2,
                             CategoryId = 2,
-                            Date = new DateTime(2015, 9, 25, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5588),
+                            Date = new DateTime(2015, 9, 26, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4802),
                             UserId = 2
                         },
                         new
@@ -3430,7 +3430,7 @@ namespace MoneyManager.Migrations
                             Amount = 3090m,
                             AssetId = 3,
                             CategoryId = 6,
-                            Date = new DateTime(2015, 9, 20, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5589),
+                            Date = new DateTime(2015, 9, 21, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4803),
                             UserId = 2
                         },
                         new
@@ -3439,7 +3439,7 @@ namespace MoneyManager.Migrations
                             Amount = 3110m,
                             AssetId = 2,
                             CategoryId = 2,
-                            Date = new DateTime(2015, 9, 15, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5590),
+                            Date = new DateTime(2015, 9, 16, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4804),
                             UserId = 2
                         },
                         new
@@ -3448,7 +3448,7 @@ namespace MoneyManager.Migrations
                             Amount = 3110m,
                             AssetId = 3,
                             CategoryId = 7,
-                            Date = new DateTime(2015, 9, 10, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5591),
+                            Date = new DateTime(2015, 9, 11, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4805),
                             UserId = 2
                         },
                         new
@@ -3457,7 +3457,7 @@ namespace MoneyManager.Migrations
                             Amount = 3130m,
                             AssetId = 3,
                             CategoryId = 3,
-                            Date = new DateTime(2015, 9, 5, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5593),
+                            Date = new DateTime(2015, 9, 6, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4806),
                             UserId = 3
                         },
                         new
@@ -3466,7 +3466,7 @@ namespace MoneyManager.Migrations
                             Amount = 3130m,
                             AssetId = 4,
                             CategoryId = 6,
-                            Date = new DateTime(2015, 8, 31, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5594),
+                            Date = new DateTime(2015, 9, 1, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4808),
                             UserId = 3
                         },
                         new
@@ -3475,7 +3475,7 @@ namespace MoneyManager.Migrations
                             Amount = 3150m,
                             AssetId = 3,
                             CategoryId = 3,
-                            Date = new DateTime(2015, 8, 26, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5595),
+                            Date = new DateTime(2015, 8, 27, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4809),
                             UserId = 3
                         },
                         new
@@ -3484,7 +3484,7 @@ namespace MoneyManager.Migrations
                             Amount = 3150m,
                             AssetId = 4,
                             CategoryId = 7,
-                            Date = new DateTime(2015, 8, 21, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5596),
+                            Date = new DateTime(2015, 8, 22, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4810),
                             UserId = 3
                         },
                         new
@@ -3493,7 +3493,7 @@ namespace MoneyManager.Migrations
                             Amount = 3170m,
                             AssetId = 3,
                             CategoryId = 3,
-                            Date = new DateTime(2015, 8, 16, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5597),
+                            Date = new DateTime(2015, 8, 17, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4811),
                             UserId = 3
                         },
                         new
@@ -3502,7 +3502,7 @@ namespace MoneyManager.Migrations
                             Amount = 3170m,
                             AssetId = 4,
                             CategoryId = 8,
-                            Date = new DateTime(2015, 8, 11, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5598),
+                            Date = new DateTime(2015, 8, 12, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4812),
                             UserId = 3
                         },
                         new
@@ -3511,7 +3511,7 @@ namespace MoneyManager.Migrations
                             Amount = 3190m,
                             AssetId = 4,
                             CategoryId = 4,
-                            Date = new DateTime(2015, 8, 6, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5599),
+                            Date = new DateTime(2015, 8, 7, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4813),
                             UserId = 4
                         },
                         new
@@ -3520,7 +3520,7 @@ namespace MoneyManager.Migrations
                             Amount = 3190m,
                             AssetId = 5,
                             CategoryId = 7,
-                            Date = new DateTime(2015, 8, 1, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5601),
+                            Date = new DateTime(2015, 8, 2, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4815),
                             UserId = 4
                         },
                         new
@@ -3529,7 +3529,7 @@ namespace MoneyManager.Migrations
                             Amount = 3210m,
                             AssetId = 4,
                             CategoryId = 4,
-                            Date = new DateTime(2015, 7, 27, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5602),
+                            Date = new DateTime(2015, 7, 28, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4816),
                             UserId = 4
                         },
                         new
@@ -3538,7 +3538,7 @@ namespace MoneyManager.Migrations
                             Amount = 3210m,
                             AssetId = 5,
                             CategoryId = 8,
-                            Date = new DateTime(2015, 7, 22, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5603),
+                            Date = new DateTime(2015, 7, 23, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4817),
                             UserId = 4
                         },
                         new
@@ -3547,7 +3547,7 @@ namespace MoneyManager.Migrations
                             Amount = 3230m,
                             AssetId = 4,
                             CategoryId = 4,
-                            Date = new DateTime(2015, 7, 17, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5604),
+                            Date = new DateTime(2015, 7, 18, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4818),
                             UserId = 4
                         },
                         new
@@ -3556,7 +3556,7 @@ namespace MoneyManager.Migrations
                             Amount = 3230m,
                             AssetId = 5,
                             CategoryId = 9,
-                            Date = new DateTime(2015, 7, 12, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5605),
+                            Date = new DateTime(2015, 7, 13, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4819),
                             UserId = 4
                         },
                         new
@@ -3565,7 +3565,7 @@ namespace MoneyManager.Migrations
                             Amount = 3250m,
                             AssetId = 5,
                             CategoryId = 5,
-                            Date = new DateTime(2015, 7, 7, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5607),
+                            Date = new DateTime(2015, 7, 8, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4821),
                             UserId = 5
                         },
                         new
@@ -3574,7 +3574,7 @@ namespace MoneyManager.Migrations
                             Amount = 3250m,
                             AssetId = 6,
                             CategoryId = 8,
-                            Date = new DateTime(2015, 7, 2, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5608),
+                            Date = new DateTime(2015, 7, 3, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4822),
                             UserId = 5
                         },
                         new
@@ -3583,7 +3583,7 @@ namespace MoneyManager.Migrations
                             Amount = 3270m,
                             AssetId = 5,
                             CategoryId = 5,
-                            Date = new DateTime(2015, 6, 27, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5609),
+                            Date = new DateTime(2015, 6, 28, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4823),
                             UserId = 5
                         },
                         new
@@ -3592,7 +3592,7 @@ namespace MoneyManager.Migrations
                             Amount = 3270m,
                             AssetId = 6,
                             CategoryId = 9,
-                            Date = new DateTime(2015, 6, 22, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5610),
+                            Date = new DateTime(2015, 6, 23, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4824),
                             UserId = 5
                         },
                         new
@@ -3601,7 +3601,7 @@ namespace MoneyManager.Migrations
                             Amount = 3290m,
                             AssetId = 5,
                             CategoryId = 5,
-                            Date = new DateTime(2015, 6, 17, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5611),
+                            Date = new DateTime(2015, 6, 18, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4825),
                             UserId = 5
                         },
                         new
@@ -3610,7 +3610,7 @@ namespace MoneyManager.Migrations
                             Amount = 3290m,
                             AssetId = 6,
                             CategoryId = 10,
-                            Date = new DateTime(2015, 6, 12, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5612),
+                            Date = new DateTime(2015, 6, 13, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4826),
                             UserId = 5
                         },
                         new
@@ -3619,7 +3619,7 @@ namespace MoneyManager.Migrations
                             Amount = 3310m,
                             AssetId = 6,
                             CategoryId = 6,
-                            Date = new DateTime(2015, 6, 7, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5613),
+                            Date = new DateTime(2015, 6, 8, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4827),
                             UserId = 6
                         },
                         new
@@ -3628,7 +3628,7 @@ namespace MoneyManager.Migrations
                             Amount = 3310m,
                             AssetId = 7,
                             CategoryId = 9,
-                            Date = new DateTime(2015, 6, 2, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5615),
+                            Date = new DateTime(2015, 6, 3, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4829),
                             UserId = 6
                         },
                         new
@@ -3637,7 +3637,7 @@ namespace MoneyManager.Migrations
                             Amount = 3330m,
                             AssetId = 6,
                             CategoryId = 6,
-                            Date = new DateTime(2015, 5, 28, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5616),
+                            Date = new DateTime(2015, 5, 29, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4830),
                             UserId = 6
                         },
                         new
@@ -3646,7 +3646,7 @@ namespace MoneyManager.Migrations
                             Amount = 3330m,
                             AssetId = 7,
                             CategoryId = 10,
-                            Date = new DateTime(2015, 5, 23, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5617),
+                            Date = new DateTime(2015, 5, 24, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4831),
                             UserId = 6
                         },
                         new
@@ -3655,7 +3655,7 @@ namespace MoneyManager.Migrations
                             Amount = 3350m,
                             AssetId = 6,
                             CategoryId = 6,
-                            Date = new DateTime(2015, 5, 18, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5618),
+                            Date = new DateTime(2015, 5, 19, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4832),
                             UserId = 6
                         },
                         new
@@ -3664,7 +3664,7 @@ namespace MoneyManager.Migrations
                             Amount = 3350m,
                             AssetId = 7,
                             CategoryId = 11,
-                            Date = new DateTime(2015, 5, 13, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5619),
+                            Date = new DateTime(2015, 5, 14, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4833),
                             UserId = 6
                         },
                         new
@@ -3673,7 +3673,7 @@ namespace MoneyManager.Migrations
                             Amount = 3370m,
                             AssetId = 7,
                             CategoryId = 7,
-                            Date = new DateTime(2015, 5, 8, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5620),
+                            Date = new DateTime(2015, 5, 9, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4835),
                             UserId = 7
                         },
                         new
@@ -3682,7 +3682,7 @@ namespace MoneyManager.Migrations
                             Amount = 3370m,
                             AssetId = 8,
                             CategoryId = 10,
-                            Date = new DateTime(2015, 5, 3, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5621),
+                            Date = new DateTime(2015, 5, 4, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4836),
                             UserId = 7
                         },
                         new
@@ -3691,7 +3691,7 @@ namespace MoneyManager.Migrations
                             Amount = 3390m,
                             AssetId = 7,
                             CategoryId = 7,
-                            Date = new DateTime(2015, 4, 28, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5623),
+                            Date = new DateTime(2015, 4, 29, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4837),
                             UserId = 7
                         },
                         new
@@ -3700,7 +3700,7 @@ namespace MoneyManager.Migrations
                             Amount = 3390m,
                             AssetId = 8,
                             CategoryId = 11,
-                            Date = new DateTime(2015, 4, 23, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5624),
+                            Date = new DateTime(2015, 4, 24, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4838),
                             UserId = 7
                         },
                         new
@@ -3709,7 +3709,7 @@ namespace MoneyManager.Migrations
                             Amount = 3410m,
                             AssetId = 7,
                             CategoryId = 7,
-                            Date = new DateTime(2015, 4, 18, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5625),
+                            Date = new DateTime(2015, 4, 19, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4839),
                             UserId = 7
                         },
                         new
@@ -3718,7 +3718,7 @@ namespace MoneyManager.Migrations
                             Amount = 3410m,
                             AssetId = 8,
                             CategoryId = 12,
-                            Date = new DateTime(2015, 4, 13, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5626),
+                            Date = new DateTime(2015, 4, 14, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4840),
                             UserId = 7
                         },
                         new
@@ -3727,7 +3727,7 @@ namespace MoneyManager.Migrations
                             Amount = 3430m,
                             AssetId = 8,
                             CategoryId = 8,
-                            Date = new DateTime(2015, 4, 8, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5627),
+                            Date = new DateTime(2015, 4, 9, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4842),
                             UserId = 8
                         },
                         new
@@ -3736,7 +3736,7 @@ namespace MoneyManager.Migrations
                             Amount = 3430m,
                             AssetId = 9,
                             CategoryId = 11,
-                            Date = new DateTime(2015, 4, 3, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5628),
+                            Date = new DateTime(2015, 4, 4, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4843),
                             UserId = 8
                         },
                         new
@@ -3745,7 +3745,7 @@ namespace MoneyManager.Migrations
                             Amount = 3450m,
                             AssetId = 8,
                             CategoryId = 8,
-                            Date = new DateTime(2015, 3, 29, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5629),
+                            Date = new DateTime(2015, 3, 30, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4844),
                             UserId = 8
                         },
                         new
@@ -3754,7 +3754,7 @@ namespace MoneyManager.Migrations
                             Amount = 3450m,
                             AssetId = 9,
                             CategoryId = 12,
-                            Date = new DateTime(2015, 3, 24, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5630),
+                            Date = new DateTime(2015, 3, 25, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4845),
                             UserId = 8
                         },
                         new
@@ -3763,7 +3763,7 @@ namespace MoneyManager.Migrations
                             Amount = 3470m,
                             AssetId = 8,
                             CategoryId = 8,
-                            Date = new DateTime(2015, 3, 19, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5632),
+                            Date = new DateTime(2015, 3, 20, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4846),
                             UserId = 8
                         },
                         new
@@ -3772,7 +3772,7 @@ namespace MoneyManager.Migrations
                             Amount = 3470m,
                             AssetId = 9,
                             CategoryId = 13,
-                            Date = new DateTime(2015, 3, 14, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5633),
+                            Date = new DateTime(2015, 3, 15, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4847),
                             UserId = 8
                         },
                         new
@@ -3781,7 +3781,7 @@ namespace MoneyManager.Migrations
                             Amount = 3490m,
                             AssetId = 9,
                             CategoryId = 9,
-                            Date = new DateTime(2015, 3, 9, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5634),
+                            Date = new DateTime(2015, 3, 10, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4849),
                             UserId = 9
                         },
                         new
@@ -3790,7 +3790,7 @@ namespace MoneyManager.Migrations
                             Amount = 3490m,
                             AssetId = 10,
                             CategoryId = 12,
-                            Date = new DateTime(2015, 3, 4, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5635),
+                            Date = new DateTime(2015, 3, 5, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4850),
                             UserId = 9
                         },
                         new
@@ -3799,7 +3799,7 @@ namespace MoneyManager.Migrations
                             Amount = 3510m,
                             AssetId = 9,
                             CategoryId = 9,
-                            Date = new DateTime(2015, 2, 27, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5636),
+                            Date = new DateTime(2015, 2, 28, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4851),
                             UserId = 9
                         },
                         new
@@ -3808,7 +3808,7 @@ namespace MoneyManager.Migrations
                             Amount = 3510m,
                             AssetId = 10,
                             CategoryId = 13,
-                            Date = new DateTime(2015, 2, 22, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5638),
+                            Date = new DateTime(2015, 2, 23, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4852),
                             UserId = 9
                         },
                         new
@@ -3817,7 +3817,7 @@ namespace MoneyManager.Migrations
                             Amount = 3530m,
                             AssetId = 9,
                             CategoryId = 9,
-                            Date = new DateTime(2015, 2, 17, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5639),
+                            Date = new DateTime(2015, 2, 18, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4853),
                             UserId = 9
                         },
                         new
@@ -3826,7 +3826,7 @@ namespace MoneyManager.Migrations
                             Amount = 3530m,
                             AssetId = 10,
                             CategoryId = 14,
-                            Date = new DateTime(2015, 2, 12, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5640),
+                            Date = new DateTime(2015, 2, 13, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4854),
                             UserId = 9
                         },
                         new
@@ -3835,7 +3835,7 @@ namespace MoneyManager.Migrations
                             Amount = 3550m,
                             AssetId = 10,
                             CategoryId = 10,
-                            Date = new DateTime(2015, 2, 7, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5641),
+                            Date = new DateTime(2015, 2, 8, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4856),
                             UserId = 10
                         },
                         new
@@ -3844,7 +3844,7 @@ namespace MoneyManager.Migrations
                             Amount = 3550m,
                             AssetId = 11,
                             CategoryId = 13,
-                            Date = new DateTime(2015, 2, 2, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5642),
+                            Date = new DateTime(2015, 2, 3, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4857),
                             UserId = 10
                         },
                         new
@@ -3853,7 +3853,7 @@ namespace MoneyManager.Migrations
                             Amount = 3570m,
                             AssetId = 10,
                             CategoryId = 10,
-                            Date = new DateTime(2015, 1, 28, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5643),
+                            Date = new DateTime(2015, 1, 29, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4858),
                             UserId = 10
                         },
                         new
@@ -3862,7 +3862,7 @@ namespace MoneyManager.Migrations
                             Amount = 3570m,
                             AssetId = 11,
                             CategoryId = 14,
-                            Date = new DateTime(2015, 1, 23, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5645),
+                            Date = new DateTime(2015, 1, 24, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4859),
                             UserId = 10
                         },
                         new
@@ -3871,7 +3871,7 @@ namespace MoneyManager.Migrations
                             Amount = 3590m,
                             AssetId = 10,
                             CategoryId = 10,
-                            Date = new DateTime(2015, 1, 18, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5646),
+                            Date = new DateTime(2015, 1, 19, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4860),
                             UserId = 10
                         },
                         new
@@ -3880,7 +3880,7 @@ namespace MoneyManager.Migrations
                             Amount = 3590m,
                             AssetId = 11,
                             CategoryId = 15,
-                            Date = new DateTime(2015, 1, 13, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5647),
+                            Date = new DateTime(2015, 1, 14, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4861),
                             UserId = 10
                         },
                         new
@@ -3889,7 +3889,7 @@ namespace MoneyManager.Migrations
                             Amount = 3610m,
                             AssetId = 1,
                             CategoryId = 1,
-                            Date = new DateTime(2015, 1, 8, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5648),
+                            Date = new DateTime(2015, 1, 9, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4863),
                             UserId = 1
                         },
                         new
@@ -3898,7 +3898,7 @@ namespace MoneyManager.Migrations
                             Amount = 3610m,
                             AssetId = 2,
                             CategoryId = 4,
-                            Date = new DateTime(2015, 1, 3, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5649),
+                            Date = new DateTime(2015, 1, 4, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4864),
                             UserId = 1
                         },
                         new
@@ -3907,7 +3907,7 @@ namespace MoneyManager.Migrations
                             Amount = 3630m,
                             AssetId = 1,
                             CategoryId = 1,
-                            Date = new DateTime(2014, 12, 29, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5650),
+                            Date = new DateTime(2014, 12, 30, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4865),
                             UserId = 1
                         },
                         new
@@ -3916,7 +3916,7 @@ namespace MoneyManager.Migrations
                             Amount = 3630m,
                             AssetId = 2,
                             CategoryId = 5,
-                            Date = new DateTime(2014, 12, 24, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5652),
+                            Date = new DateTime(2014, 12, 25, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4866),
                             UserId = 1
                         },
                         new
@@ -3925,7 +3925,7 @@ namespace MoneyManager.Migrations
                             Amount = 3650m,
                             AssetId = 1,
                             CategoryId = 1,
-                            Date = new DateTime(2014, 12, 19, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5653),
+                            Date = new DateTime(2014, 12, 20, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4867),
                             UserId = 1
                         },
                         new
@@ -3934,7 +3934,7 @@ namespace MoneyManager.Migrations
                             Amount = 3650m,
                             AssetId = 2,
                             CategoryId = 6,
-                            Date = new DateTime(2014, 12, 14, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5654),
+                            Date = new DateTime(2014, 12, 15, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4868),
                             UserId = 1
                         },
                         new
@@ -3943,7 +3943,7 @@ namespace MoneyManager.Migrations
                             Amount = 3670m,
                             AssetId = 2,
                             CategoryId = 2,
-                            Date = new DateTime(2014, 12, 9, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5655),
+                            Date = new DateTime(2014, 12, 10, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4870),
                             UserId = 2
                         },
                         new
@@ -3952,7 +3952,7 @@ namespace MoneyManager.Migrations
                             Amount = 3670m,
                             AssetId = 3,
                             CategoryId = 5,
-                            Date = new DateTime(2014, 12, 4, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5656),
+                            Date = new DateTime(2014, 12, 5, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4871),
                             UserId = 2
                         },
                         new
@@ -3961,7 +3961,7 @@ namespace MoneyManager.Migrations
                             Amount = 3690m,
                             AssetId = 2,
                             CategoryId = 2,
-                            Date = new DateTime(2014, 11, 29, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5657),
+                            Date = new DateTime(2014, 11, 30, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4872),
                             UserId = 2
                         },
                         new
@@ -3970,7 +3970,7 @@ namespace MoneyManager.Migrations
                             Amount = 3690m,
                             AssetId = 3,
                             CategoryId = 6,
-                            Date = new DateTime(2014, 11, 24, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5658),
+                            Date = new DateTime(2014, 11, 25, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4873),
                             UserId = 2
                         },
                         new
@@ -3979,7 +3979,7 @@ namespace MoneyManager.Migrations
                             Amount = 3710m,
                             AssetId = 2,
                             CategoryId = 2,
-                            Date = new DateTime(2014, 11, 19, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5660),
+                            Date = new DateTime(2014, 11, 20, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4874),
                             UserId = 2
                         },
                         new
@@ -3988,7 +3988,7 @@ namespace MoneyManager.Migrations
                             Amount = 3710m,
                             AssetId = 3,
                             CategoryId = 7,
-                            Date = new DateTime(2014, 11, 14, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5661),
+                            Date = new DateTime(2014, 11, 15, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4876),
                             UserId = 2
                         },
                         new
@@ -3997,7 +3997,7 @@ namespace MoneyManager.Migrations
                             Amount = 3730m,
                             AssetId = 3,
                             CategoryId = 3,
-                            Date = new DateTime(2014, 11, 9, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5662),
+                            Date = new DateTime(2014, 11, 10, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4877),
                             UserId = 3
                         },
                         new
@@ -4006,7 +4006,7 @@ namespace MoneyManager.Migrations
                             Amount = 3730m,
                             AssetId = 4,
                             CategoryId = 6,
-                            Date = new DateTime(2014, 11, 4, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5663),
+                            Date = new DateTime(2014, 11, 5, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4878),
                             UserId = 3
                         },
                         new
@@ -4015,7 +4015,7 @@ namespace MoneyManager.Migrations
                             Amount = 3750m,
                             AssetId = 3,
                             CategoryId = 3,
-                            Date = new DateTime(2014, 10, 30, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5664),
+                            Date = new DateTime(2014, 10, 31, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4879),
                             UserId = 3
                         },
                         new
@@ -4024,7 +4024,7 @@ namespace MoneyManager.Migrations
                             Amount = 3750m,
                             AssetId = 4,
                             CategoryId = 7,
-                            Date = new DateTime(2014, 10, 25, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5665),
+                            Date = new DateTime(2014, 10, 26, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4880),
                             UserId = 3
                         },
                         new
@@ -4033,7 +4033,7 @@ namespace MoneyManager.Migrations
                             Amount = 3770m,
                             AssetId = 3,
                             CategoryId = 3,
-                            Date = new DateTime(2014, 10, 20, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5666),
+                            Date = new DateTime(2014, 10, 21, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4882),
                             UserId = 3
                         },
                         new
@@ -4042,7 +4042,7 @@ namespace MoneyManager.Migrations
                             Amount = 3770m,
                             AssetId = 4,
                             CategoryId = 8,
-                            Date = new DateTime(2014, 10, 15, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5667),
+                            Date = new DateTime(2014, 10, 16, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4883),
                             UserId = 3
                         },
                         new
@@ -4051,7 +4051,7 @@ namespace MoneyManager.Migrations
                             Amount = 3790m,
                             AssetId = 4,
                             CategoryId = 4,
-                            Date = new DateTime(2014, 10, 10, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5669),
+                            Date = new DateTime(2014, 10, 11, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4884),
                             UserId = 4
                         },
                         new
@@ -4060,7 +4060,7 @@ namespace MoneyManager.Migrations
                             Amount = 3790m,
                             AssetId = 5,
                             CategoryId = 7,
-                            Date = new DateTime(2014, 10, 5, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5670),
+                            Date = new DateTime(2014, 10, 6, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4885),
                             UserId = 4
                         },
                         new
@@ -4069,7 +4069,7 @@ namespace MoneyManager.Migrations
                             Amount = 3810m,
                             AssetId = 4,
                             CategoryId = 4,
-                            Date = new DateTime(2014, 9, 30, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5671),
+                            Date = new DateTime(2014, 10, 1, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4886),
                             UserId = 4
                         },
                         new
@@ -4078,7 +4078,7 @@ namespace MoneyManager.Migrations
                             Amount = 3810m,
                             AssetId = 5,
                             CategoryId = 8,
-                            Date = new DateTime(2014, 9, 25, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5672),
+                            Date = new DateTime(2014, 9, 26, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4887),
                             UserId = 4
                         },
                         new
@@ -4087,7 +4087,7 @@ namespace MoneyManager.Migrations
                             Amount = 3830m,
                             AssetId = 4,
                             CategoryId = 4,
-                            Date = new DateTime(2014, 9, 20, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5673),
+                            Date = new DateTime(2014, 9, 21, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4889),
                             UserId = 4
                         },
                         new
@@ -4096,7 +4096,7 @@ namespace MoneyManager.Migrations
                             Amount = 3830m,
                             AssetId = 5,
                             CategoryId = 9,
-                            Date = new DateTime(2014, 9, 15, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5674),
+                            Date = new DateTime(2014, 9, 16, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4890),
                             UserId = 4
                         },
                         new
@@ -4105,7 +4105,7 @@ namespace MoneyManager.Migrations
                             Amount = 3850m,
                             AssetId = 5,
                             CategoryId = 5,
-                            Date = new DateTime(2014, 9, 10, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5676),
+                            Date = new DateTime(2014, 9, 11, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4891),
                             UserId = 5
                         },
                         new
@@ -4114,7 +4114,7 @@ namespace MoneyManager.Migrations
                             Amount = 3850m,
                             AssetId = 6,
                             CategoryId = 8,
-                            Date = new DateTime(2014, 9, 5, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5677),
+                            Date = new DateTime(2014, 9, 6, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4892),
                             UserId = 5
                         },
                         new
@@ -4123,7 +4123,7 @@ namespace MoneyManager.Migrations
                             Amount = 3870m,
                             AssetId = 5,
                             CategoryId = 5,
-                            Date = new DateTime(2014, 8, 31, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5678),
+                            Date = new DateTime(2014, 9, 1, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4893),
                             UserId = 5
                         },
                         new
@@ -4132,7 +4132,7 @@ namespace MoneyManager.Migrations
                             Amount = 3870m,
                             AssetId = 6,
                             CategoryId = 9,
-                            Date = new DateTime(2014, 8, 26, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5679),
+                            Date = new DateTime(2014, 8, 27, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4894),
                             UserId = 5
                         },
                         new
@@ -4141,7 +4141,7 @@ namespace MoneyManager.Migrations
                             Amount = 3890m,
                             AssetId = 5,
                             CategoryId = 5,
-                            Date = new DateTime(2014, 8, 21, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5680),
+                            Date = new DateTime(2014, 8, 22, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4896),
                             UserId = 5
                         },
                         new
@@ -4150,7 +4150,7 @@ namespace MoneyManager.Migrations
                             Amount = 3890m,
                             AssetId = 6,
                             CategoryId = 10,
-                            Date = new DateTime(2014, 8, 16, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5681),
+                            Date = new DateTime(2014, 8, 17, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4897),
                             UserId = 5
                         },
                         new
@@ -4159,7 +4159,7 @@ namespace MoneyManager.Migrations
                             Amount = 3910m,
                             AssetId = 6,
                             CategoryId = 6,
-                            Date = new DateTime(2014, 8, 11, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5682),
+                            Date = new DateTime(2014, 8, 12, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4898),
                             UserId = 6
                         },
                         new
@@ -4168,7 +4168,7 @@ namespace MoneyManager.Migrations
                             Amount = 3910m,
                             AssetId = 7,
                             CategoryId = 9,
-                            Date = new DateTime(2014, 8, 6, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5684),
+                            Date = new DateTime(2014, 8, 7, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4899),
                             UserId = 6
                         },
                         new
@@ -4177,7 +4177,7 @@ namespace MoneyManager.Migrations
                             Amount = 3930m,
                             AssetId = 6,
                             CategoryId = 6,
-                            Date = new DateTime(2014, 8, 1, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5685),
+                            Date = new DateTime(2014, 8, 2, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4900),
                             UserId = 6
                         },
                         new
@@ -4186,7 +4186,7 @@ namespace MoneyManager.Migrations
                             Amount = 3930m,
                             AssetId = 7,
                             CategoryId = 10,
-                            Date = new DateTime(2014, 7, 27, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5686),
+                            Date = new DateTime(2014, 7, 28, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4902),
                             UserId = 6
                         },
                         new
@@ -4195,7 +4195,7 @@ namespace MoneyManager.Migrations
                             Amount = 3950m,
                             AssetId = 6,
                             CategoryId = 6,
-                            Date = new DateTime(2014, 7, 22, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5687),
+                            Date = new DateTime(2014, 7, 23, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4903),
                             UserId = 6
                         },
                         new
@@ -4204,7 +4204,7 @@ namespace MoneyManager.Migrations
                             Amount = 3950m,
                             AssetId = 7,
                             CategoryId = 11,
-                            Date = new DateTime(2014, 7, 17, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5688),
+                            Date = new DateTime(2014, 7, 18, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4939),
                             UserId = 6
                         },
                         new
@@ -4213,7 +4213,7 @@ namespace MoneyManager.Migrations
                             Amount = 3970m,
                             AssetId = 7,
                             CategoryId = 7,
-                            Date = new DateTime(2014, 7, 12, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5689),
+                            Date = new DateTime(2014, 7, 13, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4940),
                             UserId = 7
                         },
                         new
@@ -4222,7 +4222,7 @@ namespace MoneyManager.Migrations
                             Amount = 3970m,
                             AssetId = 8,
                             CategoryId = 10,
-                            Date = new DateTime(2014, 7, 7, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5690),
+                            Date = new DateTime(2014, 7, 8, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4941),
                             UserId = 7
                         },
                         new
@@ -4231,7 +4231,7 @@ namespace MoneyManager.Migrations
                             Amount = 3990m,
                             AssetId = 7,
                             CategoryId = 7,
-                            Date = new DateTime(2014, 7, 2, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5692),
+                            Date = new DateTime(2014, 7, 3, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4942),
                             UserId = 7
                         },
                         new
@@ -4240,7 +4240,7 @@ namespace MoneyManager.Migrations
                             Amount = 3990m,
                             AssetId = 8,
                             CategoryId = 11,
-                            Date = new DateTime(2014, 6, 27, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5693),
+                            Date = new DateTime(2014, 6, 28, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4943),
                             UserId = 7
                         },
                         new
@@ -4249,7 +4249,7 @@ namespace MoneyManager.Migrations
                             Amount = 4010m,
                             AssetId = 7,
                             CategoryId = 7,
-                            Date = new DateTime(2014, 6, 22, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5694),
+                            Date = new DateTime(2014, 6, 23, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4944),
                             UserId = 7
                         },
                         new
@@ -4258,7 +4258,7 @@ namespace MoneyManager.Migrations
                             Amount = 4010m,
                             AssetId = 8,
                             CategoryId = 12,
-                            Date = new DateTime(2014, 6, 17, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5695),
+                            Date = new DateTime(2014, 6, 18, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4946),
                             UserId = 7
                         },
                         new
@@ -4267,7 +4267,7 @@ namespace MoneyManager.Migrations
                             Amount = 4030m,
                             AssetId = 8,
                             CategoryId = 8,
-                            Date = new DateTime(2014, 6, 12, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5696),
+                            Date = new DateTime(2014, 6, 13, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4947),
                             UserId = 8
                         },
                         new
@@ -4276,7 +4276,7 @@ namespace MoneyManager.Migrations
                             Amount = 4030m,
                             AssetId = 9,
                             CategoryId = 11,
-                            Date = new DateTime(2014, 6, 7, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5697),
+                            Date = new DateTime(2014, 6, 8, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4948),
                             UserId = 8
                         },
                         new
@@ -4285,7 +4285,7 @@ namespace MoneyManager.Migrations
                             Amount = 4050m,
                             AssetId = 8,
                             CategoryId = 8,
-                            Date = new DateTime(2014, 6, 2, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5698),
+                            Date = new DateTime(2014, 6, 3, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4949),
                             UserId = 8
                         },
                         new
@@ -4294,7 +4294,7 @@ namespace MoneyManager.Migrations
                             Amount = 4050m,
                             AssetId = 9,
                             CategoryId = 12,
-                            Date = new DateTime(2014, 5, 28, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5700),
+                            Date = new DateTime(2014, 5, 29, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4950),
                             UserId = 8
                         },
                         new
@@ -4303,7 +4303,7 @@ namespace MoneyManager.Migrations
                             Amount = 4070m,
                             AssetId = 8,
                             CategoryId = 8,
-                            Date = new DateTime(2014, 5, 23, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5701),
+                            Date = new DateTime(2014, 5, 24, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4951),
                             UserId = 8
                         },
                         new
@@ -4312,7 +4312,7 @@ namespace MoneyManager.Migrations
                             Amount = 4070m,
                             AssetId = 9,
                             CategoryId = 13,
-                            Date = new DateTime(2014, 5, 18, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5702),
+                            Date = new DateTime(2014, 5, 19, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4953),
                             UserId = 8
                         },
                         new
@@ -4321,7 +4321,7 @@ namespace MoneyManager.Migrations
                             Amount = 4090m,
                             AssetId = 9,
                             CategoryId = 9,
-                            Date = new DateTime(2014, 5, 13, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5703),
+                            Date = new DateTime(2014, 5, 14, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4954),
                             UserId = 9
                         },
                         new
@@ -4330,7 +4330,7 @@ namespace MoneyManager.Migrations
                             Amount = 4090m,
                             AssetId = 10,
                             CategoryId = 12,
-                            Date = new DateTime(2014, 5, 8, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5704),
+                            Date = new DateTime(2014, 5, 9, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4955),
                             UserId = 9
                         },
                         new
@@ -4339,7 +4339,7 @@ namespace MoneyManager.Migrations
                             Amount = 4110m,
                             AssetId = 9,
                             CategoryId = 9,
-                            Date = new DateTime(2014, 5, 3, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5705),
+                            Date = new DateTime(2014, 5, 4, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4956),
                             UserId = 9
                         },
                         new
@@ -4348,7 +4348,7 @@ namespace MoneyManager.Migrations
                             Amount = 4110m,
                             AssetId = 10,
                             CategoryId = 13,
-                            Date = new DateTime(2014, 4, 28, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5706),
+                            Date = new DateTime(2014, 4, 29, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4957),
                             UserId = 9
                         },
                         new
@@ -4357,7 +4357,7 @@ namespace MoneyManager.Migrations
                             Amount = 4130m,
                             AssetId = 9,
                             CategoryId = 9,
-                            Date = new DateTime(2014, 4, 23, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5708),
+                            Date = new DateTime(2014, 4, 24, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4959),
                             UserId = 9
                         },
                         new
@@ -4366,7 +4366,7 @@ namespace MoneyManager.Migrations
                             Amount = 4130m,
                             AssetId = 10,
                             CategoryId = 14,
-                            Date = new DateTime(2014, 4, 18, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5709),
+                            Date = new DateTime(2014, 4, 19, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4960),
                             UserId = 9
                         },
                         new
@@ -4375,7 +4375,7 @@ namespace MoneyManager.Migrations
                             Amount = 4150m,
                             AssetId = 10,
                             CategoryId = 10,
-                            Date = new DateTime(2014, 4, 13, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5710),
+                            Date = new DateTime(2014, 4, 14, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4961),
                             UserId = 10
                         },
                         new
@@ -4384,7 +4384,7 @@ namespace MoneyManager.Migrations
                             Amount = 4150m,
                             AssetId = 11,
                             CategoryId = 13,
-                            Date = new DateTime(2014, 4, 8, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5711),
+                            Date = new DateTime(2014, 4, 9, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4962),
                             UserId = 10
                         },
                         new
@@ -4393,7 +4393,7 @@ namespace MoneyManager.Migrations
                             Amount = 4170m,
                             AssetId = 10,
                             CategoryId = 10,
-                            Date = new DateTime(2014, 4, 3, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5712),
+                            Date = new DateTime(2014, 4, 4, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4963),
                             UserId = 10
                         },
                         new
@@ -4402,7 +4402,7 @@ namespace MoneyManager.Migrations
                             Amount = 4170m,
                             AssetId = 11,
                             CategoryId = 14,
-                            Date = new DateTime(2014, 3, 29, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5713),
+                            Date = new DateTime(2014, 3, 30, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4964),
                             UserId = 10
                         },
                         new
@@ -4411,7 +4411,7 @@ namespace MoneyManager.Migrations
                             Amount = 4190m,
                             AssetId = 10,
                             CategoryId = 10,
-                            Date = new DateTime(2014, 3, 24, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5714),
+                            Date = new DateTime(2014, 3, 25, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4966),
                             UserId = 10
                         },
                         new
@@ -4420,7 +4420,7 @@ namespace MoneyManager.Migrations
                             Amount = 4190m,
                             AssetId = 11,
                             CategoryId = 15,
-                            Date = new DateTime(2014, 3, 19, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5715),
+                            Date = new DateTime(2014, 3, 20, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4967),
                             UserId = 10
                         },
                         new
@@ -4429,7 +4429,7 @@ namespace MoneyManager.Migrations
                             Amount = 4210m,
                             AssetId = 1,
                             CategoryId = 1,
-                            Date = new DateTime(2014, 3, 14, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5717),
+                            Date = new DateTime(2014, 3, 15, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4968),
                             UserId = 1
                         },
                         new
@@ -4438,7 +4438,7 @@ namespace MoneyManager.Migrations
                             Amount = 4210m,
                             AssetId = 2,
                             CategoryId = 4,
-                            Date = new DateTime(2014, 3, 9, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5718),
+                            Date = new DateTime(2014, 3, 10, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4969),
                             UserId = 1
                         },
                         new
@@ -4447,7 +4447,7 @@ namespace MoneyManager.Migrations
                             Amount = 4230m,
                             AssetId = 1,
                             CategoryId = 1,
-                            Date = new DateTime(2014, 3, 4, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5719),
+                            Date = new DateTime(2014, 3, 5, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4971),
                             UserId = 1
                         },
                         new
@@ -4456,7 +4456,7 @@ namespace MoneyManager.Migrations
                             Amount = 4230m,
                             AssetId = 2,
                             CategoryId = 5,
-                            Date = new DateTime(2014, 2, 27, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5720),
+                            Date = new DateTime(2014, 2, 28, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4972),
                             UserId = 1
                         },
                         new
@@ -4465,7 +4465,7 @@ namespace MoneyManager.Migrations
                             Amount = 4250m,
                             AssetId = 1,
                             CategoryId = 1,
-                            Date = new DateTime(2014, 2, 22, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5722),
+                            Date = new DateTime(2014, 2, 23, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4973),
                             UserId = 1
                         },
                         new
@@ -4474,7 +4474,7 @@ namespace MoneyManager.Migrations
                             Amount = 4250m,
                             AssetId = 2,
                             CategoryId = 6,
-                            Date = new DateTime(2014, 2, 17, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5723),
+                            Date = new DateTime(2014, 2, 18, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4974),
                             UserId = 1
                         },
                         new
@@ -4483,7 +4483,7 @@ namespace MoneyManager.Migrations
                             Amount = 4270m,
                             AssetId = 2,
                             CategoryId = 2,
-                            Date = new DateTime(2014, 2, 12, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5724),
+                            Date = new DateTime(2014, 2, 13, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4975),
                             UserId = 2
                         },
                         new
@@ -4492,7 +4492,7 @@ namespace MoneyManager.Migrations
                             Amount = 4270m,
                             AssetId = 3,
                             CategoryId = 5,
-                            Date = new DateTime(2014, 2, 7, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5725),
+                            Date = new DateTime(2014, 2, 8, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4976),
                             UserId = 2
                         },
                         new
@@ -4501,7 +4501,7 @@ namespace MoneyManager.Migrations
                             Amount = 4290m,
                             AssetId = 2,
                             CategoryId = 2,
-                            Date = new DateTime(2014, 2, 2, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5726),
+                            Date = new DateTime(2014, 2, 3, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4978),
                             UserId = 2
                         },
                         new
@@ -4510,7 +4510,7 @@ namespace MoneyManager.Migrations
                             Amount = 4290m,
                             AssetId = 3,
                             CategoryId = 6,
-                            Date = new DateTime(2014, 1, 28, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5727),
+                            Date = new DateTime(2014, 1, 29, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4979),
                             UserId = 2
                         },
                         new
@@ -4519,7 +4519,7 @@ namespace MoneyManager.Migrations
                             Amount = 4310m,
                             AssetId = 2,
                             CategoryId = 2,
-                            Date = new DateTime(2014, 1, 23, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5728),
+                            Date = new DateTime(2014, 1, 24, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4980),
                             UserId = 2
                         },
                         new
@@ -4528,7 +4528,7 @@ namespace MoneyManager.Migrations
                             Amount = 4310m,
                             AssetId = 3,
                             CategoryId = 7,
-                            Date = new DateTime(2014, 1, 18, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5729),
+                            Date = new DateTime(2014, 1, 19, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4981),
                             UserId = 2
                         },
                         new
@@ -4537,7 +4537,7 @@ namespace MoneyManager.Migrations
                             Amount = 4330m,
                             AssetId = 3,
                             CategoryId = 3,
-                            Date = new DateTime(2014, 1, 13, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5731),
+                            Date = new DateTime(2014, 1, 14, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4982),
                             UserId = 3
                         },
                         new
@@ -4546,7 +4546,7 @@ namespace MoneyManager.Migrations
                             Amount = 4330m,
                             AssetId = 4,
                             CategoryId = 6,
-                            Date = new DateTime(2014, 1, 8, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5765),
+                            Date = new DateTime(2014, 1, 9, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4983),
                             UserId = 3
                         },
                         new
@@ -4555,7 +4555,7 @@ namespace MoneyManager.Migrations
                             Amount = 4350m,
                             AssetId = 3,
                             CategoryId = 3,
-                            Date = new DateTime(2014, 1, 3, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5767),
+                            Date = new DateTime(2014, 1, 4, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4984),
                             UserId = 3
                         },
                         new
@@ -4564,7 +4564,7 @@ namespace MoneyManager.Migrations
                             Amount = 4350m,
                             AssetId = 4,
                             CategoryId = 7,
-                            Date = new DateTime(2013, 12, 29, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5768),
+                            Date = new DateTime(2013, 12, 30, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4986),
                             UserId = 3
                         },
                         new
@@ -4573,7 +4573,7 @@ namespace MoneyManager.Migrations
                             Amount = 4370m,
                             AssetId = 3,
                             CategoryId = 3,
-                            Date = new DateTime(2013, 12, 24, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5769),
+                            Date = new DateTime(2013, 12, 25, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4987),
                             UserId = 3
                         },
                         new
@@ -4582,7 +4582,7 @@ namespace MoneyManager.Migrations
                             Amount = 4370m,
                             AssetId = 4,
                             CategoryId = 8,
-                            Date = new DateTime(2013, 12, 19, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5770),
+                            Date = new DateTime(2013, 12, 20, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4988),
                             UserId = 3
                         },
                         new
@@ -4591,7 +4591,7 @@ namespace MoneyManager.Migrations
                             Amount = 4390m,
                             AssetId = 4,
                             CategoryId = 4,
-                            Date = new DateTime(2013, 12, 14, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5771),
+                            Date = new DateTime(2013, 12, 15, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4989),
                             UserId = 4
                         },
                         new
@@ -4600,7 +4600,7 @@ namespace MoneyManager.Migrations
                             Amount = 4390m,
                             AssetId = 5,
                             CategoryId = 7,
-                            Date = new DateTime(2013, 12, 9, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5773),
+                            Date = new DateTime(2013, 12, 10, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4990),
                             UserId = 4
                         },
                         new
@@ -4609,7 +4609,7 @@ namespace MoneyManager.Migrations
                             Amount = 4410m,
                             AssetId = 4,
                             CategoryId = 4,
-                            Date = new DateTime(2013, 12, 4, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5774),
+                            Date = new DateTime(2013, 12, 5, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4991),
                             UserId = 4
                         },
                         new
@@ -4618,7 +4618,7 @@ namespace MoneyManager.Migrations
                             Amount = 4410m,
                             AssetId = 5,
                             CategoryId = 8,
-                            Date = new DateTime(2013, 11, 29, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5775),
+                            Date = new DateTime(2013, 11, 30, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4993),
                             UserId = 4
                         },
                         new
@@ -4627,7 +4627,7 @@ namespace MoneyManager.Migrations
                             Amount = 4430m,
                             AssetId = 4,
                             CategoryId = 4,
-                            Date = new DateTime(2013, 11, 24, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5776),
+                            Date = new DateTime(2013, 11, 25, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4994),
                             UserId = 4
                         },
                         new
@@ -4636,7 +4636,7 @@ namespace MoneyManager.Migrations
                             Amount = 4430m,
                             AssetId = 5,
                             CategoryId = 9,
-                            Date = new DateTime(2013, 11, 19, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5777),
+                            Date = new DateTime(2013, 11, 20, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4995),
                             UserId = 4
                         },
                         new
@@ -4645,7 +4645,7 @@ namespace MoneyManager.Migrations
                             Amount = 4450m,
                             AssetId = 5,
                             CategoryId = 5,
-                            Date = new DateTime(2013, 11, 14, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5779),
+                            Date = new DateTime(2013, 11, 15, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4996),
                             UserId = 5
                         },
                         new
@@ -4654,7 +4654,7 @@ namespace MoneyManager.Migrations
                             Amount = 4450m,
                             AssetId = 6,
                             CategoryId = 8,
-                            Date = new DateTime(2013, 11, 9, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5780),
+                            Date = new DateTime(2013, 11, 10, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4997),
                             UserId = 5
                         },
                         new
@@ -4663,7 +4663,7 @@ namespace MoneyManager.Migrations
                             Amount = 4470m,
                             AssetId = 5,
                             CategoryId = 5,
-                            Date = new DateTime(2013, 11, 4, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5781),
+                            Date = new DateTime(2013, 11, 5, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(4998),
                             UserId = 5
                         },
                         new
@@ -4672,7 +4672,7 @@ namespace MoneyManager.Migrations
                             Amount = 4470m,
                             AssetId = 6,
                             CategoryId = 9,
-                            Date = new DateTime(2013, 10, 30, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5782),
+                            Date = new DateTime(2013, 10, 31, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5000),
                             UserId = 5
                         },
                         new
@@ -4681,7 +4681,7 @@ namespace MoneyManager.Migrations
                             Amount = 4490m,
                             AssetId = 5,
                             CategoryId = 5,
-                            Date = new DateTime(2013, 10, 25, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5783),
+                            Date = new DateTime(2013, 10, 26, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5001),
                             UserId = 5
                         },
                         new
@@ -4690,7 +4690,7 @@ namespace MoneyManager.Migrations
                             Amount = 4490m,
                             AssetId = 6,
                             CategoryId = 10,
-                            Date = new DateTime(2013, 10, 20, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5784),
+                            Date = new DateTime(2013, 10, 21, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5002),
                             UserId = 5
                         },
                         new
@@ -4699,7 +4699,7 @@ namespace MoneyManager.Migrations
                             Amount = 4510m,
                             AssetId = 6,
                             CategoryId = 6,
-                            Date = new DateTime(2013, 10, 15, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5786),
+                            Date = new DateTime(2013, 10, 16, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5003),
                             UserId = 6
                         },
                         new
@@ -4708,7 +4708,7 @@ namespace MoneyManager.Migrations
                             Amount = 4510m,
                             AssetId = 7,
                             CategoryId = 9,
-                            Date = new DateTime(2013, 10, 10, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5787),
+                            Date = new DateTime(2013, 10, 11, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5004),
                             UserId = 6
                         },
                         new
@@ -4717,7 +4717,7 @@ namespace MoneyManager.Migrations
                             Amount = 4530m,
                             AssetId = 6,
                             CategoryId = 6,
-                            Date = new DateTime(2013, 10, 5, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5788),
+                            Date = new DateTime(2013, 10, 6, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5006),
                             UserId = 6
                         },
                         new
@@ -4726,7 +4726,7 @@ namespace MoneyManager.Migrations
                             Amount = 4530m,
                             AssetId = 7,
                             CategoryId = 10,
-                            Date = new DateTime(2013, 9, 30, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5789),
+                            Date = new DateTime(2013, 10, 1, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5007),
                             UserId = 6
                         },
                         new
@@ -4735,7 +4735,7 @@ namespace MoneyManager.Migrations
                             Amount = 4550m,
                             AssetId = 6,
                             CategoryId = 6,
-                            Date = new DateTime(2013, 9, 25, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5790),
+                            Date = new DateTime(2013, 9, 26, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5008),
                             UserId = 6
                         },
                         new
@@ -4744,7 +4744,7 @@ namespace MoneyManager.Migrations
                             Amount = 4550m,
                             AssetId = 7,
                             CategoryId = 11,
-                            Date = new DateTime(2013, 9, 20, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5791),
+                            Date = new DateTime(2013, 9, 21, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5009),
                             UserId = 6
                         },
                         new
@@ -4753,7 +4753,7 @@ namespace MoneyManager.Migrations
                             Amount = 4570m,
                             AssetId = 7,
                             CategoryId = 7,
-                            Date = new DateTime(2013, 9, 15, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5792),
+                            Date = new DateTime(2013, 9, 16, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5010),
                             UserId = 7
                         },
                         new
@@ -4762,7 +4762,7 @@ namespace MoneyManager.Migrations
                             Amount = 4570m,
                             AssetId = 8,
                             CategoryId = 10,
-                            Date = new DateTime(2013, 9, 10, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5794),
+                            Date = new DateTime(2013, 9, 11, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5012),
                             UserId = 7
                         },
                         new
@@ -4771,7 +4771,7 @@ namespace MoneyManager.Migrations
                             Amount = 4590m,
                             AssetId = 7,
                             CategoryId = 7,
-                            Date = new DateTime(2013, 9, 5, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5795),
+                            Date = new DateTime(2013, 9, 6, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5013),
                             UserId = 7
                         },
                         new
@@ -4780,7 +4780,7 @@ namespace MoneyManager.Migrations
                             Amount = 4590m,
                             AssetId = 8,
                             CategoryId = 11,
-                            Date = new DateTime(2013, 8, 31, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5796),
+                            Date = new DateTime(2013, 9, 1, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5014),
                             UserId = 7
                         },
                         new
@@ -4789,7 +4789,7 @@ namespace MoneyManager.Migrations
                             Amount = 4610m,
                             AssetId = 7,
                             CategoryId = 7,
-                            Date = new DateTime(2013, 8, 26, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5797),
+                            Date = new DateTime(2013, 8, 27, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5015),
                             UserId = 7
                         },
                         new
@@ -4798,7 +4798,7 @@ namespace MoneyManager.Migrations
                             Amount = 4610m,
                             AssetId = 8,
                             CategoryId = 12,
-                            Date = new DateTime(2013, 8, 21, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5798),
+                            Date = new DateTime(2013, 8, 22, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5016),
                             UserId = 7
                         },
                         new
@@ -4807,7 +4807,7 @@ namespace MoneyManager.Migrations
                             Amount = 4630m,
                             AssetId = 8,
                             CategoryId = 8,
-                            Date = new DateTime(2013, 8, 16, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5799),
+                            Date = new DateTime(2013, 8, 17, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5018),
                             UserId = 8
                         },
                         new
@@ -4816,7 +4816,7 @@ namespace MoneyManager.Migrations
                             Amount = 4630m,
                             AssetId = 9,
                             CategoryId = 11,
-                            Date = new DateTime(2013, 8, 11, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5801),
+                            Date = new DateTime(2013, 8, 12, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5019),
                             UserId = 8
                         },
                         new
@@ -4825,7 +4825,7 @@ namespace MoneyManager.Migrations
                             Amount = 4650m,
                             AssetId = 8,
                             CategoryId = 8,
-                            Date = new DateTime(2013, 8, 6, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5802),
+                            Date = new DateTime(2013, 8, 7, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5020),
                             UserId = 8
                         },
                         new
@@ -4834,7 +4834,7 @@ namespace MoneyManager.Migrations
                             Amount = 4650m,
                             AssetId = 9,
                             CategoryId = 12,
-                            Date = new DateTime(2013, 8, 1, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5803),
+                            Date = new DateTime(2013, 8, 2, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5021),
                             UserId = 8
                         },
                         new
@@ -4843,7 +4843,7 @@ namespace MoneyManager.Migrations
                             Amount = 4670m,
                             AssetId = 8,
                             CategoryId = 8,
-                            Date = new DateTime(2013, 7, 27, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5804),
+                            Date = new DateTime(2013, 7, 28, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5022),
                             UserId = 8
                         },
                         new
@@ -4852,7 +4852,7 @@ namespace MoneyManager.Migrations
                             Amount = 4670m,
                             AssetId = 9,
                             CategoryId = 13,
-                            Date = new DateTime(2013, 7, 22, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5805),
+                            Date = new DateTime(2013, 7, 23, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5024),
                             UserId = 8
                         },
                         new
@@ -4861,7 +4861,7 @@ namespace MoneyManager.Migrations
                             Amount = 4690m,
                             AssetId = 9,
                             CategoryId = 9,
-                            Date = new DateTime(2013, 7, 17, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5806),
+                            Date = new DateTime(2013, 7, 18, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5025),
                             UserId = 9
                         },
                         new
@@ -4870,7 +4870,7 @@ namespace MoneyManager.Migrations
                             Amount = 4690m,
                             AssetId = 10,
                             CategoryId = 12,
-                            Date = new DateTime(2013, 7, 12, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5807),
+                            Date = new DateTime(2013, 7, 13, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5026),
                             UserId = 9
                         },
                         new
@@ -4879,7 +4879,7 @@ namespace MoneyManager.Migrations
                             Amount = 4710m,
                             AssetId = 9,
                             CategoryId = 9,
-                            Date = new DateTime(2013, 7, 7, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5809),
+                            Date = new DateTime(2013, 7, 8, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5027),
                             UserId = 9
                         },
                         new
@@ -4888,7 +4888,7 @@ namespace MoneyManager.Migrations
                             Amount = 4710m,
                             AssetId = 10,
                             CategoryId = 13,
-                            Date = new DateTime(2013, 7, 2, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5810),
+                            Date = new DateTime(2013, 7, 3, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5028),
                             UserId = 9
                         },
                         new
@@ -4897,7 +4897,7 @@ namespace MoneyManager.Migrations
                             Amount = 4730m,
                             AssetId = 9,
                             CategoryId = 9,
-                            Date = new DateTime(2013, 6, 27, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5811),
+                            Date = new DateTime(2013, 6, 28, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5030),
                             UserId = 9
                         },
                         new
@@ -4906,7 +4906,7 @@ namespace MoneyManager.Migrations
                             Amount = 4730m,
                             AssetId = 10,
                             CategoryId = 14,
-                            Date = new DateTime(2013, 6, 22, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5812),
+                            Date = new DateTime(2013, 6, 23, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5031),
                             UserId = 9
                         },
                         new
@@ -4915,7 +4915,7 @@ namespace MoneyManager.Migrations
                             Amount = 4750m,
                             AssetId = 10,
                             CategoryId = 10,
-                            Date = new DateTime(2013, 6, 17, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5814),
+                            Date = new DateTime(2013, 6, 18, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5032),
                             UserId = 10
                         },
                         new
@@ -4924,7 +4924,7 @@ namespace MoneyManager.Migrations
                             Amount = 4750m,
                             AssetId = 11,
                             CategoryId = 13,
-                            Date = new DateTime(2013, 6, 12, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5815),
+                            Date = new DateTime(2013, 6, 13, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5033),
                             UserId = 10
                         },
                         new
@@ -4933,7 +4933,7 @@ namespace MoneyManager.Migrations
                             Amount = 4770m,
                             AssetId = 10,
                             CategoryId = 10,
-                            Date = new DateTime(2013, 6, 7, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5816),
+                            Date = new DateTime(2013, 6, 8, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5034),
                             UserId = 10
                         },
                         new
@@ -4942,7 +4942,7 @@ namespace MoneyManager.Migrations
                             Amount = 4770m,
                             AssetId = 11,
                             CategoryId = 14,
-                            Date = new DateTime(2013, 6, 2, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5817),
+                            Date = new DateTime(2013, 6, 3, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5035),
                             UserId = 10
                         },
                         new
@@ -4951,7 +4951,7 @@ namespace MoneyManager.Migrations
                             Amount = 4790m,
                             AssetId = 10,
                             CategoryId = 10,
-                            Date = new DateTime(2013, 5, 28, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5818),
+                            Date = new DateTime(2013, 5, 29, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5037),
                             UserId = 10
                         },
                         new
@@ -4960,7 +4960,7 @@ namespace MoneyManager.Migrations
                             Amount = 4790m,
                             AssetId = 11,
                             CategoryId = 15,
-                            Date = new DateTime(2013, 5, 23, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5819),
+                            Date = new DateTime(2013, 5, 24, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5038),
                             UserId = 10
                         },
                         new
@@ -4969,7 +4969,7 @@ namespace MoneyManager.Migrations
                             Amount = 4810m,
                             AssetId = 1,
                             CategoryId = 1,
-                            Date = new DateTime(2013, 5, 18, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5821),
+                            Date = new DateTime(2013, 5, 19, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5039),
                             UserId = 1
                         },
                         new
@@ -4978,7 +4978,7 @@ namespace MoneyManager.Migrations
                             Amount = 4810m,
                             AssetId = 2,
                             CategoryId = 4,
-                            Date = new DateTime(2013, 5, 13, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5822),
+                            Date = new DateTime(2013, 5, 14, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5040),
                             UserId = 1
                         },
                         new
@@ -4987,7 +4987,7 @@ namespace MoneyManager.Migrations
                             Amount = 4830m,
                             AssetId = 1,
                             CategoryId = 1,
-                            Date = new DateTime(2013, 5, 8, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5823),
+                            Date = new DateTime(2013, 5, 9, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5041),
                             UserId = 1
                         },
                         new
@@ -4996,7 +4996,7 @@ namespace MoneyManager.Migrations
                             Amount = 4830m,
                             AssetId = 2,
                             CategoryId = 5,
-                            Date = new DateTime(2013, 5, 3, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5824),
+                            Date = new DateTime(2013, 5, 4, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5043),
                             UserId = 1
                         },
                         new
@@ -5005,7 +5005,7 @@ namespace MoneyManager.Migrations
                             Amount = 4850m,
                             AssetId = 1,
                             CategoryId = 1,
-                            Date = new DateTime(2013, 4, 28, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5825),
+                            Date = new DateTime(2013, 4, 29, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5044),
                             UserId = 1
                         },
                         new
@@ -5014,7 +5014,7 @@ namespace MoneyManager.Migrations
                             Amount = 4850m,
                             AssetId = 2,
                             CategoryId = 6,
-                            Date = new DateTime(2013, 4, 23, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5826),
+                            Date = new DateTime(2013, 4, 24, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5045),
                             UserId = 1
                         },
                         new
@@ -5023,7 +5023,7 @@ namespace MoneyManager.Migrations
                             Amount = 4870m,
                             AssetId = 2,
                             CategoryId = 2,
-                            Date = new DateTime(2013, 4, 18, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5828),
+                            Date = new DateTime(2013, 4, 19, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5046),
                             UserId = 2
                         },
                         new
@@ -5032,7 +5032,7 @@ namespace MoneyManager.Migrations
                             Amount = 4870m,
                             AssetId = 3,
                             CategoryId = 5,
-                            Date = new DateTime(2013, 4, 13, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5829),
+                            Date = new DateTime(2013, 4, 14, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5047),
                             UserId = 2
                         },
                         new
@@ -5041,7 +5041,7 @@ namespace MoneyManager.Migrations
                             Amount = 4890m,
                             AssetId = 2,
                             CategoryId = 2,
-                            Date = new DateTime(2013, 4, 8, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5830),
+                            Date = new DateTime(2013, 4, 9, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5048),
                             UserId = 2
                         },
                         new
@@ -5050,7 +5050,7 @@ namespace MoneyManager.Migrations
                             Amount = 4890m,
                             AssetId = 3,
                             CategoryId = 6,
-                            Date = new DateTime(2013, 4, 3, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5831),
+                            Date = new DateTime(2013, 4, 4, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5050),
                             UserId = 2
                         },
                         new
@@ -5059,7 +5059,7 @@ namespace MoneyManager.Migrations
                             Amount = 4910m,
                             AssetId = 2,
                             CategoryId = 2,
-                            Date = new DateTime(2013, 3, 29, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5832),
+                            Date = new DateTime(2013, 3, 30, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5051),
                             UserId = 2
                         },
                         new
@@ -5068,7 +5068,7 @@ namespace MoneyManager.Migrations
                             Amount = 4910m,
                             AssetId = 3,
                             CategoryId = 7,
-                            Date = new DateTime(2013, 3, 24, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5833),
+                            Date = new DateTime(2013, 3, 25, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5052),
                             UserId = 2
                         },
                         new
@@ -5077,7 +5077,7 @@ namespace MoneyManager.Migrations
                             Amount = 4930m,
                             AssetId = 3,
                             CategoryId = 3,
-                            Date = new DateTime(2013, 3, 19, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5835),
+                            Date = new DateTime(2013, 3, 20, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5053),
                             UserId = 3
                         },
                         new
@@ -5086,7 +5086,7 @@ namespace MoneyManager.Migrations
                             Amount = 4930m,
                             AssetId = 4,
                             CategoryId = 6,
-                            Date = new DateTime(2013, 3, 14, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5836),
+                            Date = new DateTime(2013, 3, 15, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5054),
                             UserId = 3
                         },
                         new
@@ -5095,7 +5095,7 @@ namespace MoneyManager.Migrations
                             Amount = 4950m,
                             AssetId = 3,
                             CategoryId = 3,
-                            Date = new DateTime(2013, 3, 9, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5837),
+                            Date = new DateTime(2013, 3, 10, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5055),
                             UserId = 3
                         },
                         new
@@ -5104,7 +5104,7 @@ namespace MoneyManager.Migrations
                             Amount = 4950m,
                             AssetId = 4,
                             CategoryId = 7,
-                            Date = new DateTime(2013, 3, 4, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5838),
+                            Date = new DateTime(2013, 3, 5, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5057),
                             UserId = 3
                         },
                         new
@@ -5113,7 +5113,7 @@ namespace MoneyManager.Migrations
                             Amount = 4970m,
                             AssetId = 3,
                             CategoryId = 3,
-                            Date = new DateTime(2013, 2, 27, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5839),
+                            Date = new DateTime(2013, 2, 28, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5058),
                             UserId = 3
                         },
                         new
@@ -5122,7 +5122,7 @@ namespace MoneyManager.Migrations
                             Amount = 4970m,
                             AssetId = 4,
                             CategoryId = 8,
-                            Date = new DateTime(2013, 2, 22, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5840),
+                            Date = new DateTime(2013, 2, 23, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5059),
                             UserId = 3
                         },
                         new
@@ -5131,7 +5131,7 @@ namespace MoneyManager.Migrations
                             Amount = 4990m,
                             AssetId = 4,
                             CategoryId = 4,
-                            Date = new DateTime(2013, 2, 17, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5842),
+                            Date = new DateTime(2013, 2, 18, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5060),
                             UserId = 4
                         },
                         new
@@ -5140,7 +5140,7 @@ namespace MoneyManager.Migrations
                             Amount = 4990m,
                             AssetId = 5,
                             CategoryId = 7,
-                            Date = new DateTime(2013, 2, 12, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5843),
+                            Date = new DateTime(2013, 2, 13, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5061),
                             UserId = 4
                         },
                         new
@@ -5149,7 +5149,7 @@ namespace MoneyManager.Migrations
                             Amount = 5010m,
                             AssetId = 4,
                             CategoryId = 4,
-                            Date = new DateTime(2013, 2, 7, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5844),
+                            Date = new DateTime(2013, 2, 8, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5062),
                             UserId = 4
                         },
                         new
@@ -5158,7 +5158,7 @@ namespace MoneyManager.Migrations
                             Amount = 5010m,
                             AssetId = 5,
                             CategoryId = 8,
-                            Date = new DateTime(2013, 2, 2, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5845),
+                            Date = new DateTime(2013, 2, 3, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5064),
                             UserId = 4
                         },
                         new
@@ -5167,7 +5167,7 @@ namespace MoneyManager.Migrations
                             Amount = 5030m,
                             AssetId = 4,
                             CategoryId = 4,
-                            Date = new DateTime(2013, 1, 28, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5846),
+                            Date = new DateTime(2013, 1, 29, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5065),
                             UserId = 4
                         },
                         new
@@ -5176,7 +5176,7 @@ namespace MoneyManager.Migrations
                             Amount = 5030m,
                             AssetId = 5,
                             CategoryId = 9,
-                            Date = new DateTime(2013, 1, 23, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5848),
+                            Date = new DateTime(2013, 1, 24, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5066),
                             UserId = 4
                         },
                         new
@@ -5185,7 +5185,7 @@ namespace MoneyManager.Migrations
                             Amount = 5050m,
                             AssetId = 5,
                             CategoryId = 5,
-                            Date = new DateTime(2013, 1, 18, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5849),
+                            Date = new DateTime(2013, 1, 19, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5067),
                             UserId = 5
                         },
                         new
@@ -5194,7 +5194,7 @@ namespace MoneyManager.Migrations
                             Amount = 5050m,
                             AssetId = 6,
                             CategoryId = 8,
-                            Date = new DateTime(2013, 1, 13, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5850),
+                            Date = new DateTime(2013, 1, 14, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5068),
                             UserId = 5
                         },
                         new
@@ -5203,7 +5203,7 @@ namespace MoneyManager.Migrations
                             Amount = 5070m,
                             AssetId = 5,
                             CategoryId = 5,
-                            Date = new DateTime(2013, 1, 8, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5851),
+                            Date = new DateTime(2013, 1, 9, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5069),
                             UserId = 5
                         },
                         new
@@ -5212,7 +5212,7 @@ namespace MoneyManager.Migrations
                             Amount = 5070m,
                             AssetId = 6,
                             CategoryId = 9,
-                            Date = new DateTime(2013, 1, 3, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5852),
+                            Date = new DateTime(2013, 1, 4, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5071),
                             UserId = 5
                         },
                         new
@@ -5221,7 +5221,7 @@ namespace MoneyManager.Migrations
                             Amount = 5090m,
                             AssetId = 5,
                             CategoryId = 5,
-                            Date = new DateTime(2012, 12, 29, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5854),
+                            Date = new DateTime(2012, 12, 30, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5072),
                             UserId = 5
                         },
                         new
@@ -5230,7 +5230,7 @@ namespace MoneyManager.Migrations
                             Amount = 5090m,
                             AssetId = 6,
                             CategoryId = 10,
-                            Date = new DateTime(2012, 12, 24, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5855),
+                            Date = new DateTime(2012, 12, 25, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5073),
                             UserId = 5
                         },
                         new
@@ -5239,7 +5239,7 @@ namespace MoneyManager.Migrations
                             Amount = 5110m,
                             AssetId = 6,
                             CategoryId = 6,
-                            Date = new DateTime(2012, 12, 19, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5856),
+                            Date = new DateTime(2012, 12, 20, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5074),
                             UserId = 6
                         },
                         new
@@ -5248,7 +5248,7 @@ namespace MoneyManager.Migrations
                             Amount = 5110m,
                             AssetId = 7,
                             CategoryId = 9,
-                            Date = new DateTime(2012, 12, 14, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5857),
+                            Date = new DateTime(2012, 12, 15, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5075),
                             UserId = 6
                         },
                         new
@@ -5257,7 +5257,7 @@ namespace MoneyManager.Migrations
                             Amount = 5130m,
                             AssetId = 6,
                             CategoryId = 6,
-                            Date = new DateTime(2012, 12, 9, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5858),
+                            Date = new DateTime(2012, 12, 10, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5076),
                             UserId = 6
                         },
                         new
@@ -5266,7 +5266,7 @@ namespace MoneyManager.Migrations
                             Amount = 5130m,
                             AssetId = 7,
                             CategoryId = 10,
-                            Date = new DateTime(2012, 12, 4, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5939),
+                            Date = new DateTime(2012, 12, 5, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5255),
                             UserId = 6
                         },
                         new
@@ -5275,7 +5275,7 @@ namespace MoneyManager.Migrations
                             Amount = 5150m,
                             AssetId = 6,
                             CategoryId = 6,
-                            Date = new DateTime(2012, 11, 29, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5941),
+                            Date = new DateTime(2012, 11, 30, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5257),
                             UserId = 6
                         },
                         new
@@ -5284,7 +5284,7 @@ namespace MoneyManager.Migrations
                             Amount = 5150m,
                             AssetId = 7,
                             CategoryId = 11,
-                            Date = new DateTime(2012, 11, 24, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5942),
+                            Date = new DateTime(2012, 11, 25, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5258),
                             UserId = 6
                         },
                         new
@@ -5293,7 +5293,7 @@ namespace MoneyManager.Migrations
                             Amount = 5170m,
                             AssetId = 7,
                             CategoryId = 7,
-                            Date = new DateTime(2012, 11, 19, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5943),
+                            Date = new DateTime(2012, 11, 20, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5259),
                             UserId = 7
                         },
                         new
@@ -5302,7 +5302,7 @@ namespace MoneyManager.Migrations
                             Amount = 5170m,
                             AssetId = 8,
                             CategoryId = 10,
-                            Date = new DateTime(2012, 11, 14, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5945),
+                            Date = new DateTime(2012, 11, 15, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5260),
                             UserId = 7
                         },
                         new
@@ -5311,7 +5311,7 @@ namespace MoneyManager.Migrations
                             Amount = 5190m,
                             AssetId = 7,
                             CategoryId = 7,
-                            Date = new DateTime(2012, 11, 9, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5946),
+                            Date = new DateTime(2012, 11, 10, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5261),
                             UserId = 7
                         },
                         new
@@ -5320,7 +5320,7 @@ namespace MoneyManager.Migrations
                             Amount = 5190m,
                             AssetId = 8,
                             CategoryId = 11,
-                            Date = new DateTime(2012, 11, 4, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5947),
+                            Date = new DateTime(2012, 11, 5, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5263),
                             UserId = 7
                         },
                         new
@@ -5329,7 +5329,7 @@ namespace MoneyManager.Migrations
                             Amount = 5210m,
                             AssetId = 7,
                             CategoryId = 7,
-                            Date = new DateTime(2012, 10, 30, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5948),
+                            Date = new DateTime(2012, 10, 31, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5264),
                             UserId = 7
                         },
                         new
@@ -5338,7 +5338,7 @@ namespace MoneyManager.Migrations
                             Amount = 5210m,
                             AssetId = 8,
                             CategoryId = 12,
-                            Date = new DateTime(2012, 10, 25, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5949),
+                            Date = new DateTime(2012, 10, 26, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5265),
                             UserId = 7
                         },
                         new
@@ -5347,7 +5347,7 @@ namespace MoneyManager.Migrations
                             Amount = 5230m,
                             AssetId = 8,
                             CategoryId = 8,
-                            Date = new DateTime(2012, 10, 20, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5950),
+                            Date = new DateTime(2012, 10, 21, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5266),
                             UserId = 8
                         },
                         new
@@ -5356,7 +5356,7 @@ namespace MoneyManager.Migrations
                             Amount = 5230m,
                             AssetId = 9,
                             CategoryId = 11,
-                            Date = new DateTime(2012, 10, 15, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5951),
+                            Date = new DateTime(2012, 10, 16, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5268),
                             UserId = 8
                         },
                         new
@@ -5365,7 +5365,7 @@ namespace MoneyManager.Migrations
                             Amount = 5250m,
                             AssetId = 8,
                             CategoryId = 8,
-                            Date = new DateTime(2012, 10, 10, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5953),
+                            Date = new DateTime(2012, 10, 11, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5269),
                             UserId = 8
                         },
                         new
@@ -5374,7 +5374,7 @@ namespace MoneyManager.Migrations
                             Amount = 5250m,
                             AssetId = 9,
                             CategoryId = 12,
-                            Date = new DateTime(2012, 10, 5, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5954),
+                            Date = new DateTime(2012, 10, 6, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5270),
                             UserId = 8
                         },
                         new
@@ -5383,7 +5383,7 @@ namespace MoneyManager.Migrations
                             Amount = 5270m,
                             AssetId = 8,
                             CategoryId = 8,
-                            Date = new DateTime(2012, 9, 30, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5955),
+                            Date = new DateTime(2012, 10, 1, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5271),
                             UserId = 8
                         },
                         new
@@ -5392,7 +5392,7 @@ namespace MoneyManager.Migrations
                             Amount = 5270m,
                             AssetId = 9,
                             CategoryId = 13,
-                            Date = new DateTime(2012, 9, 25, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5956),
+                            Date = new DateTime(2012, 9, 26, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5272),
                             UserId = 8
                         },
                         new
@@ -5401,7 +5401,7 @@ namespace MoneyManager.Migrations
                             Amount = 5290m,
                             AssetId = 9,
                             CategoryId = 9,
-                            Date = new DateTime(2012, 9, 20, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5957),
+                            Date = new DateTime(2012, 9, 21, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5274),
                             UserId = 9
                         },
                         new
@@ -5410,7 +5410,7 @@ namespace MoneyManager.Migrations
                             Amount = 5290m,
                             AssetId = 10,
                             CategoryId = 12,
-                            Date = new DateTime(2012, 9, 15, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5958),
+                            Date = new DateTime(2012, 9, 16, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5275),
                             UserId = 9
                         },
                         new
@@ -5419,7 +5419,7 @@ namespace MoneyManager.Migrations
                             Amount = 5310m,
                             AssetId = 9,
                             CategoryId = 9,
-                            Date = new DateTime(2012, 9, 10, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5959),
+                            Date = new DateTime(2012, 9, 11, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5276),
                             UserId = 9
                         },
                         new
@@ -5428,7 +5428,7 @@ namespace MoneyManager.Migrations
                             Amount = 5310m,
                             AssetId = 10,
                             CategoryId = 13,
-                            Date = new DateTime(2012, 9, 5, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5960),
+                            Date = new DateTime(2012, 9, 6, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5277),
                             UserId = 9
                         },
                         new
@@ -5437,7 +5437,7 @@ namespace MoneyManager.Migrations
                             Amount = 5330m,
                             AssetId = 9,
                             CategoryId = 9,
-                            Date = new DateTime(2012, 8, 31, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5962),
+                            Date = new DateTime(2012, 9, 1, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5278),
                             UserId = 9
                         },
                         new
@@ -5446,7 +5446,7 @@ namespace MoneyManager.Migrations
                             Amount = 5330m,
                             AssetId = 10,
                             CategoryId = 14,
-                            Date = new DateTime(2012, 8, 26, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5963),
+                            Date = new DateTime(2012, 8, 27, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5280),
                             UserId = 9
                         },
                         new
@@ -5455,7 +5455,7 @@ namespace MoneyManager.Migrations
                             Amount = 5350m,
                             AssetId = 10,
                             CategoryId = 10,
-                            Date = new DateTime(2012, 8, 21, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5964),
+                            Date = new DateTime(2012, 8, 22, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5281),
                             UserId = 10
                         },
                         new
@@ -5464,7 +5464,7 @@ namespace MoneyManager.Migrations
                             Amount = 5350m,
                             AssetId = 11,
                             CategoryId = 13,
-                            Date = new DateTime(2012, 8, 16, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5965),
+                            Date = new DateTime(2012, 8, 17, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5282),
                             UserId = 10
                         },
                         new
@@ -5473,7 +5473,7 @@ namespace MoneyManager.Migrations
                             Amount = 5370m,
                             AssetId = 10,
                             CategoryId = 10,
-                            Date = new DateTime(2012, 8, 11, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5966),
+                            Date = new DateTime(2012, 8, 12, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5283),
                             UserId = 10
                         },
                         new
@@ -5482,7 +5482,7 @@ namespace MoneyManager.Migrations
                             Amount = 5370m,
                             AssetId = 11,
                             CategoryId = 14,
-                            Date = new DateTime(2012, 8, 6, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5968),
+                            Date = new DateTime(2012, 8, 7, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5284),
                             UserId = 10
                         },
                         new
@@ -5491,7 +5491,7 @@ namespace MoneyManager.Migrations
                             Amount = 5390m,
                             AssetId = 10,
                             CategoryId = 10,
-                            Date = new DateTime(2012, 8, 1, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5969),
+                            Date = new DateTime(2012, 8, 2, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5286),
                             UserId = 10
                         },
                         new
@@ -5500,7 +5500,7 @@ namespace MoneyManager.Migrations
                             Amount = 5390m,
                             AssetId = 11,
                             CategoryId = 15,
-                            Date = new DateTime(2012, 7, 27, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5970),
+                            Date = new DateTime(2012, 7, 28, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5287),
                             UserId = 10
                         },
                         new
@@ -5509,7 +5509,7 @@ namespace MoneyManager.Migrations
                             Amount = 5410m,
                             AssetId = 1,
                             CategoryId = 1,
-                            Date = new DateTime(2012, 7, 22, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5971),
+                            Date = new DateTime(2012, 7, 23, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5288),
                             UserId = 1
                         },
                         new
@@ -5518,7 +5518,7 @@ namespace MoneyManager.Migrations
                             Amount = 5410m,
                             AssetId = 2,
                             CategoryId = 4,
-                            Date = new DateTime(2012, 7, 17, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5972),
+                            Date = new DateTime(2012, 7, 18, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5310),
                             UserId = 1
                         },
                         new
@@ -5527,7 +5527,7 @@ namespace MoneyManager.Migrations
                             Amount = 5430m,
                             AssetId = 1,
                             CategoryId = 1,
-                            Date = new DateTime(2012, 7, 12, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5974),
+                            Date = new DateTime(2012, 7, 13, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5311),
                             UserId = 1
                         },
                         new
@@ -5536,7 +5536,7 @@ namespace MoneyManager.Migrations
                             Amount = 5430m,
                             AssetId = 2,
                             CategoryId = 5,
-                            Date = new DateTime(2012, 7, 7, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5975),
+                            Date = new DateTime(2012, 7, 8, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5312),
                             UserId = 1
                         },
                         new
@@ -5545,7 +5545,7 @@ namespace MoneyManager.Migrations
                             Amount = 5450m,
                             AssetId = 1,
                             CategoryId = 1,
-                            Date = new DateTime(2012, 7, 2, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5976),
+                            Date = new DateTime(2012, 7, 3, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5313),
                             UserId = 1
                         },
                         new
@@ -5554,7 +5554,7 @@ namespace MoneyManager.Migrations
                             Amount = 5450m,
                             AssetId = 2,
                             CategoryId = 6,
-                            Date = new DateTime(2012, 6, 27, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5977),
+                            Date = new DateTime(2012, 6, 28, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5314),
                             UserId = 1
                         },
                         new
@@ -5563,7 +5563,7 @@ namespace MoneyManager.Migrations
                             Amount = 5470m,
                             AssetId = 2,
                             CategoryId = 2,
-                            Date = new DateTime(2012, 6, 22, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5978),
+                            Date = new DateTime(2012, 6, 23, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5315),
                             UserId = 2
                         },
                         new
@@ -5572,7 +5572,7 @@ namespace MoneyManager.Migrations
                             Amount = 5470m,
                             AssetId = 3,
                             CategoryId = 5,
-                            Date = new DateTime(2012, 6, 17, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5979),
+                            Date = new DateTime(2012, 6, 18, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5317),
                             UserId = 2
                         },
                         new
@@ -5581,7 +5581,7 @@ namespace MoneyManager.Migrations
                             Amount = 5490m,
                             AssetId = 2,
                             CategoryId = 2,
-                            Date = new DateTime(2012, 6, 12, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5980),
+                            Date = new DateTime(2012, 6, 13, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5318),
                             UserId = 2
                         },
                         new
@@ -5590,7 +5590,7 @@ namespace MoneyManager.Migrations
                             Amount = 5490m,
                             AssetId = 3,
                             CategoryId = 6,
-                            Date = new DateTime(2012, 6, 7, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5982),
+                            Date = new DateTime(2012, 6, 8, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5319),
                             UserId = 2
                         },
                         new
@@ -5599,7 +5599,7 @@ namespace MoneyManager.Migrations
                             Amount = 5510m,
                             AssetId = 2,
                             CategoryId = 2,
-                            Date = new DateTime(2012, 6, 2, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5983),
+                            Date = new DateTime(2012, 6, 3, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5320),
                             UserId = 2
                         },
                         new
@@ -5608,7 +5608,7 @@ namespace MoneyManager.Migrations
                             Amount = 5510m,
                             AssetId = 3,
                             CategoryId = 7,
-                            Date = new DateTime(2012, 5, 28, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5984),
+                            Date = new DateTime(2012, 5, 29, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5321),
                             UserId = 2
                         },
                         new
@@ -5617,7 +5617,7 @@ namespace MoneyManager.Migrations
                             Amount = 5530m,
                             AssetId = 3,
                             CategoryId = 3,
-                            Date = new DateTime(2012, 5, 23, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5985),
+                            Date = new DateTime(2012, 5, 24, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5323),
                             UserId = 3
                         },
                         new
@@ -5626,7 +5626,7 @@ namespace MoneyManager.Migrations
                             Amount = 5530m,
                             AssetId = 4,
                             CategoryId = 6,
-                            Date = new DateTime(2012, 5, 18, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5986),
+                            Date = new DateTime(2012, 5, 19, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5324),
                             UserId = 3
                         },
                         new
@@ -5635,7 +5635,7 @@ namespace MoneyManager.Migrations
                             Amount = 5550m,
                             AssetId = 3,
                             CategoryId = 3,
-                            Date = new DateTime(2012, 5, 13, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5987),
+                            Date = new DateTime(2012, 5, 14, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5325),
                             UserId = 3
                         },
                         new
@@ -5644,7 +5644,7 @@ namespace MoneyManager.Migrations
                             Amount = 5550m,
                             AssetId = 4,
                             CategoryId = 7,
-                            Date = new DateTime(2012, 5, 8, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5988),
+                            Date = new DateTime(2012, 5, 9, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5326),
                             UserId = 3
                         },
                         new
@@ -5653,7 +5653,7 @@ namespace MoneyManager.Migrations
                             Amount = 5570m,
                             AssetId = 3,
                             CategoryId = 3,
-                            Date = new DateTime(2012, 5, 3, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5990),
+                            Date = new DateTime(2012, 5, 4, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5327),
                             UserId = 3
                         },
                         new
@@ -5662,7 +5662,7 @@ namespace MoneyManager.Migrations
                             Amount = 5570m,
                             AssetId = 4,
                             CategoryId = 8,
-                            Date = new DateTime(2012, 4, 28, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5991),
+                            Date = new DateTime(2012, 4, 29, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5328),
                             UserId = 3
                         },
                         new
@@ -5671,7 +5671,7 @@ namespace MoneyManager.Migrations
                             Amount = 5590m,
                             AssetId = 4,
                             CategoryId = 4,
-                            Date = new DateTime(2012, 4, 23, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5992),
+                            Date = new DateTime(2012, 4, 24, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5330),
                             UserId = 4
                         },
                         new
@@ -5680,7 +5680,7 @@ namespace MoneyManager.Migrations
                             Amount = 5590m,
                             AssetId = 5,
                             CategoryId = 7,
-                            Date = new DateTime(2012, 4, 18, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5993),
+                            Date = new DateTime(2012, 4, 19, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5331),
                             UserId = 4
                         },
                         new
@@ -5689,7 +5689,7 @@ namespace MoneyManager.Migrations
                             Amount = 5610m,
                             AssetId = 4,
                             CategoryId = 4,
-                            Date = new DateTime(2012, 4, 13, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5994),
+                            Date = new DateTime(2012, 4, 14, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5332),
                             UserId = 4
                         },
                         new
@@ -5698,7 +5698,7 @@ namespace MoneyManager.Migrations
                             Amount = 5610m,
                             AssetId = 5,
                             CategoryId = 8,
-                            Date = new DateTime(2012, 4, 8, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5995),
+                            Date = new DateTime(2012, 4, 9, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5333),
                             UserId = 4
                         },
                         new
@@ -5707,7 +5707,7 @@ namespace MoneyManager.Migrations
                             Amount = 5630m,
                             AssetId = 4,
                             CategoryId = 4,
-                            Date = new DateTime(2012, 4, 3, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5996),
+                            Date = new DateTime(2012, 4, 4, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5334),
                             UserId = 4
                         },
                         new
@@ -5716,7 +5716,7 @@ namespace MoneyManager.Migrations
                             Amount = 5630m,
                             AssetId = 5,
                             CategoryId = 9,
-                            Date = new DateTime(2012, 3, 29, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5997),
+                            Date = new DateTime(2012, 3, 30, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5335),
                             UserId = 4
                         },
                         new
@@ -5725,7 +5725,7 @@ namespace MoneyManager.Migrations
                             Amount = 5650m,
                             AssetId = 5,
                             CategoryId = 5,
-                            Date = new DateTime(2012, 3, 24, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(5999),
+                            Date = new DateTime(2012, 3, 25, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5337),
                             UserId = 5
                         },
                         new
@@ -5734,7 +5734,7 @@ namespace MoneyManager.Migrations
                             Amount = 5650m,
                             AssetId = 6,
                             CategoryId = 8,
-                            Date = new DateTime(2012, 3, 19, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(6000),
+                            Date = new DateTime(2012, 3, 20, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5338),
                             UserId = 5
                         },
                         new
@@ -5743,7 +5743,7 @@ namespace MoneyManager.Migrations
                             Amount = 5670m,
                             AssetId = 5,
                             CategoryId = 5,
-                            Date = new DateTime(2012, 3, 14, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(6001),
+                            Date = new DateTime(2012, 3, 15, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5339),
                             UserId = 5
                         },
                         new
@@ -5752,7 +5752,7 @@ namespace MoneyManager.Migrations
                             Amount = 5670m,
                             AssetId = 6,
                             CategoryId = 9,
-                            Date = new DateTime(2012, 3, 9, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(6002),
+                            Date = new DateTime(2012, 3, 10, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5340),
                             UserId = 5
                         },
                         new
@@ -5761,7 +5761,7 @@ namespace MoneyManager.Migrations
                             Amount = 5690m,
                             AssetId = 5,
                             CategoryId = 5,
-                            Date = new DateTime(2012, 3, 4, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(6003),
+                            Date = new DateTime(2012, 3, 5, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5341),
                             UserId = 5
                         },
                         new
@@ -5770,7 +5770,7 @@ namespace MoneyManager.Migrations
                             Amount = 5690m,
                             AssetId = 6,
                             CategoryId = 10,
-                            Date = new DateTime(2012, 2, 28, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(6005),
+                            Date = new DateTime(2012, 2, 29, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5343),
                             UserId = 5
                         },
                         new
@@ -5779,7 +5779,7 @@ namespace MoneyManager.Migrations
                             Amount = 5710m,
                             AssetId = 6,
                             CategoryId = 6,
-                            Date = new DateTime(2012, 2, 23, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(6006),
+                            Date = new DateTime(2012, 2, 24, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5344),
                             UserId = 6
                         },
                         new
@@ -5788,7 +5788,7 @@ namespace MoneyManager.Migrations
                             Amount = 5710m,
                             AssetId = 7,
                             CategoryId = 9,
-                            Date = new DateTime(2012, 2, 18, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(6007),
+                            Date = new DateTime(2012, 2, 19, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5345),
                             UserId = 6
                         },
                         new
@@ -5797,7 +5797,7 @@ namespace MoneyManager.Migrations
                             Amount = 5730m,
                             AssetId = 6,
                             CategoryId = 6,
-                            Date = new DateTime(2012, 2, 13, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(6008),
+                            Date = new DateTime(2012, 2, 14, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5346),
                             UserId = 6
                         },
                         new
@@ -5806,7 +5806,7 @@ namespace MoneyManager.Migrations
                             Amount = 5730m,
                             AssetId = 7,
                             CategoryId = 10,
-                            Date = new DateTime(2012, 2, 8, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(6009),
+                            Date = new DateTime(2012, 2, 9, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5348),
                             UserId = 6
                         },
                         new
@@ -5815,7 +5815,7 @@ namespace MoneyManager.Migrations
                             Amount = 5750m,
                             AssetId = 6,
                             CategoryId = 6,
-                            Date = new DateTime(2012, 2, 3, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(6010),
+                            Date = new DateTime(2012, 2, 4, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5349),
                             UserId = 6
                         },
                         new
@@ -5824,7 +5824,7 @@ namespace MoneyManager.Migrations
                             Amount = 5750m,
                             AssetId = 7,
                             CategoryId = 11,
-                            Date = new DateTime(2012, 1, 29, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(6011),
+                            Date = new DateTime(2012, 1, 30, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5350),
                             UserId = 6
                         },
                         new
@@ -5833,7 +5833,7 @@ namespace MoneyManager.Migrations
                             Amount = 5770m,
                             AssetId = 7,
                             CategoryId = 7,
-                            Date = new DateTime(2012, 1, 24, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(6013),
+                            Date = new DateTime(2012, 1, 25, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5351),
                             UserId = 7
                         },
                         new
@@ -5842,7 +5842,7 @@ namespace MoneyManager.Migrations
                             Amount = 5770m,
                             AssetId = 8,
                             CategoryId = 10,
-                            Date = new DateTime(2012, 1, 19, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(6014),
+                            Date = new DateTime(2012, 1, 20, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5352),
                             UserId = 7
                         },
                         new
@@ -5851,7 +5851,7 @@ namespace MoneyManager.Migrations
                             Amount = 5790m,
                             AssetId = 7,
                             CategoryId = 7,
-                            Date = new DateTime(2012, 1, 14, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(6015),
+                            Date = new DateTime(2012, 1, 15, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5354),
                             UserId = 7
                         },
                         new
@@ -5860,7 +5860,7 @@ namespace MoneyManager.Migrations
                             Amount = 5790m,
                             AssetId = 8,
                             CategoryId = 11,
-                            Date = new DateTime(2012, 1, 9, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(6052),
+                            Date = new DateTime(2012, 1, 10, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5355),
                             UserId = 7
                         },
                         new
@@ -5869,7 +5869,7 @@ namespace MoneyManager.Migrations
                             Amount = 5810m,
                             AssetId = 7,
                             CategoryId = 7,
-                            Date = new DateTime(2012, 1, 4, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(6053),
+                            Date = new DateTime(2012, 1, 5, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5356),
                             UserId = 7
                         },
                         new
@@ -5878,7 +5878,7 @@ namespace MoneyManager.Migrations
                             Amount = 5810m,
                             AssetId = 8,
                             CategoryId = 12,
-                            Date = new DateTime(2011, 12, 30, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(6054),
+                            Date = new DateTime(2011, 12, 31, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5357),
                             UserId = 7
                         },
                         new
@@ -5887,7 +5887,7 @@ namespace MoneyManager.Migrations
                             Amount = 5830m,
                             AssetId = 8,
                             CategoryId = 8,
-                            Date = new DateTime(2011, 12, 25, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(6055),
+                            Date = new DateTime(2011, 12, 26, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5358),
                             UserId = 8
                         },
                         new
@@ -5896,7 +5896,7 @@ namespace MoneyManager.Migrations
                             Amount = 5830m,
                             AssetId = 9,
                             CategoryId = 11,
-                            Date = new DateTime(2011, 12, 20, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(6056),
+                            Date = new DateTime(2011, 12, 21, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5359),
                             UserId = 8
                         },
                         new
@@ -5905,7 +5905,7 @@ namespace MoneyManager.Migrations
                             Amount = 5850m,
                             AssetId = 8,
                             CategoryId = 8,
-                            Date = new DateTime(2011, 12, 15, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(6057),
+                            Date = new DateTime(2011, 12, 16, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5361),
                             UserId = 8
                         },
                         new
@@ -5914,7 +5914,7 @@ namespace MoneyManager.Migrations
                             Amount = 5850m,
                             AssetId = 9,
                             CategoryId = 12,
-                            Date = new DateTime(2011, 12, 10, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(6059),
+                            Date = new DateTime(2011, 12, 11, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5362),
                             UserId = 8
                         },
                         new
@@ -5923,7 +5923,7 @@ namespace MoneyManager.Migrations
                             Amount = 5870m,
                             AssetId = 8,
                             CategoryId = 8,
-                            Date = new DateTime(2011, 12, 5, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(6060),
+                            Date = new DateTime(2011, 12, 6, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5363),
                             UserId = 8
                         },
                         new
@@ -5932,7 +5932,7 @@ namespace MoneyManager.Migrations
                             Amount = 5870m,
                             AssetId = 9,
                             CategoryId = 13,
-                            Date = new DateTime(2011, 11, 30, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(6061),
+                            Date = new DateTime(2011, 12, 1, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5364),
                             UserId = 8
                         },
                         new
@@ -5941,7 +5941,7 @@ namespace MoneyManager.Migrations
                             Amount = 5890m,
                             AssetId = 9,
                             CategoryId = 9,
-                            Date = new DateTime(2011, 11, 25, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(6062),
+                            Date = new DateTime(2011, 11, 26, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5365),
                             UserId = 9
                         },
                         new
@@ -5950,7 +5950,7 @@ namespace MoneyManager.Migrations
                             Amount = 5890m,
                             AssetId = 10,
                             CategoryId = 12,
-                            Date = new DateTime(2011, 11, 20, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(6063),
+                            Date = new DateTime(2011, 11, 21, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5367),
                             UserId = 9
                         },
                         new
@@ -5959,7 +5959,7 @@ namespace MoneyManager.Migrations
                             Amount = 5910m,
                             AssetId = 9,
                             CategoryId = 9,
-                            Date = new DateTime(2011, 11, 15, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(6064),
+                            Date = new DateTime(2011, 11, 16, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5368),
                             UserId = 9
                         },
                         new
@@ -5968,7 +5968,7 @@ namespace MoneyManager.Migrations
                             Amount = 5910m,
                             AssetId = 10,
                             CategoryId = 13,
-                            Date = new DateTime(2011, 11, 10, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(6065),
+                            Date = new DateTime(2011, 11, 11, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5369),
                             UserId = 9
                         },
                         new
@@ -5977,7 +5977,7 @@ namespace MoneyManager.Migrations
                             Amount = 5930m,
                             AssetId = 9,
                             CategoryId = 9,
-                            Date = new DateTime(2011, 11, 5, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(6067),
+                            Date = new DateTime(2011, 11, 6, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5370),
                             UserId = 9
                         },
                         new
@@ -5986,7 +5986,7 @@ namespace MoneyManager.Migrations
                             Amount = 5930m,
                             AssetId = 10,
                             CategoryId = 14,
-                            Date = new DateTime(2011, 10, 31, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(6068),
+                            Date = new DateTime(2011, 11, 1, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5371),
                             UserId = 9
                         },
                         new
@@ -5995,7 +5995,7 @@ namespace MoneyManager.Migrations
                             Amount = 5950m,
                             AssetId = 10,
                             CategoryId = 10,
-                            Date = new DateTime(2011, 10, 26, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(6069),
+                            Date = new DateTime(2011, 10, 27, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5372),
                             UserId = 10
                         },
                         new
@@ -6004,7 +6004,7 @@ namespace MoneyManager.Migrations
                             Amount = 5950m,
                             AssetId = 11,
                             CategoryId = 13,
-                            Date = new DateTime(2011, 10, 21, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(6070),
+                            Date = new DateTime(2011, 10, 22, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5374),
                             UserId = 10
                         },
                         new
@@ -6013,7 +6013,7 @@ namespace MoneyManager.Migrations
                             Amount = 5970m,
                             AssetId = 10,
                             CategoryId = 10,
-                            Date = new DateTime(2011, 10, 16, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(6071),
+                            Date = new DateTime(2011, 10, 17, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5375),
                             UserId = 10
                         },
                         new
@@ -6022,7 +6022,7 @@ namespace MoneyManager.Migrations
                             Amount = 5970m,
                             AssetId = 11,
                             CategoryId = 14,
-                            Date = new DateTime(2011, 10, 11, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(6072),
+                            Date = new DateTime(2011, 10, 12, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5376),
                             UserId = 10
                         },
                         new
@@ -6031,7 +6031,7 @@ namespace MoneyManager.Migrations
                             Amount = 5990m,
                             AssetId = 10,
                             CategoryId = 10,
-                            Date = new DateTime(2011, 10, 6, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(6073),
+                            Date = new DateTime(2011, 10, 7, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5377),
                             UserId = 10
                         },
                         new
@@ -6040,7 +6040,7 @@ namespace MoneyManager.Migrations
                             Amount = 5990m,
                             AssetId = 11,
                             CategoryId = 15,
-                            Date = new DateTime(2011, 10, 1, 15, 56, 25, 748, DateTimeKind.Local).AddTicks(6075),
+                            Date = new DateTime(2011, 10, 2, 15, 48, 37, 655, DateTimeKind.Local).AddTicks(5378),
                             UserId = 10
                         });
                 });

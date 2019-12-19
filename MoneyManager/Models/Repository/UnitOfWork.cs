@@ -14,6 +14,9 @@ namespace MoneyManager.Models
         }
 
         UserRepository userRepository;
+
+        public DbContext Context => context;
+
         public UserRepository UserRepository
         {
             get { return userRepository ??= new UserRepository(context); }

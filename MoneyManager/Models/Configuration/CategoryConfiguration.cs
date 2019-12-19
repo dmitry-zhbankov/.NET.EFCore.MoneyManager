@@ -9,7 +9,6 @@ namespace MoneyManager.Models
         public void Configure(EntityTypeBuilder<Category> builder)
         {
             builder.HasData(CreateCategories());
-
         }
 
         IEnumerable<object> CreateCategories()

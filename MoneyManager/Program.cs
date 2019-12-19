@@ -4,6 +4,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -32,15 +34,19 @@ namespace MoneyManager
 
     public static class MigrationManager
     {
+        public static IUnitOfWork UnitOfWorkInstance { get; private set; }
         public static IHost MigrateDatabase(this IHost webHost)
         {
             using (var scope = webHost.Services.CreateScope())
             {
+                UnitOfWorkInstance = scope.ServiceProvider.GetRequiredService<IUnitOfWork>();
                 var appContext = scope.ServiceProvider.GetRequiredService<MoneyContext>();
                 {
                     try
                     {
-                        appContext.Database.Migrate();
+                        var migrator= appContext.GetInfrastructure().GetService<IMigrator>();
+                        migrator.Migrate("20191219130000_ManualMigration");
+                        //appContext.Database.Migrate();
                     }
                     catch (Exception)
                     {
