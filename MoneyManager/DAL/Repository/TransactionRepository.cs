@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace MoneyManager.Models
 {
-    public class TransactionRepository : GenericRepository<Transaction>
+    public class TransactionRepository : GenericRepository<Transaction>, ITransactionRepository
     {
         public TransactionRepository(MoneyContext context) : base(context)
         {
@@ -19,6 +19,7 @@ namespace MoneyManager.Models
                 .OrderByDescending(x => x.Date);
             return query.ToList();
         }
+
         public IEnumerable<Transaction> GetUserTransactions(int userId)
         {
             var transactions = Get(x => x.User.UserId == userId).OrderByDescending(x => x.Date)
@@ -28,7 +29,8 @@ namespace MoneyManager.Models
 
         public void DeleteAllUserMonthTransactions(int userId)
         {
-            var transactions = dbSet.Where(x => x.Date.Month == DateTime.Now.Month&&x.Date.Year==DateTime.Now.Year && x.User.UserId == userId);
+            var transactions = dbSet.Where(x =>
+                x.Date.Month == DateTime.Now.Month && x.Date.Year == DateTime.Now.Year && x.User.UserId == userId);
             dbSet.RemoveRange(transactions);
         }
     }

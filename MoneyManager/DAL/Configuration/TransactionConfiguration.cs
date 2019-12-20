@@ -52,8 +52,6 @@ namespace MoneyManager.Models
             }
 
             return list;
-
         }
     }
-
 }

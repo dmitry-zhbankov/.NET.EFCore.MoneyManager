@@ -35,6 +35,7 @@ namespace MoneyManager
     public static class MigrationManager
     {
         public static IUnitOfWork UnitOfWorkInstance { get; private set; }
+        
         public static IHost MigrateDatabase(this IHost webHost)
         {
             using (var scope = webHost.Services.CreateScope())
@@ -44,13 +45,12 @@ namespace MoneyManager
                 {
                     try
                     {
-                        var migrator= appContext.GetInfrastructure().GetService<IMigrator>();
+                        var migrator = appContext.GetInfrastructure().GetService<IMigrator>();
                         migrator.Migrate("20191219130000_ManualMigration");
-                        //appContext.Database.Migrate();
                     }
-                    catch (Exception)
+                    catch (Exception exception)
                     {
-                        //Log errors or do anything you think it's needed
+                        Console.WriteLine(exception.Message);
                         throw;
                     }
                 }

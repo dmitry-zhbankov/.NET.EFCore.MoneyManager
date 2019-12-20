@@ -25,10 +25,14 @@ namespace MoneyManager
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllersWithViews();            
+            services.AddControllersWithViews();
             services.AddDbContext<MoneyContext>(options =>
-                options.UseSqlite(Configuration.GetConnectionString("MoneyDatabase")),ServiceLifetime.Singleton);
-            services.AddSingleton<IUnitOfWork,UnitOfWork>();
+                options.UseSqlite(Configuration.GetConnectionString("MoneyDatabase")), ServiceLifetime.Singleton);
+            services.AddSingleton<IUserRepository, UserRepository>();
+            services.AddSingleton<IAssetRepository, AssetRepository>();
+            services.AddSingleton<ICategoryRepository, CategoryRepository>();
+            services.AddSingleton<ITransactionRepository, TransactionRepository>();
+            services.AddSingleton<IUnitOfWork, UnitOfWork>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

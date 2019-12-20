@@ -11,7 +11,7 @@ namespace MoneyManager.Models
         {
             builder.HasData(CreateAssets());
         }
-        
+
         ICollection<object> CreateAssets()
         {
             List<object> list = new List<object>();
@@ -19,22 +19,22 @@ namespace MoneyManager.Models
             for (int i = 1; i <= 10; i++)
             {
                 list.Add(
-                    new 
+                    new
                     {
-                        AssetId=counter,
+                        AssetId = counter,
                         Name = $"User{i}Asset1",
-                        Balance=new decimal(0),
-                        UserId=i
+                        Balance = new decimal(0),
+                        UserId = i
                     }
                 );
                 counter++;
                 list.Add(
-                    new 
+                    new
                     {
                         AssetId = counter,
                         Name = $"User{i}Asset2",
                         Balance = new decimal(0),
-                        UserId =i
+                        UserId = i
                     }
                 );
                 counter++;
@@ -42,6 +42,5 @@ namespace MoneyManager.Models
 
             return list;
         }
-
     }
 }

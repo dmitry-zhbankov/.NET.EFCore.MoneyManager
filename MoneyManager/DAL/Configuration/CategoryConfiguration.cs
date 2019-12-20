@@ -76,12 +76,9 @@ namespace MoneyManager.Models
                     }
                 );
                 counter++;
-
             }
 
             return list;
-
         }
     }
-
 }

@@ -8,15 +8,13 @@ namespace MoneyManager.Models
     {
         public int CategoryId { get; set; }
 
-        [Required]
-        public string Name { get; set; }
+        [Required] public string Name { get; set; }
 
         public ICollection<Category> Children { get; set; }
 
         public Category Parent { get; set; }
 
-        [Required]
-        public CategoryType Type { get; set; }
+        [Required] public CategoryType Type { get; set; }
 
         public ICollection<UserCategory> UserCategories { get; set; }
 

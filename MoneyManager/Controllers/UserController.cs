@@ -34,6 +34,7 @@ namespace MoneyManager.Controllers
             {
                 return BadRequest();
             }
+
             try
             {
                 unitOfWork.UserRepository.Create(user);
@@ -43,6 +44,7 @@ namespace MoneyManager.Controllers
             {
                 return View();
             }
+
             return RedirectToAction("Index");
         }
 
@@ -52,7 +54,8 @@ namespace MoneyManager.Controllers
             {
                 return BadRequest();
             }
-            User user = unitOfWork.UserRepository.GetById((int)userId);
+
+            User user = unitOfWork.UserRepository.GetById((int) userId);
             return View(user);
         }
 
@@ -62,9 +65,10 @@ namespace MoneyManager.Controllers
             {
                 return BadRequest();
             }
+
             try
             {
-                unitOfWork.UserRepository.Delete((int)userId);
+                unitOfWork.UserRepository.Delete((int) userId);
                 unitOfWork.Save();
             }
             catch
@@ -72,6 +76,7 @@ namespace MoneyManager.Controllers
                 ViewBag.Message = "Delete error";
                 return View();
             }
+
             ViewBag.Message = "Successfully deleted";
             return View();
         }
@@ -82,7 +87,8 @@ namespace MoneyManager.Controllers
             {
                 return BadRequest();
             }
-            var user = unitOfWork.UserRepository.GetById((int)userId);
+
+            var user = unitOfWork.UserRepository.GetById((int) userId);
             return View(user);
         }
 
@@ -93,7 +99,8 @@ namespace MoneyManager.Controllers
             {
                 return BadRequest();
             }
-            var user = unitOfWork.UserRepository.GetById((int)userId);
+
+            var user = unitOfWork.UserRepository.GetById((int) userId);
             if (await TryUpdateModelAsync(user))
             {
                 try
@@ -105,8 +112,10 @@ namespace MoneyManager.Controllers
                 {
                     return View(user);
                 }
+
                 return RedirectToAction("Index");
             }
+
             return View(user);
         }
 
@@ -114,13 +123,14 @@ namespace MoneyManager.Controllers
         [HttpPost]
         public ActionResult Search(User userEmail)
         {
-            var users= unitOfWork.UserRepository.GetByEmail(userEmail.Email);
-            if (users==null||users?.Count()==0)
+            var users = unitOfWork.UserRepository.GetByEmail(userEmail.Email);
+            if (users == null || users?.Count() == 0)
             {
                 ViewBag.Message = "Not found";
                 users = unitOfWork.UserRepository.Get((user) => true);
-                return View("Index",users);
+                return View("Index", users);
             }
+
             return View("Index", users);
         }
     }

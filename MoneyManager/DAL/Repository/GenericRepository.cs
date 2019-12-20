@@ -14,7 +14,7 @@ namespace MoneyManager.Models
         public GenericRepository(MoneyContext context)
         {
             this.context = context;
-            this.dbSet = context.Set<T>();
+            dbSet = context.Set<T>();
         }
 
         public virtual void Create(T entity)
@@ -24,14 +24,13 @@ namespace MoneyManager.Models
 
         public virtual void Delete(int id)
         {
-            T entity = dbSet.Find(id);
+            var entity = dbSet.Find(id);
             dbSet.Remove(entity);
         }
 
         public virtual IEnumerable<T> Get(Expression<Func<T, bool>> filter)
         {
-            IQueryable<T> query = dbSet;
-            query = query.Where(filter);
+            var query = dbSet.Where(filter);
             return query.ToList();
         }
 

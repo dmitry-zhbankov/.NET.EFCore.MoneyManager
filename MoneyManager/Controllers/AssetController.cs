@@ -1,16 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using MoneyManager.Models;
 
 namespace MoneyManager.Controllers
 {
     public class AssetController : Controller
     {
-
-        IUnitOfWork unitOfWork;
+        private readonly IUnitOfWork unitOfWork;
 
         public AssetController(IUnitOfWork unitOfWork)
         {
@@ -19,12 +14,9 @@ namespace MoneyManager.Controllers
 
         public IActionResult Create(int? userId)
         {
-            if (userId == null)
-            {
-                return BadRequest();
-            }
-            var user = unitOfWork.UserRepository.GetById((int)userId);
-            var asset=new Asset();
+            if (userId == null) return BadRequest();
+            var user = unitOfWork.UserRepository.GetById((int) userId);
+            var asset = new Asset();
             asset.User = user;
             return View(asset);
         }
@@ -32,10 +24,7 @@ namespace MoneyManager.Controllers
         [HttpPost]
         public ActionResult Create(Asset asset)
         {
-            if (asset == null)
-            {
-                return BadRequest();
-            }
+            if (asset == null) return BadRequest();
             try
             {
                 var user = unitOfWork.UserRepository.GetById(asset.User.UserId);
@@ -47,18 +36,15 @@ namespace MoneyManager.Controllers
             {
                 return View();
             }
-            return RedirectToAction("Index",new {userId=asset.User.UserId});
-        }
 
+            return RedirectToAction("Index", new {userId = asset.User.UserId});
+        }
 
         public IActionResult Index(int? userId)
         {
-            if (userId == null)
-            {
-                return BadRequest();
-            }
-            var assets = unitOfWork.AssetRepository.GetByUser((int)userId);
-            ViewBag.User = unitOfWork.UserRepository.GetById((int)userId);
+            if (userId == null) return BadRequest();
+            var assets = unitOfWork.AssetRepository.GetByUser((int) userId);
+            ViewBag.User = unitOfWork.UserRepository.GetById((int) userId);
             return View(assets);
         }
     }

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -24,22 +21,18 @@ namespace MoneyManager.Models
             builder.HasData(CreateUserCategories());
         }
 
-        IEnumerable<object> CreateUserCategories()
+        private IEnumerable<object> CreateUserCategories()
         {
-            List<object> list = new List<object>();
+            var list = new List<object>();
             for (var i = 1; i <= 10; i++)
-            {
-                for (var j = 1; j <= i*6; j++) 
-                {
-                    list.Add(
-                        new
-                        {
-                            UserId = i,
-                            CategoryId = j
-                        }
-                    );
-                }
-            }
+            for (var j = 1; j <= i * 6; j++)
+                list.Add(
+                    new
+                    {
+                        UserId = i,
+                        CategoryId = j
+                    }
+                );
 
             return list;
         }

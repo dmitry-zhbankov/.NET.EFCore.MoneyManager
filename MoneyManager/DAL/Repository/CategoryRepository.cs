@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace MoneyManager.Models
 {
-    public class CategoryRepository : GenericRepository<Category>
+    public class CategoryRepository : GenericRepository<Category>, ICategoryRepository
     {
         public CategoryRepository(MoneyContext context) : base(context)
         {
@@ -17,11 +17,10 @@ namespace MoneyManager.Models
             return dbSet.Include(x => x.Children).FirstOrDefault(y => y.CategoryId == id);
         }
 
-        public override IEnumerable <Category> Get(Expression<Func<Category, bool>> filter)
+        public override IEnumerable<Category> Get(Expression<Func<Category, bool>> filter)
         {
-            IQueryable<Category> query = dbSet;
-            query = query.Where(filter).Include(x => x.UserCategories).Include(x=>x.Children);
-            return query.ToList();
+            var categories = dbSet.Where(filter).Include(x => x.UserCategories).Include(x => x.Children);
+            return categories.ToList();
         }
     }
 }

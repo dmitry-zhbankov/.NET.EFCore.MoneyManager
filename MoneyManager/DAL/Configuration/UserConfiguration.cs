@@ -11,21 +11,19 @@ namespace MoneyManager.Models
             builder.HasData(CreateUsers());
         }
 
-        IEnumerable<User> CreateUsers()
+        private IEnumerable<User> CreateUsers()
         {
-            var list=new List<User>();
+            var list = new List<User>();
             for (var i = 1; i <= 10; i++)
-            {
                 list.Add(
-                        new User
-                        {
-                            UserId = i,
-                            Name = $"User{i}",
-                            Email = $"email{i}",
-                        });
-            }
+                    new User
+                    {
+                        UserId = i,
+                        Name = $"User{i}",
+                        Email = $"email{i}"
+                    });
+
             return list;
         }
-
     }
 }

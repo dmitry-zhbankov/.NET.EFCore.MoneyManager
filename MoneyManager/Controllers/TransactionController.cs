@@ -22,7 +22,7 @@ namespace MoneyManager.Controllers
             IEnumerable<Transaction> transactions;
             if (userId != null)
             {
-                transactions = unitOfWork.TransactionRepository.GetUserTransactions((int)userId);
+                transactions = unitOfWork.TransactionRepository.GetUserTransactions((int) userId);
                 ViewBag.UserId = userId;
                 return View(transactions);
             }
@@ -37,8 +37,9 @@ namespace MoneyManager.Controllers
             {
                 return BadRequest();
             }
+
             var transaction = new Transaction();
-            transaction.User = unitOfWork.UserRepository.GetById((int)userId);
+            transaction.User = unitOfWork.UserRepository.GetById((int) userId);
             return View(transaction);
         }
 
@@ -88,7 +89,7 @@ namespace MoneyManager.Controllers
                 return View(transaction);
             }
 
-            return RedirectToAction("Index", new { userId = transaction.User.UserId });
+            return RedirectToAction("Index", new {userId = transaction.User.UserId});
         }
 
         public IActionResult DeleteMonthTransactions(int? userId)
@@ -100,9 +101,9 @@ namespace MoneyManager.Controllers
 
             try
             {
-                unitOfWork.TransactionRepository.DeleteAllUserMonthTransactions((int)userId);
+                unitOfWork.TransactionRepository.DeleteAllUserMonthTransactions((int) userId);
                 TempData["Message"] = $"Successfully deleted {unitOfWork.Save()} records";
-                return RedirectToAction("Index", new { userId = userId });
+                return RedirectToAction("Index", new {userId = userId});
             }
             catch
             {
