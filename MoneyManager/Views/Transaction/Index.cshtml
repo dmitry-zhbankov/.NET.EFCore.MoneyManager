@@ -1,0 +1,57 @@
+﻿@model IEnumerable<MoneyManager.Models.Transaction>
+
+@{
+    ViewData["Title"] = "Transactions";
+}
+
+<h1>Transactions</h1>
+@{
+    if (ViewBag.UserId != null)
+    {
+        <a asp-area="" asp-controller="Transaction" asp-action="Create" asp-route-userId="@ViewBag.UserId">Create new transaction</a>
+        @(" | ")
+        <a asp-area="" asp-controller="Transaction" asp-action="DeleteMonthTransactions" asp-route-userId="@ViewBag.UserId">Delete current month transactions</a>
+    }
+}
+<div>
+    @TempData["Message"]
+</div>
+<hr/>
+
+<table>
+    <tr>
+        <th>#</th>
+        <th>@Html.DisplayNameFor(model => model.User.Name)</th>
+        <th>@Html.DisplayNameFor(model => model.Date)</th>
+        <th>@Html.DisplayNameFor(model => model.Asset.Name)</th>
+        <th>@Html.DisplayNameFor(model => model.Category.Name)</th>
+        <th>@Html.DisplayNameFor(model => model.Category.Type)</th>
+        <th>@Html.DisplayNameFor(model => model.Amount)</th>
+    </tr>
+    @{
+        var i = 1;
+        foreach (var transaction in Model)
+        {
+            <tr>
+                <td>@i</td>
+                <td>@transaction.User?.Name</td>
+                <td>@transaction.Date</td>
+                <td>@transaction.Asset?.Name</td>
+                <td>@transaction.Category?.Name</td>
+                <td>@transaction.Category?.Type</td>
+                <td>@transaction.Amount</td>
+                <td></td>
+            </tr>
+            i++;
+        }
+    }
+</table>
+
+@{
+    if (ViewBag.UserId != null)
+    {
+        <div>
+            <a asp-controller="User" asp-action="Details" asp-route-userId="@ViewBag.UserId">Back to User</a>
+        </div>
+    }
+}

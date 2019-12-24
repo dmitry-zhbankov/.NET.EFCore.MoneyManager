@@ -1,0 +1,72 @@
+﻿@model MoneyManager.Models.Category
+
+@{
+    ViewData["Title"] = "Category Details";
+}
+
+<h1>Category Details</h1>
+@{
+    if (Model.Parent != null)
+    {
+        <a asp-controller="Category" asp-action="Details" asp-route-categoryId="@Model.Parent.CategoryId" asp-route-userId="@ViewBag.UserId">Parent category</a>
+        @(" | ")
+    }
+}
+<a asp-controller="Category" asp-action="Create" asp-route-parentId="@Model.CategoryId" asp-route-userId="@ViewBag.UserId">Create subcategory</a>
+@{
+    if (Model.Children.Any())
+    {
+        @(" | ")
+        <a asp-controller="Category" asp-action="Index" asp-route-categoryId="@Model.CategoryId" asp-route-userId="@ViewBag.UserId">Child categories</a>
+    }
+}
+@{
+    if (ViewBag.UserId != null)
+    {
+        @(" | ")
+        <a asp-controller="Category" asp-action="Add" asp-route-categoryId="@Model.CategoryId" asp-route-userId="@ViewBag.UserId">Add</a>
+    }
+}
+<hr/>
+
+<h4>Parent</h4>
+
+<dl>
+    <dt>
+        @Html.DisplayNameFor(model => model.Parent.Name)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.Parent.Name)
+    </dd>
+
+    <dt>
+        @Html.DisplayNameFor(model => model.Parent.Type)
+    </dt>
+    <dd>
+        @Html.DisplayFor(model => model.Parent.Type)
+    </dd>
+</dl>
+
+<h4>This Category</h4>
+
+<div>
+    <dl>
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Type)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Type)
+        </dd>
+    </dl>
+</div>
+
+<div>
+    <a asp-action="Index" asp-route-categoryId="@Model.Parent?.CategoryId" asp-route-userId="@ViewBag.UserId">Back to List</a>
+</div>

@@ -1,0 +1,34 @@
+﻿@model IEnumerable<User>
+
+@{
+    ViewData["Title"] = "Users";
+}
+
+<h1>Users</h1>
+<a asp-area="" asp-controller="User" asp-action="Create">Create new user</a>
+<partial name="Search" model="null"/>
+<div>@ViewBag.Message</div>
+<hr/>
+
+<table>
+    <tr>
+        <th>#</th>
+        <th>@Html.DisplayNameFor(model => model.Name)</th>
+        <th>@Html.DisplayNameFor(model => model.Capital)</th>
+    </tr>
+    @{
+        var i = 1;
+        foreach (var user in Model)
+        {
+            <tr>
+                <td>@i</td>
+                <td>
+                    <a asp-area="" asp-controller="User" asp-action="Details" asp-route-userId="@user.UserId">@user.Name</a>
+                </td>
+                <td>@user.Capital</td>
+                <td></td>
+            </tr>
+            i++;
+        }
+    }
+</table>

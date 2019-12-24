@@ -1,0 +1,94 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>MoneyManager</RootNamespace>
+    <AssemblyName>MoneyManager</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20191211143812_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191211143812_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191216090453_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191216090453_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191216091258_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191216091258_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191216093051_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191216093051_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191216094324_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191216094324_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191216094512_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191216094512_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191216095301_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191216095301_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191216101350_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191216101350_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191216104643_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191216104643_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191216104826_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191216104826_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191216115135_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191216115135_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191216123741_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191216123741_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191216135230_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191216135230_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191218094938_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191218094938_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191218095522_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191218095522_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191218100043_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191218100043_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191218102413_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191218102413_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191218104021_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191218104021_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191218104823_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191218104823_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191218105303_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191218105303_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191218111823_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191218111823_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191218112117_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191218112117_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191218113424_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191218113424_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191218114229_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191218114229_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191218114816_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191218114816_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191218115701_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191218115701_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191218115841_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191218115841_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191218120255_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191218120255_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191218120524_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191218120524_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191218120705_InitialCreate.cs" />
+    <Compile Remove="Migrations\20191218120705_InitialCreate.Designer.cs" />
+    <Compile Remove="Migrations\20191218154535_ManualMigration.cs" />
+    <Compile Remove="Migrations\20191218154535_ManualMigration.Designer.cs" />
+    <Compile Remove="Migrations\20191219125257_ManualMigration.cs" />
+    <Compile Remove="Migrations\20191219125257_ManualMigration.Designer.cs" />
+    <Compile Remove="Migrations\20191219140000_ManualMigration2.cs" />
+    <Compile Remove="Migrations\InitialCreate.cs" />
+    <Compile Remove="Migrations\InitialCreate.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\lib\" />
+    <Folder Include="wwwroot\js\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.1.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.0" />
+  </ItemGroup>
+
+</Project>
