@@ -78,9 +78,7 @@ namespace MoneyManager.Controllers
             if (categoryId != null && userId != null)
             {
                 category = unitOfWork.CategoryRepository.GetById((int) categoryId);
-                var userCategory = new UserCategory();
-                userCategory.CategoryId = (int) categoryId;
-                userCategory.UserId = (int) userId;
+                var userCategory = new UserCategory {CategoryId = (int) categoryId, UserId = (int) userId};
                 category.UserCategories.Add(userCategory);
                 unitOfWork.CategoryRepository.Update(category);
                 unitOfWork.Save();

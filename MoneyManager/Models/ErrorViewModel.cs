@@ -1,5 +1,3 @@
-using System;
-
 namespace MoneyManager.Models
 {
     public class ErrorViewModel

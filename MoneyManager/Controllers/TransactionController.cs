@@ -1,8 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Components;
 using Microsoft.AspNetCore.Mvc;
 using MoneyManager.Models;
 
@@ -38,8 +35,7 @@ namespace MoneyManager.Controllers
                 return BadRequest();
             }
 
-            var transaction = new Transaction();
-            transaction.User = unitOfWork.UserRepository.GetById((int) userId);
+            var transaction = new Transaction {User = unitOfWork.UserRepository.GetById((int) userId)};
             return View(transaction);
         }
 
@@ -103,12 +99,13 @@ namespace MoneyManager.Controllers
             {
                 unitOfWork.TransactionRepository.DeleteAllUserMonthTransactions((int) userId);
                 TempData["Message"] = $"Successfully deleted {unitOfWork.Save()} records";
-                return RedirectToAction("Index", new {userId = userId});
             }
             catch
             {
-                throw;
+                TempData["Message"] = "Delete fail";
             }
+
+            return RedirectToAction("Index", new { userId = userId });
         }
     }
 }

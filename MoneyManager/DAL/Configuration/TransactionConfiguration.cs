@@ -14,7 +14,7 @@ namespace MoneyManager.Models
 
         IEnumerable<object> CreateTransactions()
         {
-            List<object> list = new List<object>();
+            var list = new List<object>();
             var counter = 1;
             for (int k = 0; k < 10; k++)
             {

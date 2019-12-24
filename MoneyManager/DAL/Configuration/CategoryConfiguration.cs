@@ -13,7 +13,7 @@ namespace MoneyManager.Models
 
         IEnumerable<object> CreateCategories()
         {
-            List<object> list = new List<object>();
+            var list = new List<object>();
             var counter = 1;
             for (var i = 1; i <= 10; i++)
             {

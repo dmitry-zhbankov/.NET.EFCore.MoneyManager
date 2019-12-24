@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
@@ -14,7 +13,7 @@ namespace MoneyManager.Models
 
         ICollection<object> CreateAssets()
         {
-            List<object> list = new List<object>();
+            var list = new List<object>();
             var counter = 1;
             for (int i = 1; i <= 10; i++)
             {

@@ -16,8 +16,7 @@ namespace MoneyManager.Controllers
         {
             if (userId == null) return BadRequest();
             var user = unitOfWork.UserRepository.GetById((int) userId);
-            var asset = new Asset();
-            asset.User = user;
+            var asset = new Asset {User = user};
             return View(asset);
         }
 
